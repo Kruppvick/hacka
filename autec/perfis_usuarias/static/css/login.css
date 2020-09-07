@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - login */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.login .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 766px;
+  margin-left         : -1.0px;
+  position            : relative;
+  width               : 1368px;
+}
+.login .total-yearly-impact-mlWy7f {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .grupo-23-vqoFIu {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .bg-oK4ncI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .rectangle-F8xHvY {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.login .grupo-41-ArHm9x {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 76px);
+  position            : absolute;
+  right               : calc(49.68% - 139px);
+  top                 : 45px;
+  width               : 279px;
+}
+.login .login-eeBXd5 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 52px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : calc(100.00% - 104px);
+}
+.login .grupo-29-wV0UJC {
+  background-color    : rgba(255,255,255,0);
+  height              : 112px;
+  left                : 0px;
+  position            : absolute;
+  top                 : calc(24.73% - 28px);
+  width               : 100%;
+}
+.login .input-cMy3Yu {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .input-xgW465 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .rectangle-85-A5v6fH{
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+#email{
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 48px;
+  border: 0px;
+  font-color: #7882a2;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+#senha{
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 48px;
+  border: 0px;
+  top: 0px;
+  font-color: #7882a2;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.login .full-name-V2iS7x {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 42px;
+}
+.login .input-83x0Kx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  width               : 100%;
+}
+.login .input-AyGQuB {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .rectangle-85-LlgtNP {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .full-name-Dy5VvK {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 42px;
+}
+.login .grupo-31-uUGMYV {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  cursor              : pointer;
+  height              : 35px;
+  left                : calc(49.83% - 57px);
+  position            : absolute;
+  width               : 114px;
+}
+.login .icon-awesome-arrow-circle-right-xA6pzg {
+  background-color    : rgba(206,74,216,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 35px;
+}
+.login .prosseguir-m1rhAk {
+  background-color    : rgba(206,74,216,0);
+  color               : var(--auto-palette-color-6);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(47.90% - 7px);
+  white-space         : nowrap;
+  width               : 69px;
+}
+.login .google-facebook-login-IqkUGk {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(38.06% - 50px);
+  height              : 131px;
+  left                : 19px;
+  position            : absolute;
+  width               : calc(100.00% - 38px);
+}
+.login .rodape-TlCuFS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : -1.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : 1367px;
+}
+.login .grupo-20-OXjHu9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .caminho-28-HsIjxu {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.login .autech-2020-todos-os-direitos-reservados-NxZ87L {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.login {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 862px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.login .banner-kz8zwW {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 1368px;
+}
+.login .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.login .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.login .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.login .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(43.76% - 237px);
+  position            : absolute;
+  width               : 542px;
+}
+.login .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.75% - 55px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.login .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.login .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.52% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.login .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.login .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.login .grupo-36-HMCxAZ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 52px;
+  position            : absolute;
+  right               : 171px;
+  top                 : calc(50.00% - 26px);
+  width               : 168px;
+}
+.login .retangulo-248-lzUr1s {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : calc(50.00% - 84px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 168px;
+}
+.login .versao-premium-RGVN7J {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : calc(100.00% - 29px);
+  left                : calc(46.15% - 66px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 19px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.login .caminho-29-vvR3x3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 53px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 0px;
+}
+.login .grupo-27-k0Z7mq {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/caminho-30-1@1x.png");
+  background-size     : 100% 100%;
+  height              : 48px;
+  left                : 1222px;
+  position            : absolute;
+  top                 : 24px;
+  width               : 48px;
+}
+.login .icon-awesome-user-alt-1aBSDu {
+  background-color    : rgba(87,87,87,0);
+  height              : 24px;
+  left                : calc(50.00% - 12px);
+  position            : absolute;
+  top                 : calc(50.00% - 12px);
+  width               : 24px;
+}
+.login .grupo-42-hxO8Bj {
+  background-color    : rgba(255,255,255,0);
+  height              : 459px;
+  left                : 466px;
+  position            : absolute;
+  top                 : 202px;
+  width               : 436px;
+}
+
+/*input::placeholder {
+  color: orange;
+}*/
+

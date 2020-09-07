@@ -1,0 +1,5984 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - tab-bar-ativa */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-10 {
+  color               : var(--auto-palette-color-1);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  font-weight         : 800;
+  line-height         : 24.0px;
+}
+.font-class-2 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-5 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  color               : var(--auto-palette-color-2);
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : rgba(206,74,216,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(141,51,225,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(149,55,221,1.0);
+  --auto-palette-color-6: rgba(222,92,189,1.0);
+  --auto-palette-color-7: rgba(145,53,223,1.0);
+  --auto-palette-color-8: rgba(171,66,211,1.0);
+  --auto-palette-color-9: rgba(177,69,209,1.0);
+}
+.tab-bar-ativa .overlap-group5-pFh1xJ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group4-csJBAl {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group3-wVOQdA {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group2-fViMwE {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group10-KNYqDT {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group9-G5txg9 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group16-GlcyTA {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group17-aZ48tZ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group18-oYVSXr {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group19-jhUt3O {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group20-Si9u3b {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group21-lb6vr0 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group22-gxxQ1K {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.tab-bar-ativa .overlap-group23-zFYe36 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group24-4BGHc2 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group25-a2IwqW {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group26-ajZp5s {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group27-amx5em {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group28-HWbzuF {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.tab-bar-ativa .overlap-group29-PJZmle {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.tab-bar-ativa .overlap-group30-a9yQGh {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group31-uOxIDP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 4px;
+}
+.tab-bar-ativa .overlap-group32-C4N0Ls {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group33-TeKPcm {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group34-IOSR8a {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group35-Lpbx6c {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group36-uNYzTs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group37-K0kSil {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group38-SpCdpT {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group39-FCnTRH {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 5px;
+}
+.tab-bar-ativa .overlap-group40-DPve79 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group41-aFxk3p {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 4px;
+}
+.tab-bar-ativa .overlap-group42-iaeHg8 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group1-Bm5ls4 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  position            : relative;
+  width               : 68px;
+}
+.tab-bar-ativa .overlap-group15-Zceu1S {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group14-mTo2cs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group8-Tixl4L {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group7-9p0App {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group6-5N6adv {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group11-N4d5Am {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .overlap-group13-xwBXCm {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.tab-bar-ativa .overlap-group12-GJNAH3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .auto-flex1-t5q8Pb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 560px;
+  justify-content     : flex-start;
+  margin-top          : 32px;
+  position            : relative;
+  width               : auto;
+}
+.tab-bar-ativa .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 462px;
+  margin-right        : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.tab-bar-ativa .overlap-group1-wgRFnC {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.0px;
+  position            : relative;
+  width               : 26px;
+}
+.tab-bar-ativa .auto-flex-1lKxzb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 560px;
+  justify-content     : flex-start;
+  margin-top          : 88px;
+  position            : relative;
+  width               : auto;
+}
+.tab-bar-ativa .retangulo-241-9xMWEk {
+  background-color    : rgba(242,102,181,1.0);
+  height              : 55px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-242-coAZOM {
+  background-color    : rgba(243,103,180,1.0);
+  height              : 55px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-243-kdUy1h {
+  background-color    : rgba(244,103,180,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-247-fx5MVY {
+  background-color    : rgba(244,100,255,0);
+  border-radius       : 15.0px;
+  height              : 15px;
+  left                : 402px;
+  position            : absolute;
+  top                 : 65px;
+  width               : 101px;
+}
+.tab-bar-ativa .retangulo-200-uGzaVH {
+  background-color    : rgba(201,81,199,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-201-VKQJZT {
+  background-color    : rgba(202,82,198,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-202-k2LEja {
+  background-color    : rgba(203,82,198,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-203-PChEnd {
+  background-color    : rgba(204,83,197,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-204-LlYhaR {
+  background-color    : rgba(205,83,197,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-205-SrxKr5 {
+  background-color    : rgba(206,84,196,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-206-ZHx4nm {
+  background-color    : rgba(207,84,196,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-207-xhfdfc {
+  background-color    : rgba(208,85,196,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-208-Io1Xxc {
+  background-color    : rgba(209,85,195,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-209-AQipK5 {
+  background-color    : rgba(210,86,195,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-210-RrdRxy {
+  background-color    : rgba(211,86,194,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-211-4QS8U4 {
+  background-color    : rgba(212,87,194,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-212-vlMV1E {
+  background-color    : rgba(213,87,193,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-213-Jc4oMA {
+  background-color    : rgba(214,88,193,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-214-QkMylb {
+  background-color    : rgba(215,88,193,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-215-yOZiYN {
+  background-color    : rgba(216,89,192,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-216-Nc84BH {
+  background-color    : rgba(217,89,192,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-217-6ssaO7 {
+  background-color    : rgba(218,90,191,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-218-G0xQbM {
+  background-color    : rgba(219,90,191,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-219-UmNTW6 {
+  background-color    : rgba(220,91,190,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-220-RAHXk9 {
+  background-color    : rgba(221,91,190,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-221-TQRgRt {
+  background-color    : var(--auto-palette-color-6);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-222-U491QF {
+  background-color    : rgba(223,93,189,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-223-5TIOPY {
+  background-color    : rgba(224,93,189,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-224-gbxerg {
+  background-color    : rgba(225,94,188,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-225-Q7h9rH {
+  background-color    : rgba(226,94,188,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-226-Si5pXw {
+  background-color    : rgba(227,95,187,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-227-no6B9Y {
+  background-color    : rgba(228,95,187,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-228-lSbCzR {
+  background-color    : rgba(229,96,186,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-229-xXGbI0 {
+  background-color    : rgba(230,96,186,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-230-ufm6TG {
+  background-color    : rgba(231,97,186,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-231-kuVryg {
+  background-color    : rgba(232,97,185,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-232-dm3UTp {
+  background-color    : rgba(233,98,185,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-233-nBGjQh {
+  background-color    : rgba(234,98,184,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-234-NG4OJ5 {
+  background-color    : rgba(235,99,184,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-235-oqkj2z {
+  background-color    : rgba(236,99,183,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-236-QrGYPj {
+  background-color    : rgba(237,100,183,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-237-cnVGDx {
+  background-color    : rgba(238,100,182,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-238-kxv1hC {
+  background-color    : rgba(239,101,182,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-239-7epiQu {
+  background-color    : rgba(240,101,182,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-240-nrvBEy {
+  background-color    : rgba(241,102,181,1.0);
+  height              : 55px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-155-EphDHz {
+  background-color    : rgba(155,58,218,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-156-NyqpmC {
+  background-color    : rgba(156,58,218,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-157-j5FP40 {
+  background-color    : rgba(157,59,218,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-158-EHkzsm {
+  background-color    : rgba(158,60,217,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-159-Rl24v1 {
+  background-color    : rgba(159,60,217,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-160-x5zbxy {
+  background-color    : rgba(160,61,216,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-161-diJSto {
+  background-color    : rgba(161,61,216,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-162-yePXfQ {
+  background-color    : rgba(162,62,215,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-163-uvWxQl {
+  background-color    : rgba(163,62,215,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-164-WoKDy6 {
+  background-color    : rgba(164,63,214,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-165-eJDpTR {
+  background-color    : rgba(165,63,214,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-166-GQgPne {
+  background-color    : rgba(166,64,214,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-167-GUe0Zk {
+  background-color    : rgba(167,64,213,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-168-Q856Gy {
+  background-color    : rgba(168,65,213,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-169-RF93Tb {
+  background-color    : rgba(169,65,212,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-170-T1TUkv {
+  background-color    : rgba(170,66,212,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-171-GZFRqw {
+  background-color    : var(--auto-palette-color-8);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-172-PrJDA0 {
+  background-color    : rgba(172,67,211,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-173-TFnE6U {
+  background-color    : rgba(173,67,211,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-174-a7ntOq {
+  background-color    : rgba(174,68,210,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-175-8bDMTd {
+  background-color    : rgba(175,68,210,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-176-wrO8zz {
+  background-color    : rgba(176,69,209,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-177-6wWAMM {
+  background-color    : var(--auto-palette-color-9);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-178-CMxrgT {
+  background-color    : rgba(178,70,208,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-179-CCmlr0 {
+  background-color    : rgba(179,70,208,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-180-JoasDD {
+  background-color    : rgba(180,71,207,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-181-PllrQN {
+  background-color    : rgba(181,71,207,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-182-6FbdEZ {
+  background-color    : rgba(182,72,207,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-183-jDNXmF {
+  background-color    : rgba(183,72,206,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-184-16xkiD {
+  background-color    : rgba(184,73,206,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-185-i8fIGc {
+  background-color    : rgba(185,73,205,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-186-Fx2FNw {
+  background-color    : rgba(186,74,205,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-187-8c7tmt {
+  background-color    : rgba(187,74,204,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-188-UAC4EW {
+  background-color    : rgba(188,75,204,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-189-IhJRts {
+  background-color    : rgba(190,76,204,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-190-f8Pa8f {
+  background-color    : rgba(191,76,203,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-191-N3ODJs {
+  background-color    : rgba(192,77,203,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-192-ZuJ6qn {
+  background-color    : rgba(193,77,202,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-193-nJAau2 {
+  background-color    : rgba(194,78,202,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-194-d2hQT3 {
+  background-color    : rgba(195,78,201,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-195-q9sbtI {
+  background-color    : rgba(196,79,201,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-196-FEvF7d {
+  background-color    : rgba(197,79,200,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-197-rHbHVq {
+  background-color    : rgba(198,80,200,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-198-BMKsxZ {
+  background-color    : rgba(199,80,200,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-199-Tatqab {
+  background-color    : rgba(200,81,199,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-115-3oadY3 {
+  background-color    : rgba(236,99,183,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-116-S9levA {
+  background-color    : rgba(237,100,183,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-117-EipRcv {
+  background-color    : rgba(238,100,182,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-118-ET4VlU {
+  background-color    : rgba(239,101,182,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-119-8pL8hm {
+  background-color    : rgba(240,101,182,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-120-xBYRXF {
+  background-color    : rgba(241,102,181,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-121-OS3hTp {
+  background-color    : rgba(242,102,181,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-122-yB0ea5 {
+  background-color    : rgba(243,103,180,1.0);
+  height              : 68px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-123-qXYf93 {
+  background-color    : rgba(244,103,180,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-124-YOAJjx {
+  background-color    : rgba(245,104,179,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-125-Ym3OY7 {
+  background-color    : rgba(246,104,179,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-126-lort5m {
+  background-color    : rgba(247,105,179,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-127-Aj6VLp {
+  background-color    : rgba(248,105,178,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-128-lvChbJ {
+  background-color    : rgba(249,106,178,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-129-CYFxkd {
+  background-color    : rgba(250,106,177,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-130-DmFx7V {
+  background-color    : rgba(251,107,177,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-131-y9EonP {
+  background-color    : rgba(252,107,176,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-132-lZPy7J {
+  background-color    : rgba(253,108,176,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-133-xErdMa {
+  background-color    : rgba(254,108,175,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-134-Z0glKg {
+  background-color    : rgba(255,109,175,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-135-UJnx9I {
+  background-color    : rgba(255,109,175,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .caminho-38-qJ7dLN {
+  background-color    : rgba(255,109,175,0);
+  flex-shrink         : 0;
+  height              : 0px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 0px;
+}
+.tab-bar-ativa .retangulo-136-9KXxrv {
+  background-color    : rgba(136,48,227,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-137-zOx9gu {
+  background-color    : rgba(137,49,226,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-138-VxnjiC {
+  background-color    : rgba(138,49,226,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-139-ANM7cF {
+  background-color    : rgba(139,50,225,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-140-L5Pvdh {
+  background-color    : rgba(140,50,225,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-141-J9K7vg {
+  background-color    : var(--auto-palette-color-10);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-142-89kPca {
+  background-color    : rgba(142,51,224,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-143-RYnn3y {
+  background-color    : rgba(143,52,224,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-144-ckKCmS {
+  background-color    : rgba(144,52,223,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-145-LTwIXo {
+  background-color    : var(--auto-palette-color-7);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-146-KN12qs {
+  background-color    : rgba(146,53,222,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-147-RxrBXV {
+  background-color    : rgba(147,54,222,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-148-p3LBTB {
+  background-color    : rgba(148,54,221,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-149-xg72xM {
+  background-color    : var(--auto-palette-color-5);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-150-ebz7uG {
+  background-color    : rgba(150,55,221,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-151-hcWwS7 {
+  background-color    : rgba(151,56,220,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-152-ZAp5v0 {
+  background-color    : rgba(152,56,220,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-153-tgJ66P {
+  background-color    : rgba(153,57,219,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-154-JXz5Ds {
+  background-color    : rgba(154,57,219,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-72-jaQUSC {
+  background-color    : rgba(193,77,202,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-73-RxDt0S {
+  background-color    : rgba(194,78,202,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-74-zLTXby {
+  background-color    : rgba(195,78,201,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-75-L71xqj {
+  background-color    : rgba(196,79,201,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-76-B64F6k {
+  background-color    : rgba(197,79,200,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-77-B1gRjc {
+  background-color    : rgba(198,80,200,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-78-GmcULP {
+  background-color    : rgba(199,80,200,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-79-wXeGrr {
+  background-color    : rgba(200,81,199,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-80-GV6nbe {
+  background-color    : rgba(201,81,199,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-81-0OxTeE {
+  background-color    : rgba(202,82,198,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-82-rlL8L8 {
+  background-color    : rgba(203,82,198,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-83-swrpHu {
+  background-color    : rgba(204,83,197,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-84-Wmc9If {
+  background-color    : rgba(205,83,197,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-85-24loMt {
+  background-color    : rgba(206,84,196,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-86-hApCl7 {
+  background-color    : rgba(207,84,196,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-87-vgTSuX {
+  background-color    : rgba(208,85,196,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-88-0OJRYE {
+  background-color    : rgba(209,85,195,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-89-ZYVn7S {
+  background-color    : rgba(210,86,195,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-90-kOKYCv {
+  background-color    : rgba(211,86,194,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-91-WUaCPu {
+  background-color    : rgba(212,87,194,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-92-ChSOgf {
+  background-color    : rgba(213,87,193,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-93-pd5ORH {
+  background-color    : rgba(214,88,193,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-94-hQ8d7L {
+  background-color    : rgba(215,88,193,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-95-1elHax {
+  background-color    : rgba(216,89,192,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-96-wxTlK1 {
+  background-color    : rgba(217,89,192,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-97-w8jySa {
+  background-color    : rgba(218,90,191,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-98-Uk99Yn {
+  background-color    : rgba(219,90,191,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-99-v8QCWF {
+  background-color    : rgba(220,91,190,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-100-hCCrqr {
+  background-color    : rgba(221,91,190,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-101-4B2NFN {
+  background-color    : var(--auto-palette-color-6);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-102-lxDxVI {
+  background-color    : rgba(223,93,189,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-103-wbxRHS {
+  background-color    : rgba(224,93,189,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-104-K7OTJC {
+  background-color    : rgba(225,94,188,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-105-oH7WuL {
+  background-color    : rgba(226,94,188,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-106-hvMigR {
+  background-color    : rgba(227,95,187,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-107-0fm3xU {
+  background-color    : rgba(228,95,187,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-108-X3qKHQ {
+  background-color    : rgba(229,96,186,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-109-HvaPcx {
+  background-color    : rgba(230,96,186,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-110-NfbsmJ {
+  background-color    : rgba(231,97,186,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-111-8Qg2SB {
+  background-color    : rgba(232,97,185,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-112-guKJDi {
+  background-color    : rgba(233,98,185,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-113-ItfqGv {
+  background-color    : rgba(234,98,184,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-114-8fZV1U {
+  background-color    : rgba(235,99,184,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-32-i4GuN1 {
+  background-color    : rgba(152,56,220,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-33-alu0xD {
+  background-color    : rgba(153,57,219,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-34-oeoTC5 {
+  background-color    : rgba(154,57,219,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-35-QaodOc {
+  background-color    : rgba(155,58,218,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-36-rBuKCK {
+  background-color    : rgba(156,58,218,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-37-nIK54M {
+  background-color    : rgba(157,59,218,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-38-CuixjC {
+  background-color    : rgba(158,60,217,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-39-8HXxi5 {
+  background-color    : rgba(159,60,217,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-40-Q2bojL {
+  background-color    : rgba(160,61,216,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-41-T5opef {
+  background-color    : rgba(161,61,216,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-42-85cG8X {
+  background-color    : rgba(162,62,215,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-43-rF0cY3 {
+  background-color    : rgba(163,62,215,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-44-TboAY0 {
+  background-color    : rgba(164,63,214,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-45-lMDa0A {
+  background-color    : rgba(165,63,214,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-46-iY880j {
+  background-color    : rgba(166,64,214,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-47-xLWXj5 {
+  background-color    : rgba(167,64,213,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-48-0iqxYI {
+  background-color    : rgba(168,65,213,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-49-CQGZxp {
+  background-color    : rgba(169,65,212,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-50-Xcho26 {
+  background-color    : rgba(170,66,212,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-51-xKfUOP {
+  background-color    : var(--auto-palette-color-8);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-52-dhxCsn {
+  background-color    : rgba(172,67,211,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-53-PzyKCj {
+  background-color    : rgba(173,67,211,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-54-HxNvbA {
+  background-color    : rgba(174,68,210,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-55-Rx37xw {
+  background-color    : rgba(175,68,210,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-56-VS9xzx {
+  background-color    : rgba(176,69,209,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-57-mwFxOb {
+  background-color    : var(--auto-palette-color-9);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-58-h81NGJ {
+  background-color    : rgba(178,70,208,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-59-jUsAU2 {
+  background-color    : rgba(179,70,208,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-60-1d50rq {
+  background-color    : rgba(180,71,207,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-61-6fUjmy {
+  background-color    : rgba(181,71,207,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-62-6yeNxy {
+  background-color    : rgba(182,72,207,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-63-CWvWh6 {
+  background-color    : rgba(183,72,206,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-64-6JBRYX {
+  background-color    : rgba(184,73,206,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-65-5UxXzs {
+  background-color    : rgba(185,73,205,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-66-cbXPzQ {
+  background-color    : rgba(186,74,205,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-67-SM8lf8 {
+  background-color    : rgba(187,74,204,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-68-ZnTCvx {
+  background-color    : rgba(188,75,204,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-69-DqB1bx {
+  background-color    : rgba(190,76,204,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-70-sTURcJ {
+  background-color    : rgba(191,76,203,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-71-LrUis9 {
+  background-color    : rgba(192,77,203,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.tab-bar-ativa .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.62% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.tab-bar-ativa .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.tab-bar-ativa .elipse-2-gixgHN {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 97px;
+  top                 : calc(50.00% - 24px);
+  width               : 48px;
+}
+.tab-bar-ativa .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.tab-bar-ativa .grupo-26-uxQKJs {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : 1.0px;
+  margin-top          : 101px;
+  position            : relative;
+  width               : 1367px;
+}
+.tab-bar-ativa .grupo-20-tLqelE {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-28-YEewEp {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .camada-2-MZNMFF {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 70.90%;
+  justify-content     : flex-start;
+  left                : 44.85%;
+  position            : absolute;
+  top                 : 14.58%;
+  width               : auto;
+}
+.tab-bar-ativa .camada-1-rqxBCF {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 68px;
+  justify-content     : flex-start;
+  min-width           : 141px;
+  position            : relative;
+  width               : auto;
+}
+.tab-bar-ativa .caminho-31-hQi3o6 {
+  background-color    : rgba(255,0,191,0);
+  height              : 27px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 20px;
+  width               : 26px;
+}
+.tab-bar-ativa .caminho-32-MaSh2p {
+  background-color    : rgba(255,0,191,0);
+  height              : 27px;
+  left                : 34px;
+  position            : absolute;
+  top                 : 21px;
+  width               : 24px;
+}
+.tab-bar-ativa .caminho-33-enIvjR {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 26px;
+  margin-bottom       : 0.23px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 19px;
+}
+.tab-bar-ativa .caminho-34-bG744X {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 26px;
+  margin-bottom       : 0.22px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 18px;
+}
+.tab-bar-ativa .caminho-35-xxrvyQ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 28px;
+  margin-bottom       : 0.22px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 26px;
+}
+.tab-bar-ativa .caminho-36-QnuiaO {
+  background-color    : rgba(217,188,255,0);
+  height              : 27px;
+  left                : 7px;
+  position            : absolute;
+  top                 : 20px;
+  width               : 26px;
+}
+.tab-bar-ativa .caminho-37-DVV9ws {
+  background-color    : rgba(217,188,255,0);
+  height              : 27px;
+  left                : 36px;
+  position            : absolute;
+  top                 : 21px;
+  width               : 24px;
+}
+.tab-bar-ativa .grupo-24-1OVCGR {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 68px;
+  justify-content     : flex-start;
+  left                : 0px;
+  overflow            : hidden;
+  position            : absolute;
+  top                 : 0px;
+  width               : 68px;
+}
+.tab-bar-ativa .retangulo-4-x3yhHm {
+  background-color    : rgba(124,42,232,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-5-qawxfg {
+  background-color    : rgba(125,43,232,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-6-yqVc1R {
+  background-color    : rgba(126,43,231,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-7-mG0OlC {
+  background-color    : rgba(127,44,231,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-8-xxPzmD {
+  background-color    : rgba(128,44,230,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-9-lRleLM {
+  background-color    : rgba(129,45,230,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-10-KjaxYg {
+  background-color    : rgba(130,45,229,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-11-I88cmA {
+  background-color    : rgba(131,46,229,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-12-aIWUOk {
+  background-color    : rgba(132,46,228,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-13-n1n00H {
+  background-color    : rgba(133,47,228,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-14-ElNy1B {
+  background-color    : rgba(134,47,228,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-15-c10C2X {
+  background-color    : rgba(135,48,227,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-16-2sIFXM {
+  background-color    : rgba(136,48,227,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-17-I8nPxh {
+  background-color    : rgba(137,49,226,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-18-7eKnwW {
+  background-color    : rgba(138,49,226,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-19-HhC0WC {
+  background-color    : rgba(139,50,225,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-20-xu8enk {
+  background-color    : rgba(140,50,225,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-21-qecGch {
+  background-color    : var(--auto-palette-color-10);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-22-2QBxG8 {
+  background-color    : rgba(142,51,224,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-23-9Mfcll {
+  background-color    : rgba(143,52,224,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-24-Y7iLIl {
+  background-color    : rgba(144,52,223,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-25-UwYxGw {
+  background-color    : var(--auto-palette-color-7);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-26-VzTS1b {
+  background-color    : rgba(146,53,222,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-27-7xtLAI {
+  background-color    : rgba(147,54,222,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-28-1KMOwo {
+  background-color    : rgba(148,54,221,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-29-hHDd4v {
+  background-color    : var(--auto-palette-color-5);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-30-bUNmKF {
+  background-color    : rgba(150,55,221,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .retangulo-31-EYxGxp {
+  background-color    : rgba(151,56,220,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.tab-bar-ativa .componente-2-12-niJov4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-7x4shf {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-7AOE6S {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-fG6Lzo {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-byRMWy {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-4pj9ob {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-g58ewZ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-TUT0cx {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-MHETbZ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-vXwT5D {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-CxOxpe {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-iKw4bW {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-uxxzfk {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-3oCxWh {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-mOuQNk {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-1BNRGY {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-l8lnfQ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 22px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .grupo-18-eMxhQr {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/13288-1@1x.png");
+  background-size     : 100% 100%;
+  flex-shrink         : 0;
+  height              : 314px;
+  margin-left         : 1.0px;
+  margin-top          : 100px;
+  position            : relative;
+  width               : 1367px;
+}
+.tab-bar-ativa .grupo-17-XEb7Cx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.72% - 68px);
+  height              : 137px;
+  position            : absolute;
+  right               : calc(49.95% - 220px);
+  width               : 440px;
+}
+.tab-bar-ativa .quer-concorrer-a-vagas-que-dao-match-com-suas-competencias-M7T3Fx {
+  background-color    : rgba(255,255,255,0);
+  height              : 70px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 10px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .title-Yr0KeO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-left         : 2.0px;
+  margin-top          : 77px;
+  position            : relative;
+  width               : 684px;
+}
+.tab-bar-ativa .competencia-1-3oBxSN {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 126px;
+}
+.tab-bar-ativa .competencia-2-VM4Pmr {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-weight         : 900;
+  height              : 100%;
+  left                : calc(33.09% - 44px);
+  letter-spacing      : 0.00px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 134px;
+}
+.tab-bar-ativa .competencia-1-yoLQZd {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(33.15% - 41px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 126px;
+}
+.tab-bar-ativa .competencia-1-1UkSX6 {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 126px;
+}
+.tab-bar-ativa .retangulo-3-ofEbS5 {
+  background-color    : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-right        : 184.0px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 130px;
+}
+.tab-bar-ativa .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.tab-bar-ativa .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(50.00% - 276px);
+  position            : absolute;
+  width               : 551px;
+}
+.tab-bar-ativa .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.55% - 54px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.tab-bar-ativa .circle-WuOsF8 {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-bjkEG6 {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-Cxadfh {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-ngywH5 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-DxPVr7 {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-xCQxhn {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 22px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .grupo-14-1gxxv8 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 60px;
+  height              : 323px;
+  left                : 27px;
+  position            : absolute;
+  width               : calc(100.00% - 55px);
+}
+.tab-bar-ativa .componente-2-10-3JA0n2 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-prgAYP {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-pG5jOZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-YwDeRt {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-9ixDkr {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-oW74Av {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-5d3J9M {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-CXqlP6 {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-Qm959Q {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-VoCZAO {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-8gJFnf {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-FOxWjt {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-I9A8Oq {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-UkXI6y {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-wwyaVP {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-pwwv7G {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-tZIIPP {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(50.00% - 21px);
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .componente-2-11-d0lLVo {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : calc(50.00% - 146px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-l99J8d {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-dZjeQv {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-tdwD5R {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-G8bN9Q {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-Hm8vpT {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.43% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-DjtO6d {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-u5lrgb {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-SSNuWm {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.73% - 38px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-tOcwFw {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.80% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-iXjKXn {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-4VSxFr {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-xeT1bu {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-9Cwnq7 {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-SK31OP {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-efBxlg {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-PJ9SCf {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 22px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .caminho-20-EPzEJJ {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-xXTD9q {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-1ULG6S {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-gCWwC4 {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-0g07TZ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-tLXHtJ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-mIO8NT {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-OhFeIY {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-WKbxFP {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-9FvKA1 {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-Xti6LT {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-xi4nOl {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-E2HzbT {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(50.00% - 21px);
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .componente-2-8-AJyD9r {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : calc(50.00% - 146px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-9C4R3X {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-UubbE9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-pHFohL {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-QGm08h {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-fPG81A {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.43% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-EUtwwo {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-ffmTw1 {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-yV28X2 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.73% - 38px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-rW6Ojw {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.80% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-ddnwkU {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-sImocx {
+  background-color    : rgba(255,110,171,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.tab-bar-ativa .op-component-1-cW2a1b {
+  background-color    : rgba(255,110,171,0);
+  height              : 994.33%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.tab-bar-ativa .op-component-2-luQFJi {
+  background-color    : rgba(255,110,171,0);
+  height              : 1147.98%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.tab-bar-ativa .grupo-6-BXqlIA {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-XKwqde {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-pownXU {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 22px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 44px;
+}
+.tab-bar-ativa .componente-2-9-fdEdDO {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-ZVKrfD {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-cN5Gzs {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-XnaWz3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-iPPi49 {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-12-2v6GXM {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.tab-bar-ativa .artigo-sobre-responsividade-vycQxI {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ao-final-voce-ganhara-3d953S {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.tab-bar-ativa .grupo-11-PzdDnt {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.tab-bar-ativa .a2-uy3mWk {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.tab-bar-ativa .counter-qjs9rQ {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .a25-ugeCng {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : 81px;
+  text-align          : left;
+  top                 : calc(37.34% - 9px);
+  white-space         : nowrap;
+  width               : 46px;
+}
+.tab-bar-ativa .grupo-6-4r9pXt {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 54px;
+  top                 : 149px;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-ChVGrk {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(255,110,171,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-j1AOsb {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 29px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : calc(100.00% - 58px);
+}
+.tab-bar-ativa .anuncio-17ds5K {
+  background-color    : rgba(206,74,216,0);
+  color               : rgba(206,74,216,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 9px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 7px;
+  white-space         : nowrap;
+  width               : 68px;
+}
+.tab-bar-ativa .componente-1-4-sJUB7l {
+  background-color    : rgba(255,255,255,0);
+  height              : 281px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(35.51% - 100px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .grupo-5-ajFYla {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-l3c0sx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-2HIrhq {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-olWubr {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .grupo-8-Py9a2K {
+  background-color    : rgba(255,255,255,0);
+  height              : 188px;
+  position            : absolute;
+  right               : 59px;
+  top                 : 46px;
+  width               : 658px;
+}
+.tab-bar-ativa .a25-gtVLqR {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : 81px;
+  text-align          : left;
+  top                 : calc(40.06% - 9px);
+  white-space         : nowrap;
+  width               : 46px;
+}
+.tab-bar-ativa .grupo-7-kQKcjL {
+  background-color    : rgba(255,255,255,0);
+  height              : 188px;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 658px;
+}
+.tab-bar-ativa .text-cqt8cd {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 21px;
+  height              : 167px;
+  position            : absolute;
+  right               : 0px;
+  width               : 658px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-SBmexK {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 3px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 124px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 405px;
+}
+.tab-bar-ativa .curso-de-node-js-veV0mU {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 93px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -2px;
+  width               : calc(100.00% - 219px);
+}
+.tab-bar-ativa .ao-final-do-curso-voce-ganhara-pBO5No {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  top                 : 6px;
+  white-space         : nowrap;
+  width               : 204px;
+}
+.tab-bar-ativa .counter-JROTbx {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 79px;
+  position            : absolute;
+  right               : 64px;
+  top                 : calc(37.85% - 30px);
+  width               : 79px;
+}
+.tab-bar-ativa .circle-bV1VLx {
+  background-color    : rgba(255,110,171,0);
+  height              : 40px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 38px;
+}
+.tab-bar-ativa .op-component-1-Gf72yg {
+  background-color    : rgba(255,110,171,0);
+  height              : 192.78%;
+  left                : -102.29%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 202.29%;
+}
+.tab-bar-ativa .op-component-2-bMkB5W {
+  background-color    : rgba(255,110,171,0);
+  height              : 222.57%;
+  left                : -116.49%;
+  position            : absolute;
+  top                 : -22.06%;
+  width               : 242.57%;
+}
+.tab-bar-ativa .grupo-6-7rdaZA {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 54px;
+  top                 : 149px;
+  width               : 102px;
+}
+.tab-bar-ativa .retangulo-2-3MjI3e {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(255,110,171,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .fazer-SkBIvs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 30px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .grupo-10-6fj09Q {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 11.60%;
+  justify-content     : flex-start;
+  left                : 4.87%;
+  position            : absolute;
+  top                 : 38.30%;
+  width               : auto;
+}
+.tab-bar-ativa .umbler-logo-light-bg-v1br7r {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 33px;
+  justify-content     : flex-end;
+  min-width           : 119px;
+  position            : relative;
+  width               : auto;
+}
+.tab-bar-ativa .caminho-21-RFx1UM {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.01px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 12px;
+}
+.tab-bar-ativa .caminho-22-ma7vL1 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 21px;
+}
+.tab-bar-ativa .caminho-23-QjmpLy {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 33px;
+  margin-bottom       : 0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 5px;
+}
+.tab-bar-ativa .caminho-24-N5rC07 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 33px;
+  margin-bottom       : -0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 17px;
+}
+.tab-bar-ativa .caminho-25-xLJoCt {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 7px;
+  position            : absolute;
+  top                 : 9px;
+  width               : 13px;
+}
+.tab-bar-ativa .caminho-26-idp8Zy {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.01px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 26px;
+}
+.tab-bar-ativa .caminho-27-pX4WGH {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 26px;
+}
+.tab-bar-ativa .anuncio-ZbM2Ma {
+  background-color    : rgba(206,74,216,0);
+  color               : rgba(206,74,216,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 9px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 7px;
+  white-space         : nowrap;
+  width               : 68px;
+}
+.tab-bar-ativa .grupo-13-N6kFWx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(36.05% - 116px);
+  height              : 323px;
+  left                : 27px;
+  position            : absolute;
+  width               : calc(100.00% - 55px);
+}
+.tab-bar-ativa .componente-2-7-IvUsQr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.tab-bar-ativa .grupo-5-xQSQor {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-wfdTfr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-22L0rN {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .competencia-2-mGxAig {
+  background-color    : rgba(164,252,109,0);
+  color               : rgba(164,252,109,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 157px;
+}
+.tab-bar-ativa .op-component-2-h5HoJB {
+  background-color    : rgba(164,252,109,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.tab-bar-ativa .grupo-3-xD8WRx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.tab-bar-ativa .retangulo-2-1YxYD1 {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ver-materiais-cNl9SU {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.tab-bar-ativa .seja-bem-vinda-ana-HU1wMx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : auto;
+  left                : 553px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 331px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.tab-bar-ativa .span0-HU1wMx {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-HU1wMx {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 800;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span2-HU1wMx {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .abaixo-estao-suas-competencias-pontos-de-melhorias-e-materiais-para-voce-se-desenvolver-profissionalmente-zVyUet {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 49px;
+  left                : 392px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 374px;
+  width               : 586px;
+}
+.tab-bar-ativa .grupo-4-Ufdrsn {
+  background-color    : rgba(255,255,255,0);
+  height              : 157px;
+  left                : 606px;
+  position            : absolute;
+  top                 : 140px;
+  width               : 157px;
+}
+.tab-bar-ativa .elipse-2-ruvxf8 {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 31px);
+  left                : 15px;
+  position            : absolute;
+  top                 : 15px;
+  width               : calc(100.00% - 31px);
+}
+.tab-bar-ativa .elipse-3-sI21xt {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .grupo-19-iBdeku {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1472px;
+  margin-top          : 55px;
+  position            : relative;
+  width               : 992px;
+}
+.tab-bar-ativa .total-yearly-impact-jrpWrz {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-FVzBpx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-C2pZxH {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .divider-q39lkq {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.tab-bar-ativa .title-Vyn0L3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : calc(50.00% - 200px);
+  position            : absolute;
+  top                 : 23px;
+  width               : 400px;
+}
+.tab-bar-ativa .materiais-para-desenvolver-a-competencia-2-b5Fa07 {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .span0-b5Fa07 {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-b5Fa07 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .componente-1-3-KLpBlF {
+  background-color    : rgba(255,255,255,0);
+  height              : 281px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 110px;
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .grupo-5-FtPt4Y {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .total-sale-today-D9Wrsz {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .bg-0VASI9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-xmRpGK {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .alura-qSEoxF {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.97% - 25px);
+  height              : 51px;
+  left                : 51px;
+  position            : absolute;
+  width               : 109px;
+}
+.tab-bar-ativa .grupo-9-jKPwpQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 200px;
+  position            : absolute;
+  right               : 59px;
+  top                 : 40px;
+  width               : 658px;
+}
+.tab-bar-ativa .text-727qmw {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 200px;
+  position            : absolute;
+  right               : 0px;
+  width               : 658px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-BcOOtJ {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 3px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 124px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 405px;
+}
+.tab-bar-ativa .curso-de-desenvolvimento-de-sistemas-bNiWqz {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 93px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -2px;
+  width               : calc(100.00% - 219px);
+}
+.tab-bar-ativa .ao-final-do-curso-voce-ganhara-7qJ2x9 {
+  background-color    : rgba(112,112,112,0);
+  color               : rgba(112,112,112,1.0);
+  font-size           : 14.0px;
+  height              : 18px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  top                 : 6px;
+  white-space         : nowrap;
+  width               : 204px;
+}
+.tab-bar-ativa .counter-vxvLDk {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 79px;
+  position            : absolute;
+  right               : 64px;
+  top                 : calc(34.10% - 27px);
+  width               : 79px;
+}
+.tab-bar-ativa .circle-HbQs1G {
+  background-color    : rgba(255,110,171,0);
+  height              : 40px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 38px;
+}
+.tab-bar-ativa .op-component-1-GVxgJ5 {
+  background-color    : rgba(255,110,171,0);
+  height              : 192.78%;
+  left                : -102.29%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 202.29%;
+}
+.tab-bar-ativa .op-component-2-AjdbrC {
+  background-color    : rgba(255,110,171,0);
+  height              : 222.57%;
+  left                : -116.49%;
+  position            : absolute;
+  top                 : -22.06%;
+  width               : 242.57%;
+}
+.tab-bar-ativa .competencia-2-CZkNqK {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 157px;
+}
+.tab-bar-ativa .counter-mFyxuV {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.tab-bar-ativa .a32-CVoxCI {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.tab-bar-ativa .group-15-TFalJ7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .base-Iweqxq {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-yoxWWW {
+  background-color    : rgba(255,110,171,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.tab-bar-ativa .op-component-1-WoXzDs {
+  background-color    : rgba(255,110,171,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.tab-bar-ativa .op-component-2-BwkdoT {
+  background-color    : rgba(255,110,171,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.tab-bar-ativa .grupo-3-woblml {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.tab-bar-ativa .retangulo-2-GWsMLF {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ver-materiais-4De2KK {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.tab-bar-ativa .total-yearly-impact-WXc1ms {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  margin-left         : 28px;
+  position            : relative;
+  width               : 686px;
+}
+.tab-bar-ativa .bg-Gbva14 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-ZtEfQa {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .divider-s9nSNm {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.tab-bar-ativa .title-n2F0MH {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 309px;
+}
+.tab-bar-ativa .pontos-de-melhoria-em-hard-skills-7xjx6N {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .span0-7xjx6N {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-7xjx6N {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .daily-visitors-AkUG4H {
+  background-color    : rgba(255,255,255,0);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(26.89% - 55px);
+  width               : calc(100.00% - 56px);
+}
+.tab-bar-ativa .bg-Q0hHWZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-YcYiYM {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .text-V0OxtZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-Yjvy6b {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.tab-bar-ativa .competencia-1-xCD5pL {
+  background-color    : rgba(163,178,221,0);
+  color               : rgba(163,178,221,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 158px;
+}
+.tab-bar-ativa .counter-5qXWxe {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.tab-bar-ativa .a32-SChAy4 {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.tab-bar-ativa .group-15-6YxNXx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .base-0LILk4 {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-bZtIqx {
+  background-color    : rgba(163,178,221,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.tab-bar-ativa .op-component-1-lGWlCs {
+  background-color    : rgba(163,178,221,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.tab-bar-ativa .op-component-2-8raVZx {
+  background-color    : rgba(163,178,221,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.tab-bar-ativa .grupo-3-G9fFsx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.tab-bar-ativa .retangulo-2-yMzbFj {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ver-materiais-LYcnvv {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.tab-bar-ativa .daily-visitors-ypLWeY {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 42px;
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 56px);
+}
+.tab-bar-ativa .bg-pEef4o {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-X4PCLD {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .text-DtWPGw {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-kAlEDI {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.tab-bar-ativa .span2-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .text-qlSxWW {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(31.32% - 6px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a32-MmDYnH {
+  background-color    : rgba(163,178,221,0);
+  color               : rgba(163,178,221,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-Mwmxi4 {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .text-6CHQjR {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(44.69% - 9px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a80-txStn6 {
+  background-color    : rgba(216,200,74,0);
+  color               : rgba(216,200,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-vcKaDD {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .text-vr3BdE {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(41.76% - 8px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 53px);
+}
+.tab-bar-ativa .a100-FNqerQ {
+  background-color    : rgba(74,216,194,0);
+  color               : rgba(74,216,194,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 36px;
+}
+.tab-bar-ativa .competencia-2-4OIkVU {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .text-XvMKw1 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(29.12% - 6px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a32-PnuHCh {
+  background-color    : rgba(164,252,109,0);
+  color               : rgba(164,252,109,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-tVxJ5e {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .total-yearly-impact-PGuVQf {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  margin-left         : 28px;
+  position            : relative;
+  width               : 686px;
+}
+.tab-bar-ativa .bg-IWZrl1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-sizOpl {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .divider-EOxNd8 {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.tab-bar-ativa .title-xfe8Ys {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 304px;
+}
+.tab-bar-ativa .pontos-de-melhoria-em-soft-skills-ke4bUL {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .span0-ke4bUL {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-ke4bUL {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .daily-visitors-M7IPyW {
+  background-color    : rgba(255,255,255,0);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(26.89% - 55px);
+  width               : calc(100.00% - 56px);
+}
+.tab-bar-ativa .bg-I4xT2u {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-YLCGFR {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .text-LL2dux {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-oRryjn {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.tab-bar-ativa .competencia-1-G63ExO {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 158px;
+}
+.tab-bar-ativa .counter-vrpPUI {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.tab-bar-ativa .a32-beRZDE {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.tab-bar-ativa .group-15-Im8zVf {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .base-QWhpU7 {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-Be5KOK {
+  background-color    : rgba(216,150,74,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.tab-bar-ativa .op-component-1-q1dNOR {
+  background-color    : rgba(216,150,74,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.tab-bar-ativa .op-component-2-WLOzwe {
+  background-color    : rgba(216,150,74,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.tab-bar-ativa .grupo-3-e6Va69 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.tab-bar-ativa .retangulo-2-lrxRKF {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .ver-materiais-aGgFRv {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.tab-bar-ativa .daily-visitors-j62nZH {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 42px;
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 56px);
+}
+.tab-bar-ativa .bg-wGd6Fr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .caminho-20-d7d2GZ {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .text-tGoHhV {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.tab-bar-ativa .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-cF82yp {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.tab-bar-ativa .text-RUl9d9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(44.69% - 9px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a80-k1hBuV {
+  background-color    : rgba(74,216,96,0);
+  color               : rgba(74,216,96,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-vtcd9x {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .text-lisl46 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(41.76% - 8px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 53px);
+}
+.tab-bar-ativa .a100-13JAhl {
+  background-color    : rgba(126,126,230,0);
+  color               : rgba(126,126,230,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 36px;
+}
+.tab-bar-ativa .competencia-2-V0su6O {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .text-4xo7D0 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(29.12% - 6px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a32-djRyT6 {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-POJ7Ta {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .total-yearly-impact-JxSQF3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  position            : relative;
+  width               : 482px;
+}
+.tab-bar-ativa .bg-jX4B5w {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-AXuAb5 {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .your-tax-jcw5l4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.51% - 4px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-Zk7GOA {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-vTJVti {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-NLksfL {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.tab-bar-ativa .your-tax-ZCDWZJ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(24.26% - 2px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-M5XJq8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-5611qR {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-xvEKYe {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.tab-bar-ativa .your-goal-NcNnrL {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(49.24% - 5px);
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-6DJdQR {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-NO7Rdw {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-kH3JKv {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : calc(100.00% - 91px);
+}
+.tab-bar-ativa .your-actions-nKXJCF {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(35.99% - 4px);
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-67TB3A {
+  background-color    : rgba(47,55,78,1.0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-Wdg44l {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 164px;
+}
+.tab-bar-ativa .your-donations-HHbwdm {
+  background-color    : rgba(255,255,255,0);
+  height              : 44px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(17.64% - 8px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .bar-ozngWx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 1px;
+  height              : 10px;
+  left                : 0px;
+  position            : absolute;
+  width               : calc(100.00% - 3px);
+}
+.tab-bar-ativa .rectangle-2-a9ElAJ {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-KSZ5J6 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 233px;
+}
+.tab-bar-ativa .text-PU572j {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .a45-2uCaOn {
+  background-color    : rgba(216,74,74,0);
+  color               : rgba(216,74,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-1-uvcYiE {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 107px;
+}
+.tab-bar-ativa .divider-GzpelE {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.tab-bar-ativa .title-Zs1LXZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 310px;
+}
+.tab-bar-ativa .suas-competencias-em-hard-skills-weYhhq {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .span0-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa {
+  align-items         : center;
+  background-color    : rgba(24,28,40,1.0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 3948px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.tab-bar-ativa .a4316859-VEcZYp {
+  background-color    : rgba(255,255,255,0);
+  height              : 462px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.tab-bar-ativa .total-yearly-impact-1kx1b5 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  position            : relative;
+  width               : 482px;
+}
+.tab-bar-ativa .bg-Vf6RuM {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-8Elb9r {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.tab-bar-ativa .your-tax-2uoUHr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.51% - 4px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-mcn5fD {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-tM1AxQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-txDtOC {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.tab-bar-ativa .your-tax-d1x60F {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(24.26% - 2px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-2vMH5P {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-uqcsLO {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-hOLpYC {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.tab-bar-ativa .your-goal-mIsX3k {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(49.24% - 5px);
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-F1w019 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-2-PMzBQP {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-QXXuI7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : calc(100.00% - 91px);
+}
+.tab-bar-ativa .your-actions-wUVRMi {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(35.99% - 4px);
+  width               : calc(100.00% - 60px);
+}
+.tab-bar-ativa .bar-cCsaV5 {
+  background-color    : rgba(47,55,78,1.0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-wLcIwM {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 164px;
+}
+.tab-bar-ativa .your-donations-y2aQed {
+  background-color    : rgba(255,255,255,0);
+  height              : 44px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(17.64% - 8px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .bar-XgI3KO {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 1px;
+  height              : 10px;
+  left                : 0px;
+  position            : absolute;
+  width               : calc(100.00% - 3px);
+}
+.tab-bar-ativa .rectangle-2-2SXMxQ {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .rectangle-1-tEBubP {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 233px;
+}
+.tab-bar-ativa .text-vxi13r {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .a45-BDxtZK {
+  background-color    : rgba(206,74,216,0);
+  color               : rgba(206,74,216,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-1-PWjSar {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 107px;
+}
+.tab-bar-ativa .divider-focsfM {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.tab-bar-ativa .title-qx4BVL {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 304px;
+}
+.tab-bar-ativa .suas-competencias-em-soft-skills-1zH6hH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.tab-bar-ativa .span0-1zH6hH {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .span1-1zH6hH {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.tab-bar-ativa .text-Y1xBV6 {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(31.32% - 6px);
+  width               : calc(100.00% - 57px);
+}
+.tab-bar-ativa .a32-RjJHet {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.tab-bar-ativa .competencia-2-xKyIBJ {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.tab-bar-ativa .grupo-15-GmPBM5 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  cursor              : pointer;
+  height              : 39px;
+  left                : calc(49.66% - 73px);
+  position            : absolute;
+  width               : 148px;
+}
+.tab-bar-ativa .retangulo-2-kxOW39 {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .vagas-xevEll {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 27px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 54px;
+}
+.tab-bar-ativa .counter-H7C5GV {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.tab-bar-ativa .op-component-1-XJbrTk {
+  background-color    : rgba(164,252,109,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.tab-bar-ativa .group-15-5QZxIj {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.tab-bar-ativa .a32-W8XSoC {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.tab-bar-ativa .base-c9omxp {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.tab-bar-ativa .circle-oR2M8B {
+  background-color    : rgba(164,252,109,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}

@@ -1,0 +1,1483 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - dashboard-empresas */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.dashboard-empresas .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 304px;
+  margin-right        : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.dashboard-empresas .overlap-group1-yBpAcz {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 629px;
+  margin-top          : 63px;
+  position            : relative;
+  width               : 686px;
+}
+.dashboard-empresas .nomesobrenome-gmail-com-xn6hUD {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(41.24% - 6px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .nomesobrenome-gmail-com-7kHV4R {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(20.06% - 3px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .nomesobrenome-gmail-com-c3TpCV {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 0px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .grupo-56-yvdgie {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 28px;
+  height              : 372px;
+  position            : absolute;
+  right               : calc(44.28% - 42px);
+  width               : 94px;
+}
+.dashboard-empresas .telefone-7d7ECx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 2px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  white-space         : nowrap;
+  width               : 55px;
+}
+.dashboard-empresas .a21-91234-5678-Btgdxx {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(18.44% - 3px);
+  white-space         : nowrap;
+  width               : 100%;
+}
+.dashboard-empresas .a21-91234-5678-r6NUtV {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(38.83% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .a21-91234-5678-f6wufe {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(40.78% - 6px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .a21-91234-5678-NOJLur {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(20.11% - 3px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .a21-91234-5678-lZVhfa {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 0px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .grupo-45-scQFad {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 24px;
+  left                : calc(40.62% - 38px);
+  position            : absolute;
+  top                 : calc(32.62% - 8px);
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-LPBsU9 {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-xmj9ta {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(49.28% - 12px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 26px;
+}
+.dashboard-empresas .grupo-57-n0yNqt {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 24px;
+  position            : absolute;
+  right               : 52px;
+  top                 : calc(32.62% - 8px);
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-DnhuoC {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .curriculo-Ps8Rnt {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(48.28% - 31px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 66px;
+}
+.dashboard-empresas .grupo-58-8ToQaT {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(36.25% - 9px);
+  cursor              : pointer;
+  height              : 24px;
+  position            : absolute;
+  right               : 52px;
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-5prYfD {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .curriculo-Pa6spG {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(48.28% - 31px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 66px;
+}
+.dashboard-empresas .grupo-47-7wsZW6 {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 24px;
+  left                : calc(40.62% - 38px);
+  position            : absolute;
+  top                 : calc(47.76% - 11px);
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-ZV2Prd {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-M2nmRK {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(49.28% - 12px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 26px;
+}
+.dashboard-empresas .grupo-48-P3exB6 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(36.67% - 9px);
+  cursor              : pointer;
+  height              : 24px;
+  left                : calc(40.62% - 38px);
+  position            : absolute;
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-v7vz9v {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-4x99Oi {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(49.28% - 12px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 26px;
+}
+.dashboard-empresas .grupo-49-MukGwE {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(20.90% - 5px);
+  cursor              : pointer;
+  height              : 24px;
+  left                : calc(40.62% - 38px);
+  position            : absolute;
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-FHu2Ji {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-PpFVBl {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(49.28% - 12px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 26px;
+}
+.dashboard-empresas .grupo-50-rub4NN {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 26px;
+  cursor              : pointer;
+  height              : 24px;
+  left                : calc(40.62% - 38px);
+  position            : absolute;
+  width               : 93px;
+}
+.dashboard-empresas .retangulo-2-srDghG {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-nxWKXR {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 4px);
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(49.28% - 12px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 26px;
+}
+.dashboard-empresas .grupo-54-rE90pi {
+  background-color    : rgba(255,255,255,0);
+  height              : 37px;
+  left                : 239px;
+  position            : absolute;
+  top                 : 562px;
+  width               : 208px;
+}
+.dashboard-empresas .retangulo-2-iUZNoW {
+  background-color    : rgba(126,126,230,0);
+  border-radius       : 40.0px;
+  height              : calc(100.00% + 18px);
+  left                : -9px;
+  position            : absolute;
+  top                 : -6px;
+  width               : calc(100.00% + 18px);
+}
+.dashboard-empresas .cadastrar-nova-vaga-9qxV9V {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 13px;
+  line-height         : 25.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(35.71% - 8px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 36px);
+}
+.dashboard-empresas .rodape-TlCuFS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : 1.0px;
+  margin-top          : 57px;
+  position            : relative;
+  width               : 1367px;
+}
+.dashboard-empresas .grupo-20-OXjHu9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .caminho-28-HsIjxu {
+  background-color    : rgba(126,126,230,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.dashboard-empresas .autech-2020-todos-os-direitos-reservados-NxZ87L {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.dashboard-empresas .caminho-19-DHDo1z {
+  background-color    : rgba(126,126,230,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.dashboard-empresas .hologram-offices-zgSorE {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-family         : DIN Alternate, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-weight         : 700;
+  height              : calc(100.00% - 77px);
+  letter-spacing      : 0.00px;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(6.94% - 10px);
+  text-align          : right;
+  top                 : 41px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.dashboard-empresas .grupo-44-ljOs78 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  position            : absolute;
+  right               : calc(49.95% - 169px);
+  width               : 338px;
+}
+.dashboard-empresas .candidaturas-nk9GUm {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 131px;
+}
+.dashboard-empresas .cadastro-de-vaga-TlXJOH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 166px;
+}
+.dashboard-empresas .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.dashboard-empresas .user-contact-form-RSKAph {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 493px;
+  margin-top          : 48px;
+  position            : relative;
+  width               : 1196px;
+}
+.dashboard-empresas .rectangle-Wk59e6 {
+  background-color    : rgba(41,45,57,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.dashboard-empresas .rectangle-25-tahxt9 {
+  background-color    : rgba(56,61,77,0);
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 69px;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-25-BgwbQZ {
+  background-color    : rgba(56,61,77,0);
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 26.12%;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-25-gKEQs3 {
+  background-color    : rgba(56,61,77,0);
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  top                 : 40.96%;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-25-PBOxrg {
+  background-color    : rgba(56,61,77,0);
+  bottom              : 44.21%;
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-25-b3Wu0k {
+  background-color    : rgba(56,61,77,0);
+  bottom              : 29.37%;
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-25-yqeixx {
+  background-color    : rgba(56,61,77,0);
+  bottom              : 72px;
+  height              : 1px;
+  left                : -0px;
+  position            : absolute;
+  width               : 100%;
+}
+.dashboard-empresas .revenue-per-week-Ig6dxp {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 2.01%;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(4.79% - 1px);
+  white-space         : nowrap;
+  width               : 10.79%;
+}
+.dashboard-empresas .ver-todas-OM5iRO {
+  background-color    : rgba(57,182,255,0);
+  color               : rgba(57,182,255,1.0);
+  font-size           : 13.0px;
+  height              : 15px;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 24px;
+  text-align          : left;
+  text-decoration     : underline;
+  top                 : 24px;
+  white-space         : nowrap;
+  width               : 57px;
+}
+.dashboard-empresas .cargo-VSxceg {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(19.42% - 3px);
+  white-space         : nowrap;
+  width               : 40px;
+}
+.dashboard-empresas .ux-designer-NjMOjv {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(33.19% - 5px);
+  white-space         : nowrap;
+  width               : 81px;
+}
+.dashboard-empresas .ux-designer-LX0zzW {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(48.43% - 7px);
+  white-space         : nowrap;
+  width               : 81px;
+}
+.dashboard-empresas .ux-designer-gBN4hB {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(36.33% - 5px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 81px;
+}
+.dashboard-empresas .analista-de-sistemas-nc0mJb {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(20.88% - 3px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.dashboard-empresas .analista-de-sistemas-DzyhMk {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 28px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 23px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.dashboard-empresas .linkedin-Gt0TR9 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : calc(40.91% - 21px);
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(19.42% - 3px);
+  white-space         : nowrap;
+  width               : 54px;
+}
+.dashboard-empresas .grupo-46-iY8jit {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 19px;
+  height              : 381px;
+  left                : calc(22.70% - 37px);
+  position            : absolute;
+  width               : 165px;
+}
+.dashboard-empresas .candidatas-D1LF1A {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  white-space         : nowrap;
+  width               : 73px;
+}
+.dashboard-empresas .beard-boy-casual-1222271-2k6491 {
+  background-color    : rgba(255,255,255,0);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 57px;
+  width               : 32px;
+}
+.dashboard-empresas .collared-shirt-handsome-indoors-936229-HN0cnb {
+  background-color    : rgba(255,255,255,0);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  top                 : calc(37.25% - 12px);
+  width               : 32px;
+}
+.dashboard-empresas .attractive-boy-casual-769768-bxX4d8 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(41.83% - 13px);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  width               : 32px;
+}
+.dashboard-empresas .adult-blur-business-325682-xyMOkq {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(20.92% - 7px);
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  width               : 32px;
+}
+.dashboard-empresas .adult-black-background-businessman-262391-NxejxX {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 32px;
+  left                : 0px;
+  position            : absolute;
+  width               : 32px;
+}
+.dashboard-empresas .juliana-ribeiro-CYjfol {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 17px;
+  text-align          : left;
+  top                 : calc(17.98% - 3px);
+  white-space         : nowrap;
+  width               : 95px;
+}
+.dashboard-empresas .angelica-santos-9MGLzs {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 12px;
+  text-align          : left;
+  top                 : calc(37.87% - 5px);
+  white-space         : nowrap;
+  width               : 103px;
+}
+.dashboard-empresas .lucia-de-azevedo-kkPk7l {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(42.23% - 6px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 113px;
+}
+.dashboard-empresas .alexandra-fontes-8IqdBJ {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(22.07% - 3px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 4px;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 112px;
+}
+.dashboard-empresas .roberta-vieira-ytHlxI {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 9px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 26px;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 91px;
+}
+.dashboard-empresas .grupo-55-eJauA9 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 32px;
+  height              : 368px;
+  position            : absolute;
+  right               : calc(22.21% - 41px);
+  width               : 183px;
+}
+.dashboard-empresas .email-26VMF0 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  white-space         : nowrap;
+  width               : 37px;
+}
+.dashboard-empresas .nomesobrenome-gmail-com-Km0vjs {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(18.64% - 3px);
+  white-space         : nowrap;
+  width               : 100%;
+}
+.dashboard-empresas .nomesobrenome-gmail-com-Z55ea3 {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(38.70% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .bg-fHbsSK {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 100%;
+}
+.dashboard-empresas .divider-jxM1xE {
+  background-color    : var(--auto-palette-color-4);
+  bottom              : 1px;
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  width               : 100%;
+}
+.dashboard-empresas .title-xzRFhM {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 151px;
+}
+.dashboard-empresas .vagas-em-aberto-cnsC63 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.dashboard-empresas .daily-visitors-tusz2g {
+  background-color    : rgba(255,255,255,0);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(22.53% - 46px);
+  width               : calc(100.00% - 56px);
+}
+.dashboard-empresas .bg-7dJ8xx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .caminho-20-mFXRkW {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.dashboard-empresas .text-aepCqf {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 43px);
+  left                : 21px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 507px;
+}
+.dashboard-empresas .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-kyf1MA {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.dashboard-empresas .criada-em-03-09-2020-2-candidaturas-dZQFyp {
+  background-color    : rgba(126,126,230,0);
+  bottom              : 3px;
+  color               : rgba(126,126,230,1.0);
+  height              : 36px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .span0-dZQFyp {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .span1-dZQFyp {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .analista-de-sistemas-N6DIxx {
+  background-color    : rgba(126,126,230,0);
+  color               : rgba(126,126,230,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 214px;
+}
+.dashboard-empresas .grupo-52-Rwre1L {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 18px;
+  height              : 39px;
+  position            : absolute;
+  right               : 17px;
+  width               : 312px;
+}
+.dashboard-empresas .grupo-3-UXc9cw {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 148px;
+}
+.dashboard-empresas .retangulo-2-EGf20W {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-candidatas-N2aDno {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 12px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 24px);
+}
+.dashboard-empresas .grupo-51-4Cs3vp {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 148px;
+}
+.dashboard-empresas .retangulo-2-iPAL4P {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .encerrar-k00SzD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 34px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 68px;
+}
+.dashboard-empresas .daily-visitors-pPQZiH {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(24.18% - 49px);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 56px);
+}
+.dashboard-empresas .bg-97HczR {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .caminho-20-F6y4A0 {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.dashboard-empresas .text-EnWKVG {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 43px);
+  left                : 21px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 507px;
+}
+.dashboard-empresas .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-uGaUyb {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.dashboard-empresas .criada-em-03-09-2020-3-candidaturas-qJAEfc {
+  background-color    : rgba(255,110,171,0);
+  bottom              : 3px;
+  color               : rgba(255,110,171,1.0);
+  height              : 36px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  width               : calc(100.00% - 2px);
+}
+.dashboard-empresas .span0-qJAEfc {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .span1-qJAEfc {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .ux-designer-0v3Mg5 {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 123px;
+}
+.dashboard-empresas .grupo-53-649NNS {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(21.19% - 8px);
+  height              : 39px;
+  position            : absolute;
+  right               : 45px;
+  width               : 312px;
+}
+.dashboard-empresas .grupo-3-mMpSL0 {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 148px;
+}
+.dashboard-empresas .retangulo-2-VfCJbU {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .ver-candidatas-9A8NTE {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 12px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 24px);
+}
+.dashboard-empresas .grupo-51-0U9RBU {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 148px;
+}
+.dashboard-empresas .retangulo-2-xaT9eS {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .encerrar-xaCuu5 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 34px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 68px;
+}
+.dashboard-empresas .ola-hologram-offices-358YuX {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : auto;
+  left                : 551px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 154px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.dashboard-empresas .span0-358YuX {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .span1-358YuX {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.dashboard-empresas .este-e-seu-dashboard-voce-podera-ver-as-vagas-em-aberto-e-as-candidatas-selecionadas-W48TKu {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 49px;
+  left                : 392px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 197px;
+  width               : 586px;
+}
+.dashboard-empresas .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.dashboard-empresas .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 1690px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.dashboard-empresas .a4316859-VEcZYp {
+  background-color    : rgba(255,255,255,0);
+  height              : 304px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.dashboard-empresas .total-yearly-impact-riUTw2 {
+  background-color    : rgba(255,255,255,0);
+  height              : 629px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 686px;
+}
+.dashboard-empresas .bg-NczE0a {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.dashboard-empresas .rectangle-9VKjsE {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}

@@ -1,0 +1,267 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{% static 'build/botui.min.css' %}" />
+    <link rel="stylesheet" href="{% static 'build/botui-theme-default.css' %}" />
+    <title>BotUI</title>
+</head>
+
+<style>
+    #my-botui-app {
+        height: 400px;
+        width: 400px;
+        /* background-color: aqua; */
+    }
+</style>
+
+<body>
+    <div id="caixa">
+        <div id="my-botui-app">
+            <bot-ui></bot-ui>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="{% static 'build/botui.min.js' %}"></script>
+    <script>
+        var botui = new BotUI('my-botui-app');
+
+        botui.message.bot({
+            loading: true,
+            delay: 1000,
+            content: 'Oi, eu sou a Aurora!'
+        })
+        .then(() => {
+            botui.message.bot({
+                loading: true,
+                delay: 1000,
+                content: 'Qual o seu nome?'
+            })
+        })
+
+        /* .then(() => {
+            botui.action.buttontext({
+                delay: 1500,
+                actionText: {
+                    placeholder: 'Digite aqui seu nome'
+                }
+            })
+        })
+
+        .then(function(res){
+            botui.message.add({
+                loading: true,
+                delay: 1000,
+                content: 'Olá, ' + res.value + '!'
+            })
+        }) */
+
+        .then(() => {
+            botui.action.buttontext({
+                loading: true,
+                delay: 1000,
+                actionText: {
+                    placeholder: 'Digite aqui seu nome'
+                }
+            })
+        .then((res) => { // will be called when a button is clicked.
+                botui.message.bot({
+                    loading: true,
+                    delay: 1000,
+                    //human: true, // show it as right aligned to UI
+                    content: 'Olá, ' + res.value + '!'
+                })
+            })
+
+            .then(() => {
+                botui.message.bot({
+                  //  
+                    delay: 2000,
+                    //loading: true,
+                    content: 'Como você identifica?'
+                })
+            }).then(() => {
+                return botui.action.button({
+                    delay: 1000,
+                    action: [
+                        {
+                            text: 'Iniciante',
+                            value: 'iniciante'
+                        },
+                        {
+                            text: 'Avançada',
+                            value: 'avancada'
+                        }
+                    ]
+                })
+            })
+            .then(() => {
+                return botui.action.actionText({
+                   // loading: true,
+                    delay: 1000,
+                    actionText: {
+                        placeholder: 'Digite seu email'
+                    }
+                })
+            })
+
+           /*  .then(() => {
+                 return botui.action.button({
+                     delay: 1000,
+                     action: [
+                         {
+                             text: 'Bem',
+                             value: 'bem'
+                         },
+                         {
+                             text: 'Mal',
+                             value: 'mal'
+                         }
+                     ]
+                 }) */
+         })
+
+
+
+
+
+            /*  .then(() => {
+                 return botui.message.bot({
+                     delay: 1000,
+                     content: 'Como vai?'
+                 })
+             }).then(() => {
+                 return botui.action.button({
+                     delay: 1000,
+                     action: [
+                         {
+                             text: 'Bem',
+                             value: 'bem'
+                         },
+                         {
+                             text: 'Mal',
+                             value: 'mal'
+                         }
+                     ]
+                 })
+                 
+             }).then(res => {
+                 return botui.message.bot({
+                     delay: 1000,
+                     //if(res.value == 'bem')`{
+                         content: 'Se sentindo ' + res.value + '!'
+                     //}
+                     
+                 })
+             }) */
+            /*  .then(() => {
+                 return botui.message.bot({
+                     delay: 500,
+                     loading: true,
+                     content: 'Qual o idioma?'
+                 })
+             })
+ 
+             .then(() => {
+                 botui.action.select({
+                     action: {
+                         placeholder: 'Selecionar',
+                         options: [
+                             { value: "EN", text: "English" },
+                             { value: "ES", text: "Español" },
+                             { value: "TR", text: "Türkçe" },
+                             { value: "DE", text: "Deutsch" },
+                             { value: "FR", text: "Français" },
+                             { value: "IT", text: "Italiano" },
+                         ],
+                         button: {
+                             icon: 'check',
+                             label: 'OK'
+                         }
+                     }
+                 })
+             }).then(function(res){
+                 console.log(res.value);
+             })
+ 
+             .then(() => {
+                 return botui.message.bot({
+                     delay: 500,
+                     loading: true,
+                     content: 'Qual o idioma?'
+                 })
+             })
+ 
+ 
+             .then(() => {
+                 botui.action.select({
+                     action: {
+                         placeholder: 'Selecionar',
+                         options: [
+                             { value: "EN", text: "English" },
+                             { value: "ES", text: "Español" },
+                             { value: "TR", text: "Türkçe" },
+                             { value: "DE", text: "Deutsch" },
+                             { value: "FR", text: "Français" },
+                             { value: "IT", text: "Italiano" },
+                         ],
+                         button: {
+                             icon: 'check',
+                             label: 'OK'
+                         }
+                     }
+                 })
+             }) */
+
+            /*         .then(() => {
+                        botui.action.text({
+                            //size: 30,
+                            action: {
+                                placeholder: 'Seu nome'
+                            }
+                        })
+                    }) */
+
+            /*      .then(function() {
+                     bootui.action.text({
+                         action: {
+                    // text: {
+                         name: 'Seu nome aqui'
+                    // }
+                     })
+                     }
+                 }) */
+
+            /*      .then(function(res){
+                     console.log(res.value)
+                 }) */
+
+            ;
+
+        /*  botui.message.human({
+             human: true,
+             content: 'Olá, botinho!'
+         })
+
+         botui.message.bot({
+             //human:
+             content: 'Qual o seu nome?'
+         }).then(function(){
+             botui.action.text({
+                 action: {
+                     placeholder: 'Seu nome'
+                 }
+             });
+         }).then(function(res){
+             botui.message.add({
+                 content: 'Seu nome é' + res.value
+             });
+         }); */
+    </script>
+</body>
+
+</html>

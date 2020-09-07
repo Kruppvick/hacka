@@ -1,0 +1,3660 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - resultado-de-competencias */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.resultado-de-competencias .auto-flex-1lKxzb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 560px;
+  justify-content     : flex-start;
+  margin-top          : 88px;
+  position            : relative;
+  width               : auto;
+}
+.resultado-de-competencias .auto-flex1-t5q8Pb {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 560px;
+  justify-content     : flex-start;
+  margin-top          : 32px;
+  position            : relative;
+  width               : auto;
+}
+.resultado-de-competencias .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 462px;
+  margin-right        : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.resultado-de-competencias .overlap-group1-9V3bdI {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.0px;
+  position            : relative;
+  width               : 26px;
+}
+.resultado-de-competencias .grupo-36-HMCxAZ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 52px;
+  position            : absolute;
+  right               : 171px;
+  top                 : calc(50.00% - 26px);
+  width               : 168px;
+}
+.resultado-de-competencias .retangulo-248-lzUr1s {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : calc(50.00% - 84px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 168px;
+}
+.resultado-de-competencias .versao-premium-RGVN7J {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : calc(100.00% - 29px);
+  left                : calc(46.15% - 66px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 19px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.resultado-de-competencias .retangulo-247-fx5MVY {
+  background-color    : rgba(244,100,255,0);
+  border-radius       : 15.0px;
+  height              : 15px;
+  left                : 355px;
+  position            : absolute;
+  top                 : 65px;
+  width               : 101px;
+}
+.resultado-de-competencias .rodape-TlCuFS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : 1.0px;
+  margin-top          : 100px;
+  position            : relative;
+  width               : 1367px;
+}
+.resultado-de-competencias .grupo-20-OXjHu9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-28-HsIjxu {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .autech-2020-todos-os-direitos-reservados-NxZ87L {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.resultado-de-competencias .total-sale-today-TAOp2R {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-uAZx9g {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-7SOxWu {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-QgxhXu {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-WUjsfs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-5ORqk4 {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-VYCSNH {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-EANs2x {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-rpk6yz {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-jjaG3w {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .op-component-1-nnaP0w {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-ZRVbko {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-qPZOj0 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-67uX16 {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-7XwGrv {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 23px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .grupo-18-eMxhQr {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/13288-1@1x.png");
+  background-size     : 100% 100%;
+  flex-shrink         : 0;
+  height              : 314px;
+  margin-left         : 1.0px;
+  margin-top          : 100px;
+  position            : relative;
+  width               : 1367px;
+}
+.resultado-de-competencias .grupo-17-XEb7Cx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.72% - 68px);
+  height              : 137px;
+  position            : absolute;
+  right               : calc(49.95% - 220px);
+  width               : 440px;
+}
+.resultado-de-competencias .quer-concorrer-a-vagas-que-dao-match-com-suas-competencias-M7T3Fx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  font-weight         : 800;
+  height              : 70px;
+  left                : 0px;
+  letter-spacing      : 0.00px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 10px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .grupo-15-GmPBM5 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  cursor              : pointer;
+  height              : 39px;
+  left                : calc(49.66% - 73px);
+  position            : absolute;
+  width               : 148px;
+}
+.resultado-de-competencias .retangulo-2-kxOW39 {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .vagas-xevEll {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 27px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 54px;
+}
+.resultado-de-competencias .title-Yr0KeO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-right        : 1.0px;
+  margin-top          : 77px;
+  position            : relative;
+  width               : 687px;
+}
+.resultado-de-competencias .competencia-1-3oBxSN {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 16.0px;
+  font-weight         : 900;
+  height              : 100%;
+  left                : 0px;
+  letter-spacing      : 0.00px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 132px;
+}
+.resultado-de-competencias .competencia-2-VM4Pmr {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(33.57% - 43px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.resultado-de-competencias .competencia-1-yoLQZd {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(32.98% - 41px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 126px;
+}
+.resultado-de-competencias .competencia-1-1UkSX6 {
+  background-color    : rgba(132,132,132,0);
+  color               : rgba(132,132,132,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 126px;
+}
+.resultado-de-competencias .retangulo-3-ofEbS5 {
+  background-color    : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  height              : 3px;
+  margin-right        : 558.0px;
+  margin-top          : 3px;
+  position            : relative;
+  width               : 130px;
+}
+.resultado-de-competencias .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.resultado-de-competencias .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(43.76% - 237px);
+  position            : absolute;
+  width               : 542px;
+}
+.resultado-de-competencias .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.75% - 55px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.resultado-de-competencias .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.resultado-de-competencias .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.52% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.resultado-de-competencias .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.resultado-de-competencias .elipse-2-gixgHN {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 97px;
+  top                 : calc(50.00% - 24px);
+  width               : 48px;
+}
+.resultado-de-competencias .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.resultado-de-competencias .fazer-zu9xdl {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 23px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .grupo-14-1gxxv8 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 60px;
+  height              : 323px;
+  left                : 27px;
+  position            : absolute;
+  width               : calc(100.00% - 55px);
+}
+.resultado-de-competencias .componente-2-4-qh9omr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-uKtuux {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-6fEp9x {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-tfqUVn {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-y5EsfS {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-IqBMMx {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-MloCzx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-lZTqE0 {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-ufIylr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-WaZwKk {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-GZ4OTt {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-KsevJ2 {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .op-component-1-EFvI04 {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-FX2fmz {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-E1M7Vo {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-Z8J0Li {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-5px2Lp {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(50.00% - 22px);
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .componente-2-5-u19814 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : calc(50.00% - 146px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-w5rGYY {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-6zeJtq {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-zk9Zb4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-2Gfkpv {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-oNppc6 {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.43% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-YHSD19 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-pEBFp2 {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-8LXv8y {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.73% - 38px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-FOsu3x {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.80% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-R6JZDx {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-I57Mtb {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .op-component-1-2T86Og {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-oy1Vbn {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-N6GQuH {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-XlYiL6 {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-E4noZD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 23px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .componente-2-6-Rem4a8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-hWLBAb {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .op-component-1-UhymE2 {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-8gIodD {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-3g6i3Q {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-UqvtHs {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-0VC0GW {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(50.00% - 22px);
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .componente-2-2-prVgnf {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : calc(50.00% - 146px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-dhHW3g {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-Nx6GMq {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-Fc8fbr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-PGMjNj {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-9CX53T {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.43% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-8tfs5x {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-sj9OAr {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-FXzTtV {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.73% - 38px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-qTJXQP {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.80% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-jGHCq8 {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-LCiAc8 {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .op-component-1-phsCbw {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-GQVGRi {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-BGuICN {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-uJxfoz {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-3x2fQB {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 23px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : 46px;
+}
+.resultado-de-competencias .componente-2-3-eu1Y8J {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-Qsr8TS {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-iCpefx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-KvJKsU {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-Bn7a59 {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-527dgm {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-Uf9CHs {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-sDFC7o {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-7QUX43 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-xMM7cn {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-Cku1Uy {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-vhX5v0 {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .op-component-1-vCSzAj {
+  background-color    : rgba(216,150,74,0);
+  height              : 994.30%;
+  left                : -327.36%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 647.38%;
+}
+.resultado-de-competencias .op-component-2-b5pHLa {
+  background-color    : rgba(216,150,74,0);
+  height              : 1147.95%;
+  left                : -372.81%;
+  position            : absolute;
+  top                 : -113.79%;
+  width               : 806.85%;
+}
+.resultado-de-competencias .grupo-6-4IDwZG {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39px;
+  left                : calc(43.75% - 45px);
+  position            : absolute;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-c3kPAM {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(64,64,64,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .componente-1-2-sdxB8B {
+  background-color    : rgba(255,255,255,0);
+  height              : 281px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(35.51% - 100px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .grupo-5-jN0FCZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-bUC9bj {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-1HE1zI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-8JuoEI {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-8-oqLJWi {
+  background-color    : rgba(255,255,255,0);
+  height              : 188px;
+  position            : absolute;
+  right               : 59px;
+  top                 : 46px;
+  width               : 658px;
+}
+.resultado-de-competencias .a25-jZVEiu {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : 81px;
+  text-align          : left;
+  top                 : calc(40.06% - 9px);
+  white-space         : nowrap;
+  width               : 46px;
+}
+.resultado-de-competencias .grupo-7-sVHKNY {
+  background-color    : rgba(255,255,255,0);
+  height              : 188px;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 658px;
+}
+.resultado-de-competencias .text-GwzCub {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 21px;
+  height              : 167px;
+  position            : absolute;
+  right               : 0px;
+  width               : 658px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-RBlHsz {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 3px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 124px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 405px;
+}
+.resultado-de-competencias .curso-de-node-js-rFjDxR {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 93px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -2px;
+  width               : calc(100.00% - 219px);
+}
+.resultado-de-competencias .ao-final-do-curso-voce-ganhara-VnIxNF {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  top                 : 6px;
+  white-space         : nowrap;
+  width               : 204px;
+}
+.resultado-de-competencias .counter-srkVur {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 79px;
+  position            : absolute;
+  right               : 64px;
+  top                 : calc(37.85% - 30px);
+  width               : 79px;
+}
+.resultado-de-competencias .circle-xoY7Ie {
+  background-color    : rgba(216,150,74,0);
+  height              : 40px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 38px;
+}
+.resultado-de-competencias .op-component-1-rZCxZt {
+  background-color    : rgba(216,150,74,0);
+  height              : 192.78%;
+  left                : -102.29%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 202.29%;
+}
+.resultado-de-competencias .op-component-2-QPWFk9 {
+  background-color    : rgba(216,150,74,0);
+  height              : 222.57%;
+  left                : -116.49%;
+  position            : absolute;
+  top                 : -22.06%;
+  width               : 242.57%;
+}
+.resultado-de-competencias .grupo-6-2jhO8Y {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 54px;
+  top                 : 149px;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-vDsKCH {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(216,150,74,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-uh13zV {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 29px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : calc(100.00% - 58px);
+}
+.resultado-de-competencias .grupo-10-ddO2xj {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 11.60%;
+  justify-content     : flex-start;
+  left                : 4.87%;
+  position            : absolute;
+  top                 : 38.30%;
+  width               : auto;
+}
+.resultado-de-competencias .umbler-logo-light-bg-8SJjq0 {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 33px;
+  justify-content     : flex-end;
+  min-width           : 119px;
+  position            : relative;
+  width               : auto;
+}
+.resultado-de-competencias .caminho-21-gJR6ja {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.01px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 12px;
+}
+.resultado-de-competencias .caminho-22-2KqzMx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 21px;
+}
+.resultado-de-competencias .caminho-23-I2TX3X {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 33px;
+  margin-bottom       : 0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 5px;
+}
+.resultado-de-competencias .caminho-24-mRU4Xw {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 33px;
+  margin-bottom       : -0.0px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 17px;
+}
+.resultado-de-competencias .caminho-25-xhw7Xc {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 7px;
+  position            : absolute;
+  top                 : 9px;
+  width               : 13px;
+}
+.resultado-de-competencias .caminho-26-z0Y8RV {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 23px;
+  margin-bottom       : 0.01px;
+  margin-left         : 2px;
+  position            : relative;
+  width               : 26px;
+}
+.resultado-de-competencias .caminho-27-BQmUa1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 26px;
+}
+.resultado-de-competencias .anuncio-b44zau {
+  background-color    : rgba(206,74,216,0);
+  color               : var(--auto-palette-color-6);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 9px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 7px;
+  white-space         : nowrap;
+  width               : 68px;
+}
+.resultado-de-competencias .grupo-13-N6kFWx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(36.05% - 116px);
+  height              : 323px;
+  left                : 27px;
+  position            : absolute;
+  width               : calc(100.00% - 55px);
+}
+.resultado-de-competencias .componente-2-1-nLGvJx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 293px;
+}
+.resultado-de-competencias .grupo-5-5QB2uO {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-SBFDMy {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-qTfFWI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-ymsNzu {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .grupo-12-CzFILX {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 63px);
+  position            : absolute;
+  right               : calc(49.44% - 81px);
+  top                 : 31px;
+  width               : 164px;
+}
+.resultado-de-competencias .artigo-sobre-responsividade-Ri1I2h {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 50px;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ao-final-voce-ganhara-ze3esI {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  left                : 13px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.97% - 5px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 23px);
+}
+.resultado-de-competencias .grupo-11-rDKxLC {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.43% - 30px);
+  height              : 79px;
+  left                : calc(47.44% - 37px);
+  position            : absolute;
+  width               : 79px;
+}
+.resultado-de-competencias .a2-xNusAl {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : calc(46.24% - 15px);
+  text-align          : left;
+  top                 : calc(44.37% - 10px);
+  white-space         : nowrap;
+  width               : 35px;
+}
+.resultado-de-competencias .counter-bsJ6ka {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-msG2AY {
+  background-color    : rgba(216,150,74,0);
+  height              : 8px;
+  position            : absolute;
+  right               : 27px;
+  top                 : 1px;
+  width               : 12px;
+}
+.resultado-de-competencias .ver-materiais-cNl9SU {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.resultado-de-competencias .seja-bem-vinda-juliana-E5V67M {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : auto;
+  left                : 531px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 331px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.resultado-de-competencias .span0-E5V67M {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-E5V67M {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 800;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span2-E5V67M {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .abaixo-estao-suas-competencias-pontos-de-melhorias-e-materiais-para-voce-se-desenvolver-profissionalmente-zVyUet {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 49px;
+  left                : 392px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 374px;
+  width               : 586px;
+}
+.resultado-de-competencias .grupo-4-Ufdrsn {
+  background-color    : rgba(255,255,255,0);
+  height              : 157px;
+  left                : 606px;
+  position            : absolute;
+  top                 : 140px;
+  width               : 157px;
+}
+.resultado-de-competencias .elipse-2-ruvxf8 {
+  background-color    : rgba(255,255,255,0);
+  height              : calc(100.00% - 31px);
+  left                : 15px;
+  position            : absolute;
+  top                 : 15px;
+  width               : calc(100.00% - 31px);
+}
+.resultado-de-competencias .elipse-3-sI21xt {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .grupo-19-iBdeku {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1472px;
+  margin-top          : 55px;
+  position            : relative;
+  width               : 992px;
+}
+.resultado-de-competencias .total-yearly-impact-jrpWrz {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-FVzBpx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-C2pZxH {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .divider-q39lkq {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.resultado-de-competencias .title-Vyn0L3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : calc(50.00% - 199px);
+  position            : absolute;
+  top                 : 23px;
+  width               : 398px;
+}
+.resultado-de-competencias .materiais-para-desenvolver-a-competencia-1-fiYYxu {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .span0-fiYYxu {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-fiYYxu {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .componente-1-1-FqNN3n {
+  background-color    : rgba(255,255,255,0);
+  height              : 281px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 110px;
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .grupo-5-yzGnOS {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .total-sale-today-qxV87t {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .bg-vEyWdO {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-aaBgCf {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .alura-PnP5h6 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.97% - 25px);
+  height              : 51px;
+  left                : 51px;
+  position            : absolute;
+  width               : 109px;
+}
+.resultado-de-competencias .grupo-9-5PxxTh {
+  background-color    : rgba(255,255,255,0);
+  height              : 200px;
+  position            : absolute;
+  right               : 59px;
+  top                 : 40px;
+  width               : 658px;
+}
+.resultado-de-competencias .text-xjy1QB {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 200px;
+  position            : absolute;
+  right               : 0px;
+  width               : 658px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-7vamaf {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 3px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 124px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 405px;
+}
+.resultado-de-competencias .curso-de-desenvolvimento-de-sistemas-kRmL9s {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 93px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -2px;
+  width               : calc(100.00% - 219px);
+}
+.resultado-de-competencias .ao-final-do-curso-voce-ganhara-y6eIG4 {
+  background-color    : rgba(112,112,112,0);
+  color               : var(--auto-palette-color-10);
+  font-size           : 14.0px;
+  height              : 18px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  top                 : 6px;
+  white-space         : nowrap;
+  width               : 204px;
+}
+.resultado-de-competencias .counter-yfxlef {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/base-10@1x.png");
+  background-size     : 100% 100%;
+  height              : 79px;
+  position            : absolute;
+  right               : 64px;
+  top                 : calc(34.10% - 27px);
+  width               : 79px;
+}
+.resultado-de-competencias .circle-4bQkDN {
+  background-color    : rgba(216,150,74,0);
+  height              : 40px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 38px;
+}
+.resultado-de-competencias .op-component-1-iZ5Jqx {
+  background-color    : rgba(216,150,74,0);
+  height              : 192.78%;
+  left                : -102.29%;
+  position            : absolute;
+  top                 : 0px;
+  width               : 202.29%;
+}
+.resultado-de-competencias .op-component-2-0fXczH {
+  background-color    : rgba(216,150,74,0);
+  height              : 222.57%;
+  left                : -116.49%;
+  position            : absolute;
+  top                 : -22.06%;
+  width               : 242.57%;
+}
+.resultado-de-competencias .a25-KFAx8y {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 28.8px;
+  position            : absolute;
+  right               : 81px;
+  text-align          : left;
+  top                 : calc(37.34% - 9px);
+  white-space         : nowrap;
+  width               : 46px;
+}
+.resultado-de-competencias .grupo-6-WduNJi {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 54px;
+  top                 : 149px;
+  width               : 102px;
+}
+.resultado-de-competencias .retangulo-2-4fSdcx {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(216,150,74,1.0);
+  border-radius       : 25.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .fazer-H3C2uy {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 29px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(10.00% - 2px);
+  width               : calc(100.00% - 58px);
+}
+.resultado-de-competencias .anuncio-GGp1TK {
+  background-color    : rgba(206,74,216,0);
+  color               : var(--auto-palette-color-6);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 9px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 7px;
+  white-space         : nowrap;
+  width               : 68px;
+}
+.resultado-de-competencias .grupo-3-woblml {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.resultado-de-competencias .retangulo-2-GWsMLF {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ver-materiais-4De2KK {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.resultado-de-competencias .total-yearly-impact-WXc1ms {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  margin-left         : 28px;
+  position            : relative;
+  width               : 686px;
+}
+.resultado-de-competencias .bg-Gbva14 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-ZtEfQa {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .divider-s9nSNm {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.resultado-de-competencias .title-n2F0MH {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 309px;
+}
+.resultado-de-competencias .pontos-de-melhoria-em-hard-skills-7xjx6N {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .span0-7xjx6N {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-7xjx6N {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .daily-visitors-AkUG4H {
+  background-color    : rgba(255,255,255,0);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(26.89% - 55px);
+  width               : calc(100.00% - 56px);
+}
+.resultado-de-competencias .bg-Q0hHWZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-YcYiYM {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .text-V0OxtZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-Yjvy6b {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.resultado-de-competencias .competencia-1-xCD5pL {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 158px;
+}
+.resultado-de-competencias .counter-5qXWxe {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.resultado-de-competencias .a32-SChAy4 {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.resultado-de-competencias .group-15-6YxNXx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .base-0LILk4 {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-bZtIqx {
+  background-color    : rgba(163,178,221,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.resultado-de-competencias .op-component-1-lGWlCs {
+  background-color    : rgba(163,178,221,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.resultado-de-competencias .op-component-2-8raVZx {
+  background-color    : rgba(163,178,221,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.resultado-de-competencias .grupo-3-G9fFsx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.resultado-de-competencias .retangulo-2-yMzbFj {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ver-materiais-LYcnvv {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.resultado-de-competencias .daily-visitors-ypLWeY {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 42px;
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 56px);
+}
+.resultado-de-competencias .bg-pEef4o {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-X4PCLD {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .text-DtWPGw {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-kAlEDI {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.resultado-de-competencias .competencia-2-mGxAig {
+  background-color    : rgba(164,252,109,0);
+  color               : rgba(164,252,109,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 157px;
+}
+.resultado-de-competencias .counter-H7C5GV {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.resultado-de-competencias .a32-W8XSoC {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.resultado-de-competencias .group-15-5QZxIj {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .base-c9omxp {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 1px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-oR2M8B {
+  background-color    : rgba(164,252,109,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.resultado-de-competencias .op-component-1-XJbrTk {
+  background-color    : rgba(164,252,109,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.resultado-de-competencias .op-component-2-h5HoJB {
+  background-color    : rgba(164,252,109,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.resultado-de-competencias .grupo-3-xD8WRx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.resultado-de-competencias .retangulo-2-1YxYD1 {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .text-XvMKw1 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(29.12% - 6px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a32-PnuHCh {
+  background-color    : rgba(164,252,109,0);
+  color               : rgba(164,252,109,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-2-tVxJ5e {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .total-yearly-impact-PGuVQf {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  margin-left         : 28px;
+  position            : relative;
+  width               : 686px;
+}
+.resultado-de-competencias .bg-IWZrl1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-sizOpl {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .divider-EOxNd8 {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.resultado-de-competencias .title-xfe8Ys {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 304px;
+}
+.resultado-de-competencias .pontos-de-melhoria-em-soft-skills-ke4bUL {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .span0-ke4bUL {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-ke4bUL {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .daily-visitors-M7IPyW {
+  background-color    : rgba(255,255,255,0);
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  top                 : calc(26.89% - 55px);
+  width               : calc(100.00% - 56px);
+}
+.resultado-de-competencias .bg-I4xT2u {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-YLCGFR {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .text-LL2dux {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-oRryjn {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.resultado-de-competencias .competencia-1-G63ExO {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 158px;
+}
+.resultado-de-competencias .counter-vrpPUI {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.resultado-de-competencias .a32-beRZDE {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.resultado-de-competencias .group-15-Im8zVf {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .base-QWhpU7 {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-Be5KOK {
+  background-color    : rgba(216,150,74,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.resultado-de-competencias .op-component-1-q1dNOR {
+  background-color    : rgba(216,150,74,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.resultado-de-competencias .op-component-2-WLOzwe {
+  background-color    : rgba(216,150,74,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.resultado-de-competencias .grupo-3-e6Va69 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30px;
+  cursor              : pointer;
+  height              : 39px;
+  position            : absolute;
+  right               : 28px;
+  width               : 148px;
+}
+.resultado-de-competencias .retangulo-2-lrxRKF {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .ver-materiais-aGgFRv {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,1.0);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 20px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 40px);
+}
+.resultado-de-competencias .daily-visitors-j62nZH {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 42px;
+  height              : 203px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 56px);
+}
+.resultado-de-competencias .bg-wGd6Fr {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .caminho-20-d7d2GZ {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .text-tGoHhV {
+  background-color    : rgba(255,255,255,0);
+  height              : 126px;
+  position            : absolute;
+  right               : 22px;
+  top                 : 23px;
+  width               : 507px;
+}
+.resultado-de-competencias .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-magna-aliquyam-erat-sed-diam-voluptua-at-vero-eos-et-accusam-et-cF82yp {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 94px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 31px;
+  width               : 100%;
+}
+.resultado-de-competencias .competencia-2-CZkNqK {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 20.0px;
+  height              : 30px;
+  left                : 1px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 157px;
+}
+.resultado-de-competencias .counter-mFyxuV {
+  background-color    : rgba(255,255,255,0);
+  height              : 62px;
+  left                : 20px;
+  position            : absolute;
+  top                 : 19px;
+  width               : 62px;
+}
+.resultado-de-competencias .a32-CVoxCI {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 15.0px;
+  height              : 22px;
+  line-height         : 20.0px;
+  position            : absolute;
+  right               : calc(49.50% - 14px);
+  text-align          : left;
+  top                 : calc(45.61% - 9px);
+  white-space         : nowrap;
+  width               : 30px;
+}
+.resultado-de-competencias .group-15-TFalJ7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .base-Iweqxq {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .circle-yoxWWW {
+  background-color    : rgba(255,110,171,0);
+  height              : 47px;
+  position            : absolute;
+  right               : 1px;
+  top                 : 1px;
+  width               : 30px;
+}
+.resultado-de-competencias .op-component-1-WoXzDs {
+  background-color    : rgba(255,110,171,0);
+  height              : calc(100.00% + 14px);
+  left                : -31px;
+  position            : absolute;
+  top                 : -0px;
+  width               : calc(100.00% + 31px);
+}
+.resultado-de-competencias .op-component-2-BwkdoT {
+  background-color    : rgba(255,110,171,0);
+  height              : calc(100.00% + 24px);
+  left                : -39px;
+  position            : absolute;
+  top                 : -7px;
+  width               : calc(100.00% + 50px);
+}
+.resultado-de-competencias .competencia-2-POJ7Ta {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .total-yearly-impact-JxSQF3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  position            : relative;
+  width               : 482px;
+}
+.resultado-de-competencias .bg-jX4B5w {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-AXuAb5 {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .your-tax-jcw5l4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.51% - 4px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-Zk7GOA {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-vTJVti {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-NLksfL {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.resultado-de-competencias .your-tax-ZCDWZJ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(24.26% - 2px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-M5XJq8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-5611qR {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-xvEKYe {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.resultado-de-competencias .your-goal-NcNnrL {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(49.24% - 5px);
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-6DJdQR {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-NO7Rdw {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-kH3JKv {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : calc(100.00% - 91px);
+}
+.resultado-de-competencias .your-actions-nKXJCF {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(35.99% - 4px);
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-67TB3A {
+  background-color    : rgba(47,55,78,1.0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-Wdg44l {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 164px;
+}
+.resultado-de-competencias .your-donations-HHbwdm {
+  background-color    : rgba(255,255,255,0);
+  height              : 44px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(17.64% - 8px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .bar-ozngWx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 1px;
+  height              : 10px;
+  left                : 0px;
+  position            : absolute;
+  width               : calc(100.00% - 3px);
+}
+.resultado-de-competencias .rectangle-2-a9ElAJ {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-KSZ5J6 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 233px;
+}
+.resultado-de-competencias .text-PU572j {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .a45-2uCaOn {
+  background-color    : rgba(216,74,74,0);
+  color               : rgba(216,74,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-1-uvcYiE {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 107px;
+}
+.resultado-de-competencias .divider-GzpelE {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.resultado-de-competencias .title-Zs1LXZ {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 310px;
+}
+.resultado-de-competencias .suas-competencias-em-hard-skills-weYhhq {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .span0-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span2-weYhhq {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .text-qlSxWW {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(31.32% - 6px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a32-MmDYnH {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-2-Mwmxi4 {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .text-6CHQjR {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(44.69% - 9px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a80-txStn6 {
+  background-color    : rgba(216,200,74,0);
+  color               : rgba(216,200,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-2-vcKaDD {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .text-vr3BdE {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(41.76% - 8px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 53px);
+}
+.resultado-de-competencias .a100-FNqerQ {
+  background-color    : rgba(74,216,194,0);
+  color               : rgba(74,216,194,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 36px;
+}
+.resultado-de-competencias .competencia-2-4OIkVU {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .total-yearly-impact-1kx1b5 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 560px;
+  position            : relative;
+  width               : 482px;
+}
+.resultado-de-competencias .bg-Vf6RuM {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-8Elb9r {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.resultado-de-competencias .your-tax-2uoUHr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(37.51% - 4px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-mcn5fD {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-tM1AxQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-txDtOC {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.resultado-de-competencias .your-tax-d1x60F {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(24.26% - 2px);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-2vMH5P {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-uqcsLO {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-hOLpYC {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 185px;
+}
+.resultado-de-competencias .your-goal-mIsX3k {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(49.24% - 5px);
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-F1w019 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-2-PMzBQP {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-QXXuI7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : calc(100.00% - 91px);
+}
+.resultado-de-competencias .your-actions-wUVRMi {
+  background-color    : rgba(255,255,255,0);
+  height              : 10px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(35.99% - 4px);
+  width               : calc(100.00% - 60px);
+}
+.resultado-de-competencias .bar-cCsaV5 {
+  background-color    : rgba(47,55,78,1.0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-wLcIwM {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 164px;
+}
+.resultado-de-competencias .your-donations-y2aQed {
+  background-color    : rgba(255,255,255,0);
+  height              : 44px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(17.64% - 8px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .bar-XgI3KO {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 1px;
+  height              : 10px;
+  left                : 0px;
+  position            : absolute;
+  width               : calc(100.00% - 3px);
+}
+.resultado-de-competencias .rectangle-2-2SXMxQ {
+  background-color    : rgba(47,55,78,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .rectangle-1-tEBubP {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : -0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 233px;
+}
+.resultado-de-competencias .text-vxi13r {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.resultado-de-competencias .a45-BDxtZK {
+  background-color    : rgba(206,74,216,0);
+  color               : var(--auto-palette-color-6);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-1-PWjSar {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 107px;
+}
+.resultado-de-competencias .divider-focsfM {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.resultado-de-competencias .title-qx4BVL {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 30px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 304px;
+}
+.resultado-de-competencias .suas-competencias-em-soft-skills-1zH6hH {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.resultado-de-competencias .span0-1zH6hH {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .span1-1zH6hH {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 900;
+  letter-spacing      : 0.00px;
+}
+.resultado-de-competencias .text-Y1xBV6 {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(31.32% - 6px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a32-RjJHet {
+  background-color    : rgba(216,150,74,0);
+  color               : rgba(216,150,74,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-2-xKyIBJ {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .text-RUl9d9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  top                 : calc(44.69% - 9px);
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a80-k1hBuV {
+  background-color    : rgba(74,216,96,0);
+  color               : rgba(74,216,96,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias .competencia-2-vtcd9x {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .text-lisl46 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(41.76% - 8px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 53px);
+}
+.resultado-de-competencias .a100-13JAhl {
+  background-color    : rgba(126,126,230,0);
+  color               : rgba(126,126,230,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 36px;
+}
+.resultado-de-competencias .competencia-2-V0su6O {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 28.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : -4px;
+  white-space         : nowrap;
+  width               : 111px;
+}
+.resultado-de-competencias .text-4xo7D0 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(29.12% - 6px);
+  height              : 20px;
+  left                : 30px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.resultado-de-competencias .a32-djRyT6 {
+  background-color    : rgba(255,110,171,0);
+  color               : rgba(255,110,171,1.0);
+  font-size           : 14.0px;
+  height              : calc(100.00% - 1px);
+  line-height         : 28.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : center;
+  top                 : -5px;
+  white-space         : nowrap;
+  width               : 28px;
+}
+.resultado-de-competencias {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 3948px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.resultado-de-competencias .a4316859-VEcZYp {
+  background-color    : rgba(255,255,255,0);
+  height              : 462px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}

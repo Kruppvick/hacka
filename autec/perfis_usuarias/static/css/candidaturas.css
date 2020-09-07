@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - candidaturas */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.candidaturas .overlap-group1-yBpAcz {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 1179px;
+  margin-top          : 66px;
+  position            : relative;
+  width               : 890px;
+}
+.candidaturas .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 284px;
+  margin-right        : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.candidaturas .analista-de-sistemas-junior-CCBKhV {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  white-space         : nowrap;
+  width               : calc(100.00% - 434px);
+}
+.candidaturas .nome-da-empresa-JF1xwR {
+  background-color    : rgba(204,204,204,0);
+  color               : var(--auto-palette-color-9);
+  font-size           : 16.0px;
+  height              : 20px;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 8px;
+  white-space         : nowrap;
+  width               : 135px;
+}
+.candidaturas .divider-h0Vx2k {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 27px;
+  position            : absolute;
+  top                 : 26.86%;
+  width               : calc(100.00% - 54px);
+}
+.candidaturas .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.candidaturas .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(43.76% - 237px);
+  position            : absolute;
+  width               : 542px;
+}
+.candidaturas .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.75% - 55px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.candidaturas .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.candidaturas .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.52% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.candidaturas .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.candidaturas .elipse-2-gixgHN {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 97px;
+  top                 : calc(50.00% - 24px);
+  width               : 48px;
+}
+.candidaturas .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.candidaturas .grupo-36-HMCxAZ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 52px;
+  position            : absolute;
+  right               : 171px;
+  top                 : calc(50.00% - 26px);
+  width               : 168px;
+}
+.candidaturas .retangulo-248-lzUr1s {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : calc(50.00% - 84px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 168px;
+}
+.candidaturas .versao-premium-RGVN7J {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : calc(100.00% - 29px);
+  left                : calc(46.15% - 66px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 19px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.candidaturas .grupo-25-D0X4pV {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/13288-1@1x.png");
+  background-size     : 100% 100%;
+  flex-shrink         : 0;
+  height              : 314px;
+  margin-left         : 1.0px;
+  margin-top          : 88px;
+  position            : relative;
+  width               : 1367px;
+}
+.candidaturas .grupo-17-XjoWbB {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.72% - 68px);
+  height              : 137px;
+  position            : absolute;
+  right               : calc(49.95% - 220px);
+  width               : 440px;
+}
+.candidaturas .quer-concorrer-a-vagas-que-dao-match-com-suas-competencias-UnTqyU {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  font-weight         : 800;
+  height              : 70px;
+  left                : 0px;
+  letter-spacing      : 0.00px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 10px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.candidaturas .grupo-15-8xVLBJ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  cursor              : pointer;
+  height              : 39px;
+  left                : calc(49.66% - 73px);
+  position            : absolute;
+  width               : 148px;
+}
+.candidaturas .retangulo-2-2jcwcx {
+  background-color    : var(--auto-palette-color-1);
+  border-radius       : 25.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .vagas-DE0NDb {
+  background-color    : rgba(59,59,59,0);
+  color               : rgba(59,59,59,0.701960784314);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : calc(50.00% - 27px);
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(31.88% - 7px);
+  white-space         : nowrap;
+  width               : 54px;
+}
+.candidaturas .caminho-45-xk01dd {
+  background-color    : rgba(244,100,255,0);
+  height              : 15px;
+  left                : 592px;
+  position            : absolute;
+  top                 : 65px;
+  width               : 138px;
+}
+.candidaturas .rodape-TlCuFS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-right        : 1.0px;
+  margin-top          : 55px;
+  position            : relative;
+  width               : 1367px;
+}
+.candidaturas .grupo-20-OXjHu9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .caminho-28-HsIjxu {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .autech-2020-todos-os-direitos-reservados-NxZ87L {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.candidaturas .remover-candidatura-bHcUVs {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 705px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  text-decoration     : underline;
+  top                 : 404px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.candidaturas .remover-candidatura-ub4CkP {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 705px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  text-decoration     : underline;
+  top                 : 760px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.candidaturas .remover-candidatura-qAx9n6 {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 14.0px;
+  height              : auto;
+  left                : 705px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  text-decoration     : underline;
+  top                 : 1112px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.candidaturas .total-sale-today-HsBVFW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .bg-Q9Ewjk {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .caminho-20-PfjfDY {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .grupo-9-5Vx2rC {
+  background-color    : rgba(255,255,255,0);
+  height              : 277px;
+  position            : absolute;
+  right               : 29px;
+  top                 : 31px;
+  width               : 778px;
+}
+.candidaturas .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-f3yva0 {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 125px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 62px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .informacoes-adicionais-da-vaga-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-i-a73R5i {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 44px;
+  color               : var(--auto-palette-color-2);
+  height              : 62px;
+  left                : 0px;
+  overflow            : hidden;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .span0-a73R5i {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .span1-a73R5i {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .realizada-em-06-08-2020-as-20-57-EGzDxJ {
+  background-color    : rgba(206,74,216,0);
+  bottom              : 0px;
+  height              : 22px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 245px;
+}
+.candidaturas .analista-de-sistemas-junior-xOUIeD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  white-space         : nowrap;
+  width               : calc(100.00% - 434px);
+}
+.candidaturas .nome-da-empresa-cNUCDx {
+  background-color    : rgba(204,204,204,0);
+  color               : var(--auto-palette-color-9);
+  font-size           : 16.0px;
+  height              : 20px;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 8px;
+  white-space         : nowrap;
+  width               : 135px;
+}
+.candidaturas .divider-n5cs0m {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 27px;
+  position            : absolute;
+  top                 : 26.86%;
+  width               : calc(100.00% - 54px);
+}
+.candidaturas .componente-1-9-IlzPge {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(45.75% - 150px);
+  height              : 328px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.candidaturas .grupo-5-Eqz8dG {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .total-sale-today-bhwgTp {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .bg-XC3mvI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .caminho-20-hBYBGn {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .grupo-9-hUF85d {
+  background-color    : rgba(255,255,255,0);
+  height              : 277px;
+  position            : absolute;
+  right               : 29px;
+  top                 : 31px;
+  width               : 778px;
+}
+.candidaturas .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-ug0uXa {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 125px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 62px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .informacoes-adicionais-da-vaga-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-i-bj1C5g {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 44px;
+  color               : var(--auto-palette-color-2);
+  height              : 62px;
+  left                : 0px;
+  overflow            : hidden;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .span0-bj1C5g {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .span1-bj1C5g {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .realizada-em-06-08-2020-as-20-57-cRmBhu {
+  background-color    : rgba(206,74,216,0);
+  bottom              : 0px;
+  height              : 22px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 245px;
+}
+.candidaturas .analista-de-sistemas-junior-WGhMVn {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 1px;
+  line-height         : 28.8px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 2px;
+  white-space         : nowrap;
+  width               : calc(100.00% - 434px);
+}
+.candidaturas .nome-da-empresa-37zzFx {
+  background-color    : rgba(204,204,204,0);
+  color               : var(--auto-palette-color-9);
+  font-size           : 16.0px;
+  height              : 20px;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 8px;
+  white-space         : nowrap;
+  width               : 135px;
+}
+.candidaturas .divider-zWXsXD {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 27px;
+  position            : absolute;
+  top                 : 26.86%;
+  width               : calc(100.00% - 54px);
+}
+.candidaturas .componente-1-10-DyQHJA {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 38px;
+  height              : 328px;
+  left                : 28px;
+  position            : absolute;
+  width               : calc(100.00% - 57px);
+}
+.candidaturas .grupo-5-m0CfKb {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .total-sale-today-Uz6vkY {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .bg-DboVsW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .caminho-20-z9eokr {
+  background-color    : rgba(30,33,43,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .grupo-9-Css2fw {
+  background-color    : rgba(255,255,255,0);
+  height              : 277px;
+  position            : absolute;
+  right               : 29px;
+  top                 : 31px;
+  width               : 778px;
+}
+.candidaturas .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-Ol6Tla {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 125px;
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 62px;
+  left                : 0px;
+  line-height         : 20.0px;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .informacoes-adicionais-da-vaga-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-lorem-i-r5NI8X {
+  background-color    : rgba(120,130,162,0);
+  bottom              : 44px;
+  color               : var(--auto-palette-color-2);
+  height              : 62px;
+  left                : 0px;
+  overflow            : hidden;
+  position            : absolute;
+  text-align          : left;
+  width               : 750px;
+}
+.candidaturas .span0-r5NI8X {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 700;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .span1-r5NI8X {
+  color               : rgba(120,130,162,1.0);
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .realizada-em-06-08-2020-as-20-57-EZxzZ9 {
+  background-color    : rgba(206,74,216,0);
+  bottom              : 0px;
+  height              : 22px;
+  left                : 0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 245px;
+}
+.candidaturas {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 2083px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.candidaturas .a326738-p9-jgd5-443-s0Ocqx {
+  background-color    : rgba(255,255,255,0);
+  height              : 284px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.candidaturas .aqui-estao-todas-as-suas-candidaturas-xDVU6y {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 70px;
+  left                : 494px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 157px;
+  width               : 382px;
+}
+.candidaturas .span0-xDVU6y {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .span1-xDVU6y {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 800;
+  letter-spacing      : 0.00px;
+}
+.candidaturas .grupo-19-8BtOsj {
+  background-color    : rgba(255,255,255,0);
+  height              : 1179px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 890px;
+}
+.candidaturas .total-yearly-impact-FCOzQx {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .bg-ZFjRhY {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.candidaturas .rectangle-FbjL9S {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.candidaturas .divider-QIZ5Db {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 71px;
+  width               : 100%;
+}
+.candidaturas .title-ur1Ymg {
+  background-color    : rgba(255,255,255,0);
+  height              : 23px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 23px;
+  width               : 129px;
+}
+.candidaturas .candidaturas-LgI4g0 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 100%;
+}
+.candidaturas .componente-1-8-r0xMG1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 328px;
+  left                : 28px;
+  position            : absolute;
+  top                 : 110px;
+  width               : calc(100.00% - 57px);
+}
+.candidaturas .grupo-5-htYUGy {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}

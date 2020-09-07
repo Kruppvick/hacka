@@ -1,0 +1,1162 @@
+{% load static %}
+
+<html>
+   <head>
+        <link href="img/favicon.png" rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1366, maximum-scale=1.0" name="viewport"/>
+        <!-- Facebook -->
+        <meta content="" property="og:url"/>
+        <meta content="website" property="og:type"/>
+        <!-- Twitter -->
+        <meta content="photo" name="twitter:card"/>
+        <link href="{% static "css/cadastro.css" %}" rel="stylesheet" type="text/css"/>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(24, 28, 40, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="cadastro"/>
+        <div class="anima-container-center-horizontal">
+            <div class="cadastro anima-flexbox-container anima-screen ">
+                <div class="overlap-group-Y7zamN">
+                    <img anima-src={% static "img/banner-1@1x.png" %} class="banner-kz8zwW" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <div class="menu-E3DCV4">
+                        <div class="bg-RtrBFh">
+                            <img anima-src={% static "img/caminho-19-1@1x.png" %} class="caminho-19-DHDo1z" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                        <div class="grupo-2-S4Qzc4">
+                            <a href="{% url 'candidaturas' %}">
+                                <div class="candidaturas-2ZcLjF font-class-1">
+                                    CANDIDATURAS
+                                </div>
+                            </a>
+                            <a href="{% url 'cadastro_empresas' %}">
+                                <div class="para-empresas-mhxBv8 font-class-1">
+                                    PARA EMPRESAS
+                                </div>
+                            </a>
+                            <a href="{% url 'vagas' %}">
+                                <div class="vagas-Mob1Ea font-class-1">
+                                    VAGAS
+                                </div>
+                            </a>
+                            <a href="{% url 'resultado_de_competencias' %}">
+                                <div class="meu-perfil-bFLiFx font-class-1">
+                                    MEU PERFIL
+                                </div>
+                            </a>
+                        </div>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - cadastro */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.cadastro .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 766px;
+  margin-left         : -1.0px;
+  position            : relative;
+  width               : 1368px;
+}
+.cadastro .input-Gm7rZ4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-LqbwYJ {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-zPXtOr {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .grupo-30-N6GxIk {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48px;
+  position            : absolute;
+  right               : calc(25.03% - 45px);
+  width               : 178px;
+}
+.cadastro .grupo-30-3SPTSr {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/caminho-30-1@1x.png");
+  background-size     : 100% 100%;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 48px;
+}
+.cadastro .icon-awesome-user-alt-DAYlVi {
+  background-color    : rgba(87,87,87,0);
+  height              : 24px;
+  left                : calc(50.00% - 12px);
+  position            : absolute;
+  top                 : calc(50.00% - 12px);
+  width               : 24px;
+}
+.cadastro .full-name-10oJqz {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 23px;
+  text-align          : left;
+  top                 : calc(50.00% - 8px);
+  white-space         : nowrap;
+  width               : 93px;
+}
+.cadastro .icon-feather-upload-fy7DyI {
+  background-color    : rgba(255,255,255,0);
+  height              : 15px;
+  position            : absolute;
+  right               : 0px;
+  top                 : calc(48.48% - 7px);
+  width               : 15px;
+}
+.cadastro .caminho-40-mdkM1j {
+  background-color    : rgba(255,255,255,0);
+  bottom              : -2px;
+  height              : 8px;
+  left                : -2px;
+  position            : absolute;
+  width               : calc(100.00% + 3px);
+}
+.cadastro .caminho-41-UzTPRQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 1px;
+  position            : absolute;
+  top                 : -2px;
+  width               : calc(100.00% - 2px);
+}
+.cadastro .caminho-42-61tYq1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : calc(50.00% - 2px);
+  position            : absolute;
+  top                 : -1px;
+  width               : 3px;
+}
+.cadastro .by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-iHFbFD {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 10.0px;
+  height              : auto;
+  left                : 493px;
+  line-height         : 10.0px;
+  opacity             : 0.4;
+  position            : absolute;
+  text-align          : center;
+  top                 : 676px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.cadastro .grupo-31-SxN47M {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 35px;
+  left                : 627px;
+  position            : absolute;
+  top                 : 613px;
+  width               : 114px;
+}
+.cadastro .icon-awesome-arrow-circle-right-v8PMt9 {
+  background-color    : rgba(206,74,216,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 35px;
+}
+.cadastro .prosseguir-LtTZ3i {
+  background-color    : rgba(206,74,216,0);
+  color               : var(--auto-palette-color-6);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(47.90% - 7px);
+  white-space         : nowrap;
+  width               : 69px;
+}
+.cadastro .rodape-TlCuFS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : -1.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : 1367px;
+}
+.cadastro .grupo-20-OXjHu9 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .caminho-28-HsIjxu {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro .autech-2020-todos-os-direitos-reservados-NxZ87L {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.cadastro .grupo-36-HMCxAZ {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 52px;
+  position            : absolute;
+  right               : 171px;
+  top                 : calc(50.00% - 26px);
+  width               : 168px;
+}
+.cadastro .retangulo-248-lzUr1s {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : calc(50.00% - 84px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 168px;
+}
+.cadastro .versao-premium-RGVN7J {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : calc(100.00% - 29px);
+  left                : calc(46.15% - 66px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 19px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.cadastro .caminho-29-vvR3x3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 53px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 0px;
+}
+.cadastro .para-comecar-nos-responda-algumas-perguntinhas-2aMamA {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 290px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 144px;
+  width               : 790px;
+}
+.cadastro .iremos-mapear-suas-competencias-Q5kpko {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 35px;
+  left                : 290px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 190px;
+  width               : 790px;
+}
+.cadastro .grupo-27-k0Z7mq {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/caminho-30-1@1x.png");
+  background-size     : 100% 100%;
+  height              : 48px;
+  left                : 1222px;
+  position            : absolute;
+  top                 : 24px;
+  width               : 48px;
+}
+.cadastro .icon-awesome-user-alt-1aBSDu {
+  background-color    : rgba(87,87,87,0);
+  height              : 24px;
+  left                : calc(50.00% - 12px);
+  position            : absolute;
+  top                 : calc(50.00% - 12px);
+  width               : 24px;
+}
+.cadastro .total-yearly-impact-pwycnf {
+  background-color    : rgba(255,255,255,0);
+  height              : 459px;
+  left                : 290px;
+  position            : absolute;
+  top                 : 242px;
+  width               : 788px;
+}
+.cadastro .grupo-23-ztuqYh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .bg-Q10fuo {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-YlnxYb {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro .cadastro-sDUuKD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 597px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 287px;
+  width               : 177px;
+}
+.cadastro .grupo-29-N7MTjU {
+  background-color    : rgba(255,255,255,0);
+  height              : 237px;
+  left                : 393px;
+  position            : absolute;
+  top                 : 348px;
+  width               : 582px;
+}
+.cadastro .input-PvlotK {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 279px;
+}
+.cadastro .input-qFwtqP {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-Y8xrwd {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-hCoJcq {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-WKzcEX {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 279px;
+}
+.cadastro .input-XPqRfW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-7PUfSb {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-szIaOs {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-m1lpDv {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  top                 : calc(33.86% - 16px);
+  width               : 279px;
+}
+.cadastro .input-ZF7YD1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-ufYPaM {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-V6Z33k {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-lwkldY {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(32.28% - 15px);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  width               : 279px;
+}
+.cadastro .input-2H7AjW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-5CNmGi {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-1NyJQz {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-rbpOFN {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : calc(33.86% - 16px);
+  width               : 279px;
+}
+.cadastro .input-fRH0GI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-a9jNkC {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-B9kkss {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-zEmzCr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(32.28% - 15px);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  width               : 279px;
+}
+.cadastro .input-y6scG2 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .rectangle-85-eReYXo {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-5);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .full-name-cG81kx {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(50% - 15px);
+  color               : var(--auto-palette-color-2);
+    font-size           : 14.0px;
+  height              : 39px;
+  border: 0px;
+  font-color: #7882a2;
+  top: 5px;
+  left                : 15px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 258px;
+}
+.cadastro .input-9EBRBR {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  width               : 279px;
+}
+.cadastro {
+  align-items         : flex-start;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 862px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.cadastro .banner-kz8zwW {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 1368px;
+}
+.cadastro .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.cadastro .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(43.76% - 237px);
+  position            : absolute;
+  width               : 542px;
+}
+.cadastro .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.75% - 55px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.cadastro .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.cadastro .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.52% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.cadastro .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.cadastro .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+</style>                        <a href="home.html">
+                            <img anima-src={% static "img/logoautec-10@1x.png" %} class="logoautec-xJxzQD" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </a>
+                        <a href="premium.html">
+                            <div class="grupo-36-HMCxAZ">
+                                <div class="retangulo-248-lzUr1s">
+                                </div>
+                                <div class="versao-premium-RGVN7J font-class-1">
+                                    VERSÃO PREMIUM
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <img anima-src={% static "img/caminho-29-2@1x.png" %} class="caminho-29-vvR3x3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <div class="para-comecar-nos-responda-algumas-perguntinhas-2aMamA font-class-4">
+                        Para começar, nos responda algumas perguntinhas
+                    </div>
+                    <div class="iremos-mapear-suas-competencias-Q5kpko font-class-2">
+                        Iremos mapear suas competências :)
+                    </div>
+                    <div class="grupo-27-k0Z7mq">
+                        <img anima-src={% static "img/icon-awesome-user-alt-1@1x.png" %} class="icon-awesome-user-alt-1aBSDu" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="total-yearly-impact-pwycnf">
+                        <div class="grupo-23-ztuqYh">
+                            <div class="bg-Q10fuo">
+                                <img anima-src={% static "img/rectangle--14@1x.png" %} class="rectangle-YlnxYb" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadastro-sDUuKD font-class-3">
+                        Cadastro
+                    </div>
+                    <div class="grupo-29-N7MTjU">
+                        <div class="input-PvlotK">
+                            <div class="input-qFwtqP">
+                                <div class="rectangle-85-Y8xrwd">
+                                </div>
+                                <input type="text"  class="full-name-hCoJcq font-class-2" placeholder="Nome completo">
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-WKzcEX">
+                            <div class="input-XPqRfW">
+                                <div class="rectangle-85-7PUfSb">
+                                </div>
+                                <input type="text" class="full-name-szIaOs font-class-2" placeholder="LinkedIn">
+
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-m1lpDv">
+                            <div class="input-ZF7YD1">
+                                <div class="rectangle-85-ufYPaM">
+                                </div>
+                                <input type="text" class="full-name-V6Z33k font-class-2" placeholder="Telefone">
+
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-lwkldY">
+                            <div class="input-2H7AjW">
+                                <div class="rectangle-85-5CNmGi">
+                                </div>
+                                <input type="text" class="full-name-1NyJQz font-class-2" placeholder="Cidade">
+
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-rbpOFN">
+                            <div class="input-fRH0GI">
+                                <div class="rectangle-85-a9jNkC">
+                                </div>
+                                <input type="text" class="full-name-B9kkss font-class-2" placeholder="Email">
+
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-zEmzCr">
+                            <div class="input-y6scG2">
+                                <div class="rectangle-85-eReYXo">
+                                </div>
+                                <input type="password" class="full-name-cG81kx font-class-2" placeholder="Senha">
+
+                                </input>
+                            </div>
+                        </div>
+                        <div class="input-9EBRBR">
+                            <div class="input-Gm7rZ4">
+                                <div class="rectangle-85-LqbwYJ">
+                                </div>
+                                <input type="password" class="full-name-zPXtOr font-class-2" placeholder="Confirme sua senha">
+                                </input>
+                            </div>
+                        </div>
+                        <div class="grupo-30-N6GxIk">
+                            <div class="grupo-30-3SPTSr">
+                                <img anima-src={% static "img/icon-awesome-user-alt-1@1x.png" %} class="icon-awesome-user-alt-DAYlVi" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            </div>
+                            <div class="full-name-10oJqz font-class-2">
+                                Upload de foto
+                            </div>
+                    
+                            <div class="icon-feather-upload-fy7DyI" href="#">
+                                <img anima-src={% static "img/caminho-40@1x.png" %} class="caminho-40-mdkM1j" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-41@1x.png" %} class="caminho-41-UzTPRQ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-42@1x.png" %} class="caminho-42-61tYq1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            </div>
+                        
+                        </div>
+                    </div>
+                    <div class="by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-iHFbFD font-class-4">
+                        By creating an account you agree to our Terms of Service and Privacy Policy
+                    </div>
+                    <a href="{% url 'chatbot' %}">
+                        <div class="grupo-31-SxN47M">
+                            <img anima-src={% static "img/icon-awesome-arrow-circle-right-1@1x.png" %} class="icon-awesome-arrow-circle-right-v8PMt9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <div class="prosseguir-LtTZ3i font-class-2">
+                                Prosseguir
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="rodape-TlCuFS">
+                    <div class="grupo-20-OXjHu9">
+                        <img anima-src={% static "img/caminho-28-1@1x.png" %} class="caminho-28-HsIjxu" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        <div class="autech-2020-todos-os-direitos-reservados-NxZ87L font-class-3">
+                            Autech 2020 - todos os direitos reservados
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+        <script src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js">
+        </script>
+    </body>
+</html>

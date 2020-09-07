@@ -1,0 +1,1471 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|DIN+Alternate:700|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - premium */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-2 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-3 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-5 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : var(--auto-palette-color-6);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(112,112,112,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(63,63,124,1.0);
+  --auto-palette-color-6: rgba(206,74,216,1.0);
+  --auto-palette-color-7: rgba(24,28,40,1.0);
+  --auto-palette-color-8: rgba(163,178,221,1.0);
+  --auto-palette-color-9: rgba(204,204,204,1.0);
+}
+.premium .overlap-group1-fL7T5U {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 629px;
+  position            : relative;
+  width               : 1367px;
+}
+.premium .overlap-group2-5bIZrx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 323px;
+  margin-left         : 59px;
+  position            : relative;
+  width               : 653px;
+}
+.premium .auto-flex4-0JLSnI {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 323px;
+  justify-content     : flex-start;
+  margin-top          : 60px;
+  position            : relative;
+  width               : auto;
+}
+.premium .auto-flex-2TWt8z {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 71px;
+  position            : relative;
+  width               : 1368px;
+}
+.premium .auto-flex7-vcphMe {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 323px;
+  justify-content     : flex-start;
+  margin-top          : 60px;
+  position            : relative;
+  width               : auto;
+}
+.premium .auto-flex2-CJlPxF {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-right        : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.premium .auto-flex1-IifjLz {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 323px;
+  justify-content     : flex-start;
+  margin-left         : 1.0px;
+  margin-top          : 64px;
+  position            : relative;
+  width               : auto;
+}
+.premium .auto-flex3-HThl3k {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 3.0px;
+  position            : relative;
+  width               : 512px;
+}
+.premium .auto-flex5-B7ha6x {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 55px;
+  position            : relative;
+  width               : 1368px;
+}
+.premium .auto-flex6-czjWiM {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  flex-shrink         : 0;
+  height              : auto;
+  justify-content     : flex-start;
+  margin-top          : 1.0px;
+  position            : relative;
+  width               : 484px;
+}
+.premium .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-s1VlLz {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 105px;
+  line-height         : 16.0px;
+  margin-top          : 30px;
+  min-height          : 105px;
+  opacity             : 0.8;
+  position            : relative;
+  text-align          : left;
+  width               : 512px;
+}
+.premium .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-GsxGt6 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  flex-shrink         : 0;
+  font-size           : 16.0px;
+  height              : 105px;
+  line-height         : 16.0px;
+  margin-top          : 30px;
+  min-height          : 105px;
+  opacity             : 0.8;
+  position            : relative;
+  text-align          : left;
+  width               : 484px;
+}
+.premium .acompanhe-seu-progresso-ao-longo-dos-meses-ojzmV0 {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  font-size           : 32.0px;
+  height              : 95px;
+  line-height         : 32.0px;
+  min-height          : 95px;
+  position            : relative;
+  text-align          : left;
+  width               : 484px;
+}
+.premium .descontos-exclusivos-em-cursos-e-eventos-jIYxgZ {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  flex-shrink         : 0;
+  font-size           : 32.0px;
+  height              : 95px;
+  line-height         : 32.0px;
+  min-height          : 95px;
+  position            : relative;
+  text-align          : left;
+  width               : 456px;
+}
+.premium .grupo-37-FLIaRQ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 228px;
+  margin-top          : 1.0px;
+  position            : relative;
+  width               : 484px;
+}
+.premium .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-V1zaaR {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 105px;
+  left                : 0px;
+  line-height         : 16.0px;
+  opacity             : 0.8;
+  position            : absolute;
+  text-align          : left;
+  width               : 100%;
+}
+.premium .feedbacks-de-processos-seletivos-2nuxBq {
+  background-color    : rgba(163,178,221,0);
+  color               : var(--auto-palette-color-8);
+  font-size           : 32.0px;
+  height              : 95px;
+  left                : 0px;
+  line-height         : 32.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 0px;
+  width               : calc(100.00% - 30px);
+}
+.premium .divider-rYOyUd {
+  background-color    : var(--auto-palette-color-4);
+  flex-shrink         : 0;
+  height              : 1px;
+  margin-left         : 1.0px;
+  margin-top          : 63px;
+  position            : relative;
+  width               : 1196px;
+}
+.premium .divider-Bbg96R {
+  background-color    : var(--auto-palette-color-4);
+  flex-shrink         : 0;
+  height              : 1px;
+  position            : relative;
+  width               : 1196px;
+}
+.premium .monthly-sale-report-wzZhRq {
+  background-color    : rgba(255,255,255,0);
+  height              : 323px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 653px;
+}
+.premium .rectangle-33-9UMbzc {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.premium .divider-yTBMg7 {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  opacity             : 0.53;
+  position            : absolute;
+  top                 : 20.41%;
+  width               : 100%;
+}
+.premium .shares-by-months-4L9PdD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 4.59%;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(8.83% - 2px);
+  white-space         : nowrap;
+  width               : 67.08%;
+}
+.premium .path-10-SuRvTy {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(30.49% - 25px);
+  height              : 81px;
+  left                : 96px;
+  position            : absolute;
+  width               : calc(100.00% - 141px);
+}
+.premium .divider-x6Rc7j {
+  background-color    : var(--auto-palette-color-6);
+  bottom              : 55px;
+  height              : 1px;
+  left                : 0px;
+  opacity             : 0.53;
+  position            : absolute;
+  width               : 205px;
+}
+.premium .divider-oAx8Bs {
+  background-color    : var(--auto-palette-color-6);
+  bottom              : 55px;
+  height              : 1px;
+  opacity             : 0.53;
+  position            : absolute;
+  right               : 0px;
+  width               : 205px;
+}
+.premium .grupo-38-Yz0d5I {
+  background-color    : rgba(255,255,255,0);
+  height              : 52px;
+  left                : 234px;
+  position            : absolute;
+  top                 : 241px;
+  width               : 187px;
+}
+.premium .beard-boy-casual-1222271-uy63Az {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 52px;
+}
+.premium .recrutador-tdmxEq {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 22.0px;
+  height              : 24px;
+  line-height         : 22.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : left;
+  top                 : calc(46.67% - 10px);
+  white-space         : nowrap;
+  width               : 111px;
+}
+.premium .lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-lorem-ipsum-dolor-sit-amet-consetetur-sadipscing-elitr-sed-diam-nonumy-eirmod-tempor-invidunt-ut-labore-et-dolore-lorem-ipsum-dolor-sit-am-GhdLOQ {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 14.0px;
+  height              : 111px;
+  left                : 23px;
+  line-height         : 14.0px;
+  opacity             : 0.6;
+  position            : absolute;
+  text-align          : left;
+  top                 : 98px;
+  width               : 610px;
+}
+.premium .grupo-39-fbMBE0 {
+  background-color    : rgba(255,255,255,0);
+  height              : 65px;
+  left                : 86px;
+  position            : absolute;
+  top                 : 430px;
+  width               : 220px;
+}
+.premium .retangulo-249-Up78zd {
+  background-color    : rgba(206,74,216,0);
+  border-radius       : 25.0px;
+  height              : calc(100.00% + 18px);
+  left                : -9px;
+  position            : absolute;
+  top                 : -6px;
+  width               : calc(100.00% + 18px);
+}
+.premium .assinar-mnWawx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 66px;
+  line-height         : 47.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(28.12% - 9px);
+  white-space         : nowrap;
+  width               : calc(100.00% - 132px);
+}
+.premium .grupo-40-ogvzOo {
+  background-color    : rgba(255,255,255,0);
+  height              : 85px;
+  left                : 539px;
+  position            : absolute;
+  top                 : 51px;
+  width               : 288px;
+}
+.premium .retangulo-249-EaMYqi {
+  background-color    : rgba(206,74,216,0);
+  border-radius       : 40.0px;
+  height              : calc(100.00% + 18px);
+  left                : -9px;
+  position            : absolute;
+  top                 : -6px;
+  width               : calc(100.00% + 18px);
+}
+.premium .assinar-rTNmqA {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 32.0px;
+  height              : 47px;
+  left                : 85px;
+  line-height         : 59.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : calc(16.25% - 7px);
+  width               : calc(100.00% - 170px);
+}
+.premium .rodape-ayXB0x {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-top          : 51px;
+  position            : relative;
+  width               : 1367px;
+}
+.premium .grupo-20-qNOwwN {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.premium .caminho-28-NRSqPf {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.premium .autech-2020-todos-os-direitos-reservados-U12jDK {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  line-height         : 25.0px;
+  position            : absolute;
+  right               : calc(49.95% - 171px);
+  text-align          : center;
+  top                 : calc(49.32% - 11px);
+  white-space         : nowrap;
+  width               : 344px;
+}
+.premium .rectangle-35-copy-5-ux6xxr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48.28%;
+  left                : 13.67%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-26-YCNLgj {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 62.89%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-27-Ntl9JP {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48.28%;
+  left                : 95.70%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-13-2CRpdW {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48.28%;
+  left                : 38.28%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-6-HvTtxQ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 86.21%;
+  left                : 16.41%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-28-CKLu0H {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 11.21%;
+  left                : 65.62%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-29-8gAI9j {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 100%;
+  left                : 98.44%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-14-kvaVcx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 41.02%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-31-xMhL0p {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 86.21%;
+  left                : 73.83%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-7-oUFtdF {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 63.79%;
+  left                : 19.14%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-30-J6kjHg {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 20.69%;
+  left                : 68.36%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-15-ufDJ6J {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 20.69%;
+  left                : 43.75%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-35-jFdfQX {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39.66%;
+  left                : 76.56%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-8-MrB6DA {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 37.07%;
+  left                : 21.88%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-32-TJzIQC {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 39.66%;
+  left                : 71.09%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-16-7z2xLo {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 37.07%;
+  left                : 46.48%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-37-wnfxJ9 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48.28%;
+  left                : 79.30%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-anKpLT {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 34.48%;
+  left                : 2.73%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-34-j6lZHA {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 34.48%;
+  left                : 51.95%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-38-UXaLOn {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 34.48%;
+  left                : 84.77%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-17-hrMqMg {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 34.48%;
+  left                : 27.34%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .jan-lkR79D {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 12.25%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.52%;
+}
+.premium .feb-lSoVKM {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 19.30%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.52%;
+}
+.premium .mar-q8rKI5 {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 26.49%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.68%;
+}
+.premium .apr-oifuvP {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 33.69%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.37%;
+}
+.premium .may-6uNkKa {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 40.74%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.52%;
+}
+.premium .jun-FaIOAO {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 47.78%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.52%;
+}
+.premium .jul-1zp9AZ {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 54.98%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 2.76%;
+}
+.premium .august-NLZaKs {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 61.26%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.83%;
+}
+.premium .sep-x1zP6O {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 68.76%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.22%;
+}
+.premium .nav-dtLMbc {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 75.50%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.52%;
+}
+.premium .nav-BXJElV {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 82.70%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.83%;
+}
+.premium .dec-1Gj6iI {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(9.71% - 1px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 90.05%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.83%;
+}
+.premium .path-10-FJgQIz {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(30.49% - 25px);
+  height              : 81px;
+  left                : 96px;
+  position            : absolute;
+  width               : calc(100.00% - 141px);
+}
+.premium .monthly-sale-report-hOlGdf {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 323px;
+  margin-left         : 59px;
+  position            : relative;
+  width               : 653px;
+}
+.premium .rectangle-33-Ce4XgP {
+  background-color    : rgba(255,255,255,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.premium .path-10-9u2fxe {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(30.49% - 25px);
+  height              : 81px;
+  left                : 96px;
+  position            : absolute;
+  width               : calc(100.00% - 141px);
+}
+.premium .caminho-29-jvAykz {
+  background-color    : rgba(255,255,255,0);
+  height              : 534px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 596px;
+}
+.premium .seja-premium-e-acesse-a-recursos-exclusivos-3VQ6Ik {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 48.0px;
+  height              : 213px;
+  left                : 86px;
+  line-height         : 48.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : 189px;
+  width               : 512px;
+}
+.premium .span0-3VQ6Ik {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.premium .span1-3VQ6Ik {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 800;
+  letter-spacing      : 0.00px;
+}
+.premium .span2-3VQ6Ik {
+  color               : rgba(255,255,255,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+  letter-spacing      : 0.00px;
+}
+.premium .meu-perfil-esCXee {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.premium .elipse-2-nEaW7G {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 97px;
+  top                 : calc(50.00% - 24px);
+  width               : 48px;
+}
+.premium .logoautec-REEeiS {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.premium .grupo-36-U4ec7x {
+  background-color    : rgba(255,255,255,0);
+  height              : 52px;
+  position            : absolute;
+  right               : 171px;
+  top                 : calc(50.00% - 26px);
+  width               : 168px;
+}
+.premium .retangulo-248-cu37pl {
+  background-color    : rgba(255,255,255,0);
+  border-color        : var(--auto-palette-color-1);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : calc(50.00% - 84px);
+  position            : absolute;
+  top                 : 0px;
+  width               : 168px;
+}
+.premium .versao-premium-CCxeZw {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : calc(100.00% - 29px);
+  left                : calc(46.15% - 66px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 19px;
+  white-space         : nowrap;
+  width               : 144px;
+}
+.premium .monthly-sale-report-bmSfLL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 323px;
+  margin-left         : 31px;
+  position            : relative;
+  width               : 653px;
+}
+.premium .rectangle-33-paxIPv {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.premium .divider-AxLTil {
+  background-color    : var(--auto-palette-color-4);
+  height              : 1px;
+  left                : 0px;
+  opacity             : 0.53;
+  position            : absolute;
+  top                 : 20.41%;
+  width               : 100%;
+}
+.premium .shares-by-months-qNAhPm {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 4.59%;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(8.83% - 2px);
+  white-space         : nowrap;
+  width               : 38.74%;
+}
+.premium .line-5-jIV85B {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 20.50%;
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  width               : calc(100.00% - 100px);
+}
+.premium .line-5-copy-2-retY5D {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 30.12%;
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  width               : calc(100.00% - 100px);
+}
+.premium .line-5-copy-4-fSpEPi {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 39.75%;
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  width               : calc(100.00% - 100px);
+}
+.premium .line-5-copy-6-mScXzr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 49.38%;
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  width               : calc(100.00% - 100px);
+}
+.premium .line-5-copy-7-JF9qI7 {
+  background-color    : rgba(255,255,255,0);
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  top                 : 40.99%;
+  width               : calc(100.00% - 100px);
+}
+.premium .line-5-copy-7-JboVox {
+  background-color    : rgba(255,255,255,0);
+  height              : 1px;
+  left                : 75px;
+  position            : absolute;
+  top                 : 31.68%;
+  width               : calc(100.00% - 100px);
+}
+.premium .a0-oFRPYS {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(18.45% - 3px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 5.97%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 3.06%;
+}
+.premium .a10-FADThn {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(28.48% - 4px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 4.59%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 4.29%;
+}
+.premium .a20-4DYakH {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(38.51% - 5px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 4.59%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 4.29%;
+}
+.premium .a30-LuQlry {
+  background-color    : rgba(120,130,162,0);
+  bottom              : calc(48.87% - 7px);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 4.59%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 4.29%;
+}
+.premium .a40-l0apgF {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 4.59%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(41.10% - 6px);
+  white-space         : nowrap;
+  width               : 4.29%;
+}
+.premium .a40-1WVjqH {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 4.59%;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(31.07% - 4px);
+  white-space         : nowrap;
+  width               : 4.29%;
+}
+.premium .group-6-bZMdIU {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(31.88% - 37px);
+  height              : 116px;
+  left                : 91px;
+  position            : absolute;
+  width               : calc(100.00% - 141px);
+}
+.premium .rectangle-35-5fm1Sh {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 0px;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-18-lnxLs6 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 49.22%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-19-UB18Iq {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 82.03%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-9-1yGN2z {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 97.41%;
+  left                : 24.61%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-2-kSWjJP {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 60.34%;
+  left                : 5.47%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-20-abgmJs {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 37.07%;
+  left                : 54.69%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-21-wRxRuR {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 37.07%;
+  left                : 87.50%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-10-vCncUx {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 60.34%;
+  left                : 30.08%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-3-4xyOO9 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 45.69%;
+  left                : 8.20%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-22-XFfqik {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 45.69%;
+  left                : 57.42%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-23-YFkS7Z {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 64.66%;
+  left                : 90.23%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-11-lKmOk5 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 45.69%;
+  left                : 32.81%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-4-4Yvv1C {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 22.41%;
+  left                : 10.94%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-24-V0TYVR {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 22.41%;
+  left                : 60.16%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-25-4cPKQ8 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 22.41%;
+  left                : 92.97%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .rectangle-35-copy-12-7AkWYJ {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 22.41%;
+  left                : 35.55%;
+  position            : absolute;
+  width               : 1.56%;
+}
+.premium .overlap-group-A75LU2 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 178px;
+  margin-left         : 1.0px;
+  position            : relative;
+  width               : 1367px;
+}
+.premium {
+  align-items         : center;
+  background-color    : var(--auto-palette-color-7);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 2295px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.premium .grupo-25-4cKAKh {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/13288-2@1x.png");
+  background-size     : 100% 100%;
+  height              : 178px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.premium .a37972-OreRx8 {
+  background-color    : rgba(255,255,255,0);
+  height              : 533px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 96px;
+  width               : 1367px;
+}
+.premium .menu-jNBm2F {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.premium .bg-8agaad {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.premium .caminho-19-CTh4Sd {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.premium .grupo-2-eTfT9U {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(43.76% - 237px);
+  position            : absolute;
+  width               : 542px;
+}
+.premium .candidaturas-wxce72 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.75% - 55px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.premium .para-empresas-XOZKV9 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.premium .vagas-TgaU0J {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.52% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}

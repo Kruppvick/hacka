@@ -1,0 +1,75 @@
+{% load static %}
+
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="{% static "build/botui.min.css" %}" />
+    <link rel="stylesheet" href="{% static "build/botui-theme-default.css" %}" />
+    <title>Bot</title>
+</head>
+<style>
+   #caixa {
+        width: 200px;
+        height: 600px;
+	border: 2px black solid;
+        background-color: orange;
+    }
+</style>
+<body>
+    <div id="caixa">
+	<div id="my-botui-app">
+	    <bot-ui></bot-ui>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/vue/latest/vue.min.js"></script>
+    <script src="{% static "build/botui.min.js" %}"></script>
+    <script src="{% static "srcbot/bot.js" %}"></script>
+    <script>
+/*	var botui = new BotUI('my-botui-app');
+	
+	botui.message.bot({
+	    loading: true,
+	    delay: 1000,
+	    content: 'Oi, eu sou a Aurora!'
+	})
+	.then(() => {
+	    botui.message.bot({
+		loading: true
+		delay: 1000,/
+		content: 'Qual o seu nome?'
+	    })
+	})
+	.then(() => {
+	    botui.action.buttontext({
+		delay: 1000,
+		actionText: {
+		    placeholder: 'Digite aqui seu nome'
+		}
+	    })
+	    .then((res) => {
+	    botui.message.bot({
+		loading: true,
+		delay: 1000,
+		content: 'Olá, ' + res.value + '!'
+            })
+	    })
+	    .then(() => {
+		botui.message.bot({
+		    loading: true,
+		    delay: 1500,
+		    content: 'Agora seu email'
+	    })
+	    })
+	    .then(() => {
+		botui.action.buttontext({
+		    delay: 2000,
+		    actionText: {
+		        placeholder: 'Email'
+		    }
+		})
+	    })
+        });*/
+    </script>
+</body>
+</html>

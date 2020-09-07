@@ -1,0 +1,825 @@
+{% load static %}
+
+<html>
+    <head>
+        <link href={% static "img/favicon.png" %} rel="shortcut icon"/>
+        <meta charset="utf-8"/>
+        <meta content="width=1366, maximum-scale=1.0" name="viewport"/>
+        <!-- Facebook -->
+        <meta content="" property="og:url"/>
+        <meta content="website" property="og:type"/>
+        <!-- Twitter -->
+        <meta content="photo" name="twitter:card"/>
+        <link href="{% static "css/cadastro-preenchido.css" %}" rel="stylesheet" type="text/css"/>
+        <meta content="AnimaApp.com - Design to code, Automated." name="author">
+        </meta>
+    </head>
+    <body style="margin: 0;
+ background: rgba(24, 28, 40, 1.0);">
+        <input id="anPageName" name="page" type="hidden" value="cadastro-preenchido"/>
+        <div class="anima-container-center-horizontal">
+            <div class="cadastro-preenchido anima-flexbox-container anima-screen ">
+                <div class="overlap-group-Y7zamN">
+                    <img anima-src={% static "img/banner-1@1x.png" %} class="banner-kz8zwW" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <div class="menu-E3DCV4">
+                        <div class="bg-RtrBFh">
+                            <img anima-src={% static "img/caminho-19-1@1x.png" %} class="caminho-19-DHDo1z" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                        <div class="grupo-2-S4Qzc4">
+                            <a href="{% url 'candidaturas' %}">
+                                <div class="candidaturas-2ZcLjF font-class-1">
+                                    CANDIDATURAS
+                                </div>
+                            </a>
+                            <div class="para-empresas-mhxBv8 font-class-1">
+                                PARA EMPRESAS
+                            </div>
+                            <a href="{% url 'vagas' %}">
+                                <div class="vagas-Mob1Ea font-class-1">
+                                    VAGAS
+                                </div>
+                            </a>
+                            <a href="{% url 'resultado_de_competencias' %}">
+                                <div class="meu-perfil-bFLiFx font-class-1">
+                                    MEU PERFIL
+                                </div>
+                            </a>
+                        </div>
+                        <a href="{% url 'home' %}">
+                            <img anima-src={% static "img/logoautec-1@1x.png" %} class="logoautec-xJxzQD" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </a>
+                    </div>
+                    <img anima-src={% static "img/caminho-29-1@1x.png" %} class="caminho-29-vvR3x3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    <div class="para-comecar-nos-responda-algumas-perguntinhas-2aMamA font-class-2">
+                        Para começar, nos responda algumas perguntinhas
+                    </div>
+                    <div class="iremos-mapear-suas-competencias-Q5kpko font-class-5">
+                        Iremos mapear suas competências :)
+                    </div>
+                    <div class="grupo-27-k0Z7mq">
+                        <img anima-src={% static "img/icon-awesome-user-alt-1@1x.png" %} class="icon-awesome-user-alt-1aBSDu" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="total-yearly-impact-pwycnf">
+                        <div class="grupo-23-ztuqYh">
+                            <div class="bg-Q10fuo">
+                                <img anima-src={% static "img/rectangle--10@1x.png" %} class="rectangle-YlnxYb" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cadastro-sDUuKD font-class-4">
+                        Cadastro
+                    </div>
+                    <div class="grupo-29-N7MTjU">
+                        <div class="input-PvlotK">
+                            <div class="input-qFwtqP">
+                                <div class="rectangle-85-Y8xrwd">
+                                </div>
+                                <div class="full-name-hCoJcq font-class-5">
+                                    Ana Carolina da Silva
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-WKzcEX">
+                            <div class="input-XPqRfW">
+                                <div class="rectangle-85-7PUfSb">
+                                </div>
+                                <div class="full-name-szIaOs font-class-5">
+                                    linkedin.com/in/carol-silva.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-m1lpDv">
+                            <div class="input-ZF7YD1">
+                                <div class="rectangle-85-ufYPaM">
+                                </div>
+                                <div class="full-name-V6Z33k font-class-5">
+                                    21 912345678
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-lwkldY">
+                            <div class="input-2H7AjW">
+                                <div class="rectangle-85-5CNmGi">
+                                </div>
+                                <div class="full-name-1NyJQz font-class-5">
+                                    Rio de Janeiro
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-rbpOFN">
+                            <div class="input-fRH0GI">
+                                <div class="rectangle-85-a9jNkC">
+                                </div>
+                                <div class="full-name-B9kkss font-class-5">
+                                    anacarolinasilva@gmail.com
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-zEmzCr">
+                            <div class="input-y6scG2">
+                                <div class="rectangle-85-eReYXo">
+                                </div>
+                                <div class="full-name-cG81kx font-class-5">
+                                    *************
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-9EBRBR">
+                            <div class="input-Gm7rZ4">
+                                <div class="rectangle-85-LqbwYJ">
+                                </div>
+                                <div class="full-name-zPXtOr font-class-5">
+                                    *************
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grupo-30-N6GxIk">
+                            <div class="full-name-10oJqz font-class-5">
+                                fotoescolhida.png
+                            </div>
+                            <div class="icon-feather-upload-fy7DyI">
+                                <img anima-src={% static "img/caminho-40-1@1x.png" %} class="caminho-40-mdkM1j" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-41-1@1x.png" %} class="caminho-41-UzTPRQ" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-42-1@1x.png" %} class="caminho-42-61tYq1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            </div>
+                            <img anima-src={% static "img/caminho-43@1x.png" %} class="caminho-43-hzkmAl" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                    </div>
+                    <div class="by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-iHFbFD font-class-2">
+                        By creating an account you agree to our Terms of Service and Privacy Policy
+                    </div>
+                    <a href="{% url 'resultado-de-competencias' %}">
+                        <div class="grupo-31-SxN47M">
+                            <img anima-src={% static "img/icon-awesome-arrow-circle-right@1x.png" %} class="icon-awesome-arrow-circle-right-v8PMt9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <div class="prosseguir-LtTZ3i font-class-5">
+                                Prosseguir
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="overlap-group1-yBpAcz">
+                    <div class="grupo-20-FMF4kh">
+                        <img anima-src={% static "img/caminho-28-1@1x.png" %} class="caminho-28-BuMPoV" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                    </div>
+                    <div class="camada-2-0lBBb5 anima-flexbox-container">
+                        <div class="camada-1-Zu7E4k anima-flexbox-container">
+                            <div class="overlap-group2-bBFBYO">
+                                <img anima-src={% static "img/caminho-31-1@1x.png" %} class="caminho-31-4XeSO2" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-32-1@1x.png" %} class="caminho-32-8vU5ls" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-36-1@1x.png" %} class="caminho-36-8ftP7N" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <img anima-src={% static "img/caminho-37-1@1x.png" %} class="caminho-37-yEv4dY" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                <div class="grupo-24-Ulpe1T anima-flexbox-container">
+                                    <div class="retangulo-4-AXWntB">
+                                    </div>
+                                    <div class="overlap-group3-tQDRwq">
+                                        <div class="retangulo-5-i5hTwS">
+                                        </div>
+                                        <div class="retangulo-6-4sRPUV">
+                                        </div>
+                                    </div>
+                                    <div class="retangulo-7-pQrpsB">
+                                    </div>
+                                    <div class="retangulo-8-xvlG7k">
+                                    </div>
+                                    <div class="overlap-group4-fF2RiO">
+                                        <div class="retangulo-9-xh188R">
+                                        </div>
+                                        <div class="retangulo-10-j3bRRj">
+                                        </div>
+                                        <div class="retangulo-11-QDSWqC">
+                                        </div>
+                                    </div>
+                                    <div class="retangulo-12-skfngp">
+                                    </div>
+                                    <div class="overlap-group5-yixHL5">
+                                        <div class="retangulo-13-6BUxW1">
+                                        </div>
+                                        <div class="retangulo-14-0KfplM">
+                                        </div>
+                                        <div class="retangulo-15-gdcsQs">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group6-B1xaxo">
+                                        <div class="retangulo-16-mu8EgZ">
+                                        </div>
+                                        <div class="retangulo-17-nwBCSx">
+                                        </div>
+                                        <div class="retangulo-18-33haQ6">
+                                        </div>
+                                        <div class="retangulo-136-mnU9iD">
+                                        </div>
+                                        <div class="retangulo-137-Tsn0d8">
+                                        </div>
+                                        <div class="retangulo-138-FgUcxL">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group7-npHf2n">
+                                        <div class="retangulo-19-goT7Qv">
+                                        </div>
+                                        <div class="retangulo-139-ABZlkv">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group8-pSHYv2">
+                                        <div class="retangulo-20-2pmDIU">
+                                        </div>
+                                        <div class="retangulo-140-An6LdD">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group9-E2xSan">
+                                        <div class="retangulo-21-djjcRf">
+                                        </div>
+                                        <div class="retangulo-22-4SsD5t">
+                                        </div>
+                                        <div class="retangulo-23-rxRBMb">
+                                        </div>
+                                        <div class="retangulo-141-EHpIqD">
+                                        </div>
+                                        <div class="retangulo-142-VCPruJ">
+                                        </div>
+                                        <div class="retangulo-143-texaVJ">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group10-7BWnsK">
+                                        <div class="retangulo-24-jee0mx">
+                                        </div>
+                                        <div class="retangulo-25-fTw7qj">
+                                        </div>
+                                        <div class="retangulo-26-UuFHPr">
+                                        </div>
+                                        <div class="retangulo-144-wxcWLm">
+                                        </div>
+                                        <div class="retangulo-145-q38Kyg">
+                                        </div>
+                                        <div class="retangulo-146-oycFfL">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group11-pRsoA8">
+                                        <div class="retangulo-27-HgnxXw">
+                                        </div>
+                                        <div class="retangulo-147-tKuZBN">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group12-OtFaEY">
+                                        <div class="retangulo-28-qfTnHI">
+                                        </div>
+                                        <div class="retangulo-29-7iUnbh">
+                                        </div>
+                                        <div class="retangulo-148-RXtBzX">
+                                        </div>
+                                        <div class="retangulo-149-X8h3Fx">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group13-1FTUwi">
+                                        <div class="retangulo-30-SGJs4o">
+                                        </div>
+                                        <div class="retangulo-31-ac6VRb">
+                                        </div>
+                                        <div class="retangulo-150-civDvQ">
+                                        </div>
+                                        <div class="retangulo-151-9YpNTR">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group14-3vBzdL">
+                                        <div class="retangulo-32-0dOXjx">
+                                        </div>
+                                        <div class="retangulo-33-6KYQif">
+                                        </div>
+                                        <div class="retangulo-34-WrZeIF">
+                                        </div>
+                                        <div class="retangulo-152-R1Cx36">
+                                        </div>
+                                        <div class="retangulo-153-NDgO9j">
+                                        </div>
+                                        <div class="retangulo-154-nNUUhm">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group15-llb66t">
+                                        <div class="retangulo-35-NKToVO">
+                                        </div>
+                                        <div class="retangulo-36-qiL8Hd">
+                                        </div>
+                                        <div class="retangulo-37-ZYCilS">
+                                        </div>
+                                        <div class="retangulo-38-3BmPAU">
+                                        </div>
+                                        <div class="retangulo-155-BBDNxF">
+                                        </div>
+                                        <div class="retangulo-156-qF4P6G">
+                                        </div>
+                                        <div class="retangulo-157-oSqqxs">
+                                        </div>
+                                        <div class="retangulo-158-lVSxcx">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group16-X42loe">
+                                        <div class="retangulo-39-RynmsK">
+                                        </div>
+                                        <div class="retangulo-40-BFBErx">
+                                        </div>
+                                        <div class="retangulo-41-xkJG12">
+                                        </div>
+                                        <div class="retangulo-159-FxrZ40">
+                                        </div>
+                                        <div class="retangulo-160-junCU2">
+                                        </div>
+                                        <div class="retangulo-161-HRd8PO">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group17-y7fX1I">
+                                        <div class="retangulo-42-7zxDGn">
+                                        </div>
+                                        <div class="retangulo-162-PvFwpn">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group18-8sRAxd">
+                                        <div class="retangulo-43-JnUEX6">
+                                        </div>
+                                        <div class="retangulo-44-26QnjN">
+                                        </div>
+                                        <div class="retangulo-163-XBIpR3">
+                                        </div>
+                                        <div class="retangulo-164-1yqIuD">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group19-2dkvYD">
+                                        <div class="retangulo-45-bLIiPH">
+                                        </div>
+                                        <div class="retangulo-46-ZdNRZQ">
+                                        </div>
+                                        <div class="retangulo-165-1xDVYF">
+                                        </div>
+                                        <div class="retangulo-166-AslyWK">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group20-iDGzow">
+                                        <div class="retangulo-47-qxwVw0">
+                                        </div>
+                                        <div class="retangulo-48-lwm6Vx">
+                                        </div>
+                                        <div class="retangulo-167-bpYJfs">
+                                        </div>
+                                        <div class="retangulo-168-U3kkvQ">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group21-jHLyzi">
+                                        <div class="retangulo-49-lAp47W">
+                                        </div>
+                                        <div class="retangulo-169-WDPUJf">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group22-oozXCm">
+                                        <div class="retangulo-50-0Wn4F8">
+                                        </div>
+                                        <div class="retangulo-170-ORvC0o">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group23-inqOOg">
+                                        <div class="retangulo-51-S77Wsw">
+                                        </div>
+                                        <div class="retangulo-52-XxmGW2">
+                                        </div>
+                                        <div class="retangulo-53-NiMXN1">
+                                        </div>
+                                        <div class="retangulo-54-sxlWE7">
+                                        </div>
+                                        <div class="retangulo-55-m9xxHl">
+                                        </div>
+                                        <div class="retangulo-56-QleQZ1">
+                                        </div>
+                                        <div class="retangulo-171-lJOUez">
+                                        </div>
+                                        <div class="retangulo-172-4TrNzC">
+                                        </div>
+                                        <div class="retangulo-173-l3S3Yr">
+                                        </div>
+                                        <div class="retangulo-174-bPfsjf">
+                                        </div>
+                                        <div class="retangulo-175-LWAopR">
+                                        </div>
+                                        <div class="retangulo-176-6YNFOe">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group24-wKpwVP">
+                                        <div class="retangulo-57-hVxqxu">
+                                        </div>
+                                        <div class="retangulo-58-GCmC9y">
+                                        </div>
+                                        <div class="retangulo-59-dY5FQ5">
+                                        </div>
+                                        <div class="retangulo-177-iL6fLw">
+                                        </div>
+                                        <div class="retangulo-178-ZVoxno">
+                                        </div>
+                                        <div class="retangulo-179-QRnrxx">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group25-xIlRxV">
+                                        <div class="retangulo-60-5CVxhy">
+                                        </div>
+                                        <div class="retangulo-61-sU7f0A">
+                                        </div>
+                                        <div class="retangulo-180-3c6NZz">
+                                        </div>
+                                        <div class="retangulo-181-JGi8NK">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group26-3i0PQR">
+                                        <div class="retangulo-62-PcAYSZ">
+                                        </div>
+                                        <div class="retangulo-63-s2xDow">
+                                        </div>
+                                        <div class="retangulo-64-67x4xR">
+                                        </div>
+                                        <div class="retangulo-182-WTHbMp">
+                                        </div>
+                                        <div class="retangulo-183-vhxbe1">
+                                        </div>
+                                        <div class="retangulo-184-Wou1QU">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group27-PH7ReM">
+                                        <div class="retangulo-65-CFFFI7">
+                                        </div>
+                                        <div class="retangulo-66-ZeHXPb">
+                                        </div>
+                                        <div class="retangulo-67-6qUTSx">
+                                        </div>
+                                        <div class="retangulo-68-NqBgcV">
+                                        </div>
+                                        <div class="retangulo-185-QZfoG9">
+                                        </div>
+                                        <div class="retangulo-186-UJ7DOq">
+                                        </div>
+                                        <div class="retangulo-187-vfkNRS">
+                                        </div>
+                                        <div class="retangulo-188-Lg01lI">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group28-l8yUZw">
+                                        <div class="retangulo-69-ulCaLV">
+                                        </div>
+                                        <div class="retangulo-70-utZxWN">
+                                        </div>
+                                        <div class="retangulo-71-5zq32q">
+                                        </div>
+                                        <div class="retangulo-72-0NTEx3">
+                                        </div>
+                                        <div class="retangulo-189-ZivBoR">
+                                        </div>
+                                        <div class="retangulo-190-JWeFPL">
+                                        </div>
+                                        <div class="retangulo-191-o35ENz">
+                                        </div>
+                                        <div class="retangulo-192-u5tPYc">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group29-GnZash">
+                                        <div class="retangulo-73-kevnv2">
+                                        </div>
+                                        <div class="retangulo-74-FDzMwk">
+                                        </div>
+                                        <div class="retangulo-75-wIPUze">
+                                        </div>
+                                        <div class="retangulo-76-0C6gL6">
+                                        </div>
+                                        <div class="retangulo-77-SdeHTe">
+                                        </div>
+                                        <div class="retangulo-78-3GARUw">
+                                        </div>
+                                        <div class="retangulo-193-rAHnUw">
+                                        </div>
+                                        <div class="retangulo-194-ETjd5u">
+                                        </div>
+                                        <div class="retangulo-195-2LR7i9">
+                                        </div>
+                                        <div class="retangulo-196-Rtr2Gf">
+                                        </div>
+                                        <div class="retangulo-197-MhDxn3">
+                                        </div>
+                                        <div class="retangulo-198-VVebvn">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group30-SnxThK">
+                                        <div class="retangulo-79-RRqmaf">
+                                        </div>
+                                        <div class="retangulo-80-t2w0S0">
+                                        </div>
+                                        <div class="retangulo-81-84g1k0">
+                                        </div>
+                                        <div class="retangulo-82-doozF9">
+                                        </div>
+                                        <div class="retangulo-83-asGIeb">
+                                        </div>
+                                        <div class="retangulo-84-Rqw0CX">
+                                        </div>
+                                        <div class="retangulo-199-hGTlw2">
+                                        </div>
+                                        <div class="retangulo-200-pjeN1X">
+                                        </div>
+                                        <div class="retangulo-201-UJYwMi">
+                                        </div>
+                                        <div class="retangulo-202-WeH2Ng">
+                                        </div>
+                                        <div class="retangulo-203-vjukvy">
+                                        </div>
+                                        <div class="retangulo-204-JFijas">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group31-qfheGm">
+                                        <div class="retangulo-85-lpTOZp">
+                                        </div>
+                                        <div class="retangulo-86-jV4yKR">
+                                        </div>
+                                        <div class="retangulo-87-4BGIMN">
+                                        </div>
+                                        <div class="retangulo-88-6kD7pM">
+                                        </div>
+                                        <div class="retangulo-205-G16vX5">
+                                        </div>
+                                        <div class="retangulo-206-OeUuCm">
+                                        </div>
+                                        <div class="retangulo-207-Dbu6jx">
+                                        </div>
+                                        <div class="retangulo-208-xR7y5M">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group32-zuLnqZ">
+                                        <div class="retangulo-89-yEHdjB">
+                                        </div>
+                                        <div class="retangulo-90-KthJRr">
+                                        </div>
+                                        <div class="retangulo-91-YNemHG">
+                                        </div>
+                                        <div class="retangulo-92-W7Nk37">
+                                        </div>
+                                        <div class="retangulo-93-w9eu1e">
+                                        </div>
+                                        <div class="retangulo-94-BxUnzV">
+                                        </div>
+                                        <div class="retangulo-95-JZFhSy">
+                                        </div>
+                                        <div class="retangulo-209-ZjxMEp">
+                                        </div>
+                                        <div class="retangulo-210-hN4fFK">
+                                        </div>
+                                        <div class="retangulo-211-697EY4">
+                                        </div>
+                                        <div class="retangulo-212-MPa6xI">
+                                        </div>
+                                        <div class="retangulo-213-9Bk94A">
+                                        </div>
+                                        <div class="retangulo-214-SJVuZY">
+                                        </div>
+                                        <div class="retangulo-215-4ElMLF">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group33-SxNaw8">
+                                        <div class="retangulo-96-DkNwoV">
+                                        </div>
+                                        <div class="retangulo-97-PQkg33">
+                                        </div>
+                                        <div class="retangulo-216-1Y1bNx">
+                                        </div>
+                                        <div class="retangulo-217-rjrysH">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group34-uxvSk4">
+                                        <div class="retangulo-98-rzgKlK">
+                                        </div>
+                                        <div class="retangulo-99-JxvRIi">
+                                        </div>
+                                        <div class="retangulo-218-kNNr5E">
+                                        </div>
+                                        <div class="retangulo-219-rd2Zs3">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group35-RhvyOx">
+                                        <div class="retangulo-100-fdDUna">
+                                        </div>
+                                        <div class="retangulo-101-MltPe0">
+                                        </div>
+                                        <div class="retangulo-102-butMf5">
+                                        </div>
+                                        <div class="retangulo-220-Lqf8Lu">
+                                        </div>
+                                        <div class="retangulo-221-zyOht0">
+                                        </div>
+                                        <div class="retangulo-222-wSbobX">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group36-Sfmjxp">
+                                        <div class="retangulo-103-aqFL4H">
+                                        </div>
+                                        <div class="retangulo-104-KpzDyH">
+                                        </div>
+                                        <div class="retangulo-105-nO7HBP">
+                                        </div>
+                                        <div class="retangulo-223-uQ19UU">
+                                        </div>
+                                        <div class="retangulo-224-yJj4nl">
+                                        </div>
+                                        <div class="retangulo-225-ZcKqrU">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group37-T29hSP">
+                                        <div class="retangulo-106-QZX0eL">
+                                        </div>
+                                        <div class="retangulo-226-61UZ1F">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group38-4mGDYd">
+                                        <div class="retangulo-107-CE3jqP">
+                                        </div>
+                                        <div class="retangulo-108-KZTMPJ">
+                                        </div>
+                                        <div class="retangulo-109-fJjJjq">
+                                        </div>
+                                        <div class="retangulo-227-z1pDfu">
+                                        </div>
+                                        <div class="retangulo-228-0E6dY9">
+                                        </div>
+                                        <div class="retangulo-229-y2M4kx">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group39-34woSu">
+                                        <div class="retangulo-110-fItiMA">
+                                        </div>
+                                        <div class="retangulo-111-7xXgGz">
+                                        </div>
+                                        <div class="retangulo-112-ERYGyQ">
+                                        </div>
+                                        <div class="retangulo-230-AkyayB">
+                                        </div>
+                                        <div class="retangulo-231-xlqlbI">
+                                        </div>
+                                        <div class="retangulo-232-q0oxj9">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group40-G1c1eX">
+                                        <div class="retangulo-113-PxFzPx">
+                                        </div>
+                                        <div class="retangulo-114-DoOsKZ">
+                                        </div>
+                                        <div class="retangulo-115-fBIsWS">
+                                        </div>
+                                        <div class="retangulo-116-WEjW0n">
+                                        </div>
+                                        <div class="retangulo-117-7vIQrB">
+                                        </div>
+                                        <div class="retangulo-118-qxF1KP">
+                                        </div>
+                                        <div class="retangulo-119-weMqc3">
+                                        </div>
+                                        <div class="retangulo-120-aq0kwa">
+                                        </div>
+                                        <div class="retangulo-121-x4jRhJ">
+                                        </div>
+                                        <div class="retangulo-122-kJJONc">
+                                        </div>
+                                        <div class="retangulo-233-u7gAlK">
+                                        </div>
+                                        <div class="retangulo-234-JTuYm2">
+                                        </div>
+                                        <div class="retangulo-235-0N7xMA">
+                                        </div>
+                                        <div class="retangulo-236-EwjY1K">
+                                        </div>
+                                        <div class="retangulo-237-6vxSwH">
+                                        </div>
+                                        <div class="retangulo-238-4hRfQl">
+                                        </div>
+                                        <div class="retangulo-239-zfTTUi">
+                                        </div>
+                                        <div class="retangulo-240-MFvv63">
+                                        </div>
+                                        <div class="retangulo-241-Lg07mU">
+                                        </div>
+                                        <div class="retangulo-242-Nce7S6">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group41-Dwr0E3">
+                                        <div class="retangulo-123-j81dYH">
+                                        </div>
+                                        <div class="retangulo-124-rDkiWA">
+                                        </div>
+                                        <div class="retangulo-243-xaBeVJ">
+                                        </div>
+                                    </div>
+                                    <div class="retangulo-125-2uqUx1">
+                                    </div>
+                                    <div class="overlap-group42-EQxxgS">
+                                        <div class="retangulo-126-ZU10lN">
+                                        </div>
+                                        <div class="retangulo-127-pHqlBP">
+                                        </div>
+                                        <div class="retangulo-128-qBxuzi">
+                                        </div>
+                                        <div class="retangulo-129-89287a">
+                                        </div>
+                                        <div class="retangulo-130-04RwOR">
+                                        </div>
+                                        <div class="retangulo-131-ZQ5A3a">
+                                        </div>
+                                        <div class="retangulo-132-WTPf6L">
+                                        </div>
+                                        <div class="retangulo-133-mj4qVY">
+                                        </div>
+                                    </div>
+                                    <div class="overlap-group43-STrT40">
+                                        <div class="retangulo-134-vHxcDQ">
+                                        </div>
+                                        <div class="retangulo-135-KLJsQd">
+                                        </div>
+                                    </div>
+                                    <img anima-src={% static "img/caminho-38-1@1x.png" %} class="caminho-38-9EcH0M" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                                </div>
+                            </div>
+                            <img anima-src={% static "img/caminho-33-1@1x.png" %} class="caminho-33-xU2dHX" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img anima-src={% static "img/caminho-34-1@1x.png" %} class="caminho-34-o6lx7F" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                            <img anima-src={% static "img/caminho-35-1@1x.png" %} class="caminho-35-2nIvKq" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Scripts -->
+        <script>
+            anima_isHidden = function(e) {
+                if (!(e instanceof HTMLElement)) return !1;
+                if (getComputedStyle(e).display == "none") return !0; else if (e.parentNode && anima_isHidden(e.parentNode)) return !0;
+                return !1;
+            };
+            anima_loadAsyncSrcForTag = function(tag) {
+                var elements = document.getElementsByTagName(tag);
+                var toLoad = [];
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var src = e.getAttribute("src");
+                    var loaded = (src != undefined && src.length > 0 && src != 'data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+                    if (loaded) continue;
+                    var asyncSrc = e.getAttribute("anima-src");
+                    if (asyncSrc == undefined || asyncSrc.length == 0) continue;
+                    if (anima_isHidden(e)) continue;
+                    toLoad.push(e);
+                }
+                toLoad.sort(function(a, b) {
+                    return anima_getTop(a) - anima_getTop(b);
+                });
+                for (var i = 0; i < toLoad.length; i++) {
+                    var e = toLoad[i];
+                    var asyncSrc = e.getAttribute("anima-src");
+                    e.setAttribute("src", asyncSrc);
+                }
+            };
+            anima_pauseHiddenVideos = function(tag) {
+                var elements = document.getElementsByTagName("video");
+                for (var i = 0; i < elements.length; i++) {
+                    var e = elements[i];
+                    var isPlaying = !!(e.currentTime > 0 && !e.paused && !e.ended && e.readyState > 2);
+                    var isHidden = anima_isHidden(e);
+                    if (!isPlaying && !isHidden && e.getAttribute("autoplay") == "autoplay") {
+                        e.play();
+                    } else if (isPlaying && isHidden) {
+                        e.pause();
+                    }
+                }
+            };
+            anima_loadAsyncSrc = function(tag) {
+                anima_loadAsyncSrcForTag("img");
+                anima_loadAsyncSrcForTag("iframe");
+                anima_loadAsyncSrcForTag("video");
+                anima_pauseHiddenVideos();
+            };
+            var anima_getTop = function(e) {
+                var top = 0;
+                do {
+                    top += e.offsetTop || 0;
+                    e = e.offsetParent;
+                } while (e);
+                return top;
+            };
+            anima_loadAsyncSrc();
+            anima_old_onResize = window.onresize;
+            anima_new_onResize = undefined;
+            anima_updateOnResize = function() {
+                if (anima_new_onResize == undefined || window.onresize != anima_new_onResize) {
+                    anima_new_onResize = function(x) {
+                        if (anima_old_onResize != undefined) anima_old_onResize(x);
+                        anima_loadAsyncSrc();
+                    };
+                    window.onresize = anima_new_onResize;
+                    setTimeout(function() {
+                        anima_updateOnResize();
+                    }, 3000);
+                }
+            };
+            anima_updateOnResize();
+            setTimeout(function() {
+                anima_loadAsyncSrc();
+            }, 200);
+        </script>
+        <!-- End of Scripts -->
+        <script src="https://animaapp.s3.amazonaws.com/static/restart-btn.min.js">
+        </script>
+    </body>
+</html>

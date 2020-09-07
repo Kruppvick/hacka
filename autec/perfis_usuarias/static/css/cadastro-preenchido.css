@@ -1,0 +1,3188 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400|Poppins:900,500,700,400,800,300|Helvetica:400,700|Helvetica+Neue:400');
+
+
+/* .anima-animate-appear prefix for appear animations */
+.anima-animate-appear {
+  opacity             : 0;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 normal forwards;
+}
+.anima-animate-disappear {
+  opacity             : 1;
+  display             : block;
+  animation           : anima-reveal 0.3s ease-in-out 1 reverse forwards;
+}
+.anima-animate-nodelay {
+  animation-delay     : 0s;
+}
+@keyframes anima-reveal {
+  from {
+    opacity             : 0;
+  }
+  to {
+    opacity             : 1;
+  }
+}
+a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+* {
+  box-sizing          : border-box;
+}
+.anima-component-wrapper,
+.anima-component-wrapper * {
+  pointer-events      : none;
+}
+.anima-component-wrapper a *,
+.anima-component-wrapper a,
+.anima-component-wrapper input,
+.anima-component-wrapper video,
+.anima-component-wrapper iframe,
+.anima-listeners-active,
+.anima-listeners-active * {
+  pointer-events      : auto;
+}
+.anima-hidden,
+.anima-hidden * {
+  visibility          : hidden;
+  pointer-events      : none;
+}
+.anima-smart-layers-pointers,
+.anima-smart-layers-pointers * {
+  pointer-events      : auto;
+  visibility          : visible;
+}
+.anima-component-wrapper.anima-not-ready,
+.anima-component-wrapper.anima-not-ready * {
+  visibility          : hidden !important;
+}
+.anima-listeners-active-click,
+.anima-listeners-active-click * {
+  cursor              : pointer;
+}
+.anima-component-wrapper a,
+.anima-screen a {
+  text-decoration     : none;
+}
+.anima-flexbox-container a {
+  line-height         : 0;
+}
+.anima-full-width-a {
+  width               : 100%;
+}
+.anima-full-height-a {
+  height              : 100%;
+}
+.anima-screen textarea:focus,
+.anima-screen input:focus {
+  outline             : none;
+}
+.anima-screen div {
+  -webkit-text-size-adjust: none;
+}
+.anima-container-center-vertical,
+.anima-container-center-horizontal {
+  pointer-events      : none;
+  display             : flex;
+  flex-direction      : row;
+  padding             : 0;
+  margin              : 0;
+}
+.anima-container-center-vertical {
+  align-items         : center;
+  height              : 100%;
+}
+.anima-container-center-horizontal {
+  justify-content     : center;
+  width               : 100%;
+}
+.anima-container-center-vertical > *,
+.anima-container-center-horizontal > * {
+  pointer-events      : auto;
+  flex-shrink         : 0;
+}
+.anima-component-wrapper,
+.anima-screen {
+  overflow-wrap       : break-word;
+  word-wrap           : break-word;
+  word-break          : break-all;
+  word-break          : break-word;
+}
+.anima-auto-animated div {
+  opacity             : 0;
+  position            : absolute;
+  --anima-z-index: -1;
+}
+.anima-auto-animated .anima-container-center-vertical,
+.anima-auto-animated .anima-container-center-horizontal {
+  opacity             : 1;
+}
+/* ANIMA screen - cadastro-preenchido */
+.font-class-1 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 700;
+}
+.font-class-10 {
+  color               : var(--auto-palette-color-1);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 24.0px;
+  font-weight         : 800;
+  line-height         : 24.0px;
+}
+.font-class-2 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 500;
+}
+.font-class-3 {
+  font-family         : Roboto, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-4 {
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-5 {
+  font-family         : Helvetica, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-6 {
+  font-family         : Helvetica Neue, Helvetica, Arial, serif;
+  font-weight         : 400;
+}
+.font-class-7 {
+  font-family         : "Poppins", Helvetica, Arial, serif;
+}
+.font-class-8 {
+  color               : var(--auto-palette-color-2);
+  font-family         : "Helvetica", Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  line-height         : 20.0px;
+}
+.font-class-9 {
+  color               : rgba(206,74,216,1.0);
+  font-family         : Poppins, Helvetica, Arial, serif;
+  font-size           : 14.0px;
+  font-weight         : 300;
+  line-height         : 20.0px;
+}
+:root {
+  --auto-palette-color-1: rgba(255,255,255,1.0);
+  --auto-palette-color-10: rgba(141,51,225,1.0);
+  --auto-palette-color-2: rgba(120,130,162,1.0);
+  --auto-palette-color-3: rgba(255,255,255,0.701960784314);
+  --auto-palette-color-4: rgba(56,61,77,1.0);
+  --auto-palette-color-5: rgba(149,55,221,1.0);
+  --auto-palette-color-6: rgba(222,92,189,1.0);
+  --auto-palette-color-7: rgba(145,53,223,1.0);
+  --auto-palette-color-8: rgba(171,66,211,1.0);
+  --auto-palette-color-9: rgba(177,69,209,1.0);
+}
+.cadastro-preenchido .overlap-group40-G1c1eX {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 5px;
+}
+.cadastro-preenchido .overlap-group41-Dwr0E3 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group42-EQxxgS {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 4px;
+}
+.cadastro-preenchido .overlap-group43-STrT40 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group12-OtFaEY {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group11-pRsoA8 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group10-7BWnsK {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group13-1FTUwi {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group15-llb66t {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group14-3vBzdL {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group5-yixHL5 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group7-npHf2n {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group6-B1xaxo {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group4-fF2RiO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group3-tQDRwq {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group9-E2xSan {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group8-pSHYv2 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group17-y7fX1I {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group16-X42loe {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group18-8sRAxd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group19-2dkvYD {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group20-iDGzow {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group21-jHLyzi {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group22-oozXCm {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group23-inqOOg {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.cadastro-preenchido .overlap-group24-wKpwVP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group25-xIlRxV {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group26-3i0PQR {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group27-PH7ReM {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group28-l8yUZw {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group29-GnZash {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.cadastro-preenchido .overlap-group30-SnxThK {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 3px;
+}
+.cadastro-preenchido .overlap-group31-qfheGm {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group32-zuLnqZ {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 4px;
+}
+.cadastro-preenchido .overlap-group33-SxNaw8 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group34-uxvSk4 {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group35-RhvyOx {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group36-Sfmjxp {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group37-T29hSP {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .overlap-group38-4mGDYd {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group39-34woSu {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 2px;
+}
+.cadastro-preenchido .overlap-group1-yBpAcz {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 96px;
+  margin-left         : -1.0px;
+  margin-top          : 0px;
+  position            : relative;
+  width               : 1367px;
+}
+.cadastro-preenchido .overlap-group2-bBFBYO {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 68px;
+  position            : relative;
+  width               : 68px;
+}
+.cadastro-preenchido .overlap-group-Y7zamN {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 766px;
+  margin-left         : -1.0px;
+  position            : relative;
+  width               : 1368px;
+}
+.cadastro-preenchido .grupo-29-N7MTjU {
+  background-color    : rgba(255,255,255,0);
+  height              : 237px;
+  left                : 393px;
+  position            : absolute;
+  top                 : 348px;
+  width               : 582px;
+}
+.cadastro-preenchido .input-PvlotK {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 279px;
+}
+.cadastro-preenchido .input-qFwtqP {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-Y8xrwd {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-hCoJcq {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 137px;
+}
+.cadastro-preenchido .input-WKzcEX {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 279px;
+}
+.cadastro-preenchido .input-XPqRfW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-7PUfSb {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-szIaOs {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 192px;
+}
+.cadastro-preenchido .input-m1lpDv {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  top                 : calc(33.86% - 16px);
+  width               : 279px;
+}
+.cadastro-preenchido .input-ZF7YD1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-ufYPaM {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-V6Z33k {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 92px;
+}
+.cadastro-preenchido .input-lwkldY {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(32.28% - 15px);
+  height              : 48px;
+  position            : absolute;
+  right               : 0px;
+  width               : 279px;
+}
+.cadastro-preenchido .input-2H7AjW {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-5CNmGi {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-1NyJQz {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 92px;
+}
+.cadastro-preenchido .input-rbpOFN {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  top                 : calc(33.86% - 16px);
+  width               : 279px;
+}
+.cadastro-preenchido .input-fRH0GI {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-a9jNkC {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-B9kkss {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 180px;
+}
+.cadastro-preenchido .input-zEmzCr {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(32.28% - 15px);
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  width               : 279px;
+}
+.cadastro-preenchido .input-y6scG2 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-eReYXo {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-cG81kx {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 73px;
+}
+.cadastro-preenchido .input-9EBRBR {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48px;
+  left                : 0px;
+  position            : absolute;
+  width               : 279px;
+}
+.cadastro-preenchido .input-Gm7rZ4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-85-LqbwYJ {
+  background-color    : rgba(255,255,255,0);
+  border-color        : rgba(63,63,124,1.0);
+  border-radius       : 15.0px;
+  border-style        : solid;
+  border-width        : 1.0px;
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .full-name-zPXtOr {
+  background-color    : rgba(189,198,227,0);
+  bottom              : calc(47.06% - 7px);
+  color               : rgba(189,198,227,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 20px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  white-space         : nowrap;
+  width               : 73px;
+}
+.cadastro-preenchido .grupo-30-N6GxIk {
+  background-color    : rgba(255,255,255,0);
+  bottom              : 0px;
+  height              : 48px;
+  position            : absolute;
+  right               : 82px;
+  width               : 197px;
+}
+.cadastro-preenchido .full-name-10oJqz {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 14.0px;
+  height              : 16px;
+  line-height         : 14.0px;
+  position            : absolute;
+  right               : 23px;
+  text-align          : left;
+  top                 : calc(50.00% - 8px);
+  white-space         : nowrap;
+  width               : 112px;
+}
+.cadastro-preenchido .icon-feather-upload-fy7DyI {
+  background-color    : rgba(255,255,255,0);
+  height              : 15px;
+  position            : absolute;
+  right               : 0px;
+  top                 : calc(48.48% - 7px);
+  width               : 15px;
+}
+.cadastro-preenchido .caminho-40-mdkM1j {
+  background-color    : rgba(255,255,255,0);
+  bottom              : -2px;
+  height              : 8px;
+  left                : -2px;
+  position            : absolute;
+  width               : calc(100.00% + 3px);
+}
+.cadastro-preenchido .caminho-41-UzTPRQ {
+  background-color    : rgba(255,255,255,0);
+  height              : 8px;
+  left                : 1px;
+  position            : absolute;
+  top                 : -1px;
+  width               : calc(100.00% - 2px);
+}
+.cadastro-preenchido .caminho-42-61tYq1 {
+  background-color    : rgba(255,255,255,0);
+  height              : 13px;
+  left                : calc(50.00% - 2px);
+  position            : absolute;
+  top                 : -1px;
+  width               : 3px;
+}
+.cadastro-preenchido .caminho-43-hzkmAl {
+  background-color    : rgba(255,255,255,0);
+  height              : 48px;
+  position            : absolute;
+  right               : 149px;
+  top                 : calc(50.00% - 24px);
+  width               : 48px;
+}
+.cadastro-preenchido .by-creating-an-account-you-agree-to-our-terms-of-service-and-privacy-policy-iHFbFD {
+  background-color    : rgba(120,130,162,0);
+  color               : var(--auto-palette-color-2);
+  font-size           : 10.0px;
+  height              : auto;
+  left                : 493px;
+  line-height         : 10.0px;
+  opacity             : 0.4;
+  position            : absolute;
+  text-align          : center;
+  top                 : 676px;
+  white-space         : nowrap;
+  width               : auto;
+}
+.cadastro-preenchido .grupo-31-SxN47M {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : 35px;
+  left                : 627px;
+  position            : absolute;
+  top                 : 613px;
+  width               : 114px;
+}
+.cadastro-preenchido .icon-awesome-arrow-circle-right-v8PMt9 {
+  background-color    : rgba(206,74,216,0);
+  height              : 100%;
+  position            : absolute;
+  right               : 0px;
+  top                 : 0px;
+  width               : 35px;
+}
+.cadastro-preenchido .prosseguir-LtTZ3i {
+  background-color    : rgba(206,74,216,0);
+  color               : rgba(206,74,216,1.0);
+  font-size           : 14.0px;
+  height              : 16px;
+  left                : 0px;
+  line-height         : 14.0px;
+  position            : absolute;
+  text-align          : left;
+  top                 : calc(47.90% - 7px);
+  white-space         : nowrap;
+  width               : 69px;
+}
+.cadastro-preenchido .retangulo-207-Dbu6jx {
+  background-color    : rgba(208,85,196,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-208-xR7y5M {
+  background-color    : rgba(209,85,195,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-209-ZjxMEp {
+  background-color    : rgba(210,86,195,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-210-hN4fFK {
+  background-color    : rgba(211,86,194,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-211-697EY4 {
+  background-color    : rgba(212,87,194,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-212-MPa6xI {
+  background-color    : rgba(213,87,193,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-213-9Bk94A {
+  background-color    : rgba(214,88,193,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-214-SJVuZY {
+  background-color    : rgba(215,88,193,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-215-4ElMLF {
+  background-color    : rgba(216,89,192,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-216-1Y1bNx {
+  background-color    : rgba(217,89,192,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-217-rjrysH {
+  background-color    : rgba(218,90,191,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-218-kNNr5E {
+  background-color    : rgba(219,90,191,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-219-rd2Zs3 {
+  background-color    : rgba(220,91,190,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-220-Lqf8Lu {
+  background-color    : rgba(221,91,190,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-221-zyOht0 {
+  background-color    : var(--auto-palette-color-6);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-222-wSbobX {
+  background-color    : rgba(223,93,189,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-223-uQ19UU {
+  background-color    : rgba(224,93,189,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-224-yJj4nl {
+  background-color    : rgba(225,94,188,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-225-ZcKqrU {
+  background-color    : rgba(226,94,188,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-226-61UZ1F {
+  background-color    : rgba(227,95,187,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-227-z1pDfu {
+  background-color    : rgba(228,95,187,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-228-0E6dY9 {
+  background-color    : rgba(229,96,186,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-229-y2M4kx {
+  background-color    : rgba(230,96,186,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-230-AkyayB {
+  background-color    : rgba(231,97,186,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-231-xlqlbI {
+  background-color    : rgba(232,97,185,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-232-q0oxj9 {
+  background-color    : rgba(233,98,185,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-233-u7gAlK {
+  background-color    : rgba(234,98,184,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-234-JTuYm2 {
+  background-color    : rgba(235,99,184,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-235-0N7xMA {
+  background-color    : rgba(236,99,183,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-236-EwjY1K {
+  background-color    : rgba(237,100,183,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-237-6vxSwH {
+  background-color    : rgba(238,100,182,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-238-4hRfQl {
+  background-color    : rgba(239,101,182,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-239-zfTTUi {
+  background-color    : rgba(240,101,182,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-240-MFvv63 {
+  background-color    : rgba(241,102,181,1.0);
+  height              : 55px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-241-Lg07mU {
+  background-color    : rgba(242,102,181,1.0);
+  height              : 55px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-242-Nce7S6 {
+  background-color    : rgba(243,103,180,1.0);
+  height              : 55px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-243-xaBeVJ {
+  background-color    : rgba(244,103,180,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .cadastro-sDUuKD {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 25px;
+  left                : 597px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 287px;
+  width               : 177px;
+}
+.cadastro-preenchido .retangulo-163-XBIpR3 {
+  background-color    : rgba(163,62,215,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-164-1yqIuD {
+  background-color    : rgba(164,63,214,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-165-1xDVYF {
+  background-color    : rgba(165,63,214,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-166-AslyWK {
+  background-color    : rgba(166,64,214,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-167-bpYJfs {
+  background-color    : rgba(167,64,213,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-168-U3kkvQ {
+  background-color    : rgba(168,65,213,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-169-WDPUJf {
+  background-color    : rgba(169,65,212,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-170-ORvC0o {
+  background-color    : rgba(170,66,212,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-171-lJOUez {
+  background-color    : var(--auto-palette-color-8);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-172-4TrNzC {
+  background-color    : rgba(172,67,211,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-173-l3S3Yr {
+  background-color    : rgba(173,67,211,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-174-bPfsjf {
+  background-color    : rgba(174,68,210,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-175-LWAopR {
+  background-color    : rgba(175,68,210,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-176-6YNFOe {
+  background-color    : rgba(176,69,209,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-177-iL6fLw {
+  background-color    : var(--auto-palette-color-9);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-178-ZVoxno {
+  background-color    : rgba(178,70,208,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-179-QRnrxx {
+  background-color    : rgba(179,70,208,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-180-3c6NZz {
+  background-color    : rgba(180,71,207,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-181-JGi8NK {
+  background-color    : rgba(181,71,207,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-182-WTHbMp {
+  background-color    : rgba(182,72,207,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-183-vhxbe1 {
+  background-color    : rgba(183,72,206,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-184-Wou1QU {
+  background-color    : rgba(184,73,206,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-185-QZfoG9 {
+  background-color    : rgba(185,73,205,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-186-UJ7DOq {
+  background-color    : rgba(186,74,205,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-187-vfkNRS {
+  background-color    : rgba(187,74,204,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-188-Lg01lI {
+  background-color    : rgba(188,75,204,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-189-ZivBoR {
+  background-color    : rgba(190,76,204,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-190-JWeFPL {
+  background-color    : rgba(191,76,203,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-191-o35ENz {
+  background-color    : rgba(192,77,203,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-192-u5tPYc {
+  background-color    : rgba(193,77,202,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-193-rAHnUw {
+  background-color    : rgba(194,78,202,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-194-ETjd5u {
+  background-color    : rgba(195,78,201,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-195-2LR7i9 {
+  background-color    : rgba(196,79,201,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-196-Rtr2Gf {
+  background-color    : rgba(197,79,200,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-197-MhDxn3 {
+  background-color    : rgba(198,80,200,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-198-VVebvn {
+  background-color    : rgba(199,80,200,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-199-hGTlw2 {
+  background-color    : rgba(200,81,199,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-200-pjeN1X {
+  background-color    : rgba(201,81,199,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-201-UJYwMi {
+  background-color    : rgba(202,82,198,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-202-WeH2Ng {
+  background-color    : rgba(203,82,198,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-203-vjukvy {
+  background-color    : rgba(204,83,197,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-204-JFijas {
+  background-color    : rgba(205,83,197,1.0);
+  height              : 55px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-205-G16vX5 {
+  background-color    : rgba(206,84,196,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-206-OeUuCm {
+  background-color    : rgba(207,84,196,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-122-kJJONc {
+  background-color    : rgba(243,103,180,1.0);
+  height              : 68px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-123-j81dYH {
+  background-color    : rgba(244,103,180,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-124-rDkiWA {
+  background-color    : rgba(245,104,179,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-125-2uqUx1 {
+  background-color    : rgba(246,104,179,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-126-ZU10lN {
+  background-color    : rgba(247,105,179,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-127-pHqlBP {
+  background-color    : rgba(248,105,178,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-128-qBxuzi {
+  background-color    : rgba(249,106,178,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-129-89287a {
+  background-color    : rgba(250,106,177,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-130-04RwOR {
+  background-color    : rgba(251,107,177,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-131-ZQ5A3a {
+  background-color    : rgba(252,107,176,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-132-WTPf6L {
+  background-color    : rgba(253,108,176,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-133-mj4qVY {
+  background-color    : rgba(254,108,175,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-134-vHxcDQ {
+  background-color    : rgba(255,109,175,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-135-KLJsQd {
+  background-color    : rgba(255,109,175,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .caminho-38-9EcH0M {
+  background-color    : rgba(255,109,175,0);
+  flex-shrink         : 0;
+  height              : 0px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 0px;
+}
+.cadastro-preenchido .retangulo-136-mnU9iD {
+  background-color    : rgba(136,48,227,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-137-Tsn0d8 {
+  background-color    : rgba(137,49,226,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-138-FgUcxL {
+  background-color    : rgba(138,49,226,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-139-ABZlkv {
+  background-color    : rgba(139,50,225,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-140-An6LdD {
+  background-color    : rgba(140,50,225,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-141-EHpIqD {
+  background-color    : var(--auto-palette-color-10);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-142-VCPruJ {
+  background-color    : rgba(142,51,224,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-143-texaVJ {
+  background-color    : rgba(143,52,224,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-144-wxcWLm {
+  background-color    : rgba(144,52,223,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-145-q38Kyg {
+  background-color    : var(--auto-palette-color-7);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-146-oycFfL {
+  background-color    : rgba(146,53,222,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-147-tKuZBN {
+  background-color    : rgba(147,54,222,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-148-RXtBzX {
+  background-color    : rgba(148,54,221,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-149-X8h3Fx {
+  background-color    : var(--auto-palette-color-5);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-150-civDvQ {
+  background-color    : rgba(150,55,221,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-151-9YpNTR {
+  background-color    : rgba(151,56,220,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-152-R1Cx36 {
+  background-color    : rgba(152,56,220,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-153-NDgO9j {
+  background-color    : rgba(153,57,219,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-154-nNUUhm {
+  background-color    : rgba(154,57,219,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-155-BBDNxF {
+  background-color    : rgba(155,58,218,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-156-qF4P6G {
+  background-color    : rgba(156,58,218,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-157-oSqqxs {
+  background-color    : rgba(157,59,218,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-158-lVSxcx {
+  background-color    : rgba(158,60,217,1.0);
+  height              : 55px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-159-FxrZ40 {
+  background-color    : rgba(159,60,217,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-160-junCU2 {
+  background-color    : rgba(160,61,216,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-161-HRd8PO {
+  background-color    : rgba(161,61,216,1.0);
+  height              : 55px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-162-PvFwpn {
+  background-color    : rgba(162,62,215,1.0);
+  height              : 55px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 6px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-80-t2w0S0 {
+  background-color    : rgba(201,81,199,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-81-84g1k0 {
+  background-color    : rgba(202,82,198,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-82-doozF9 {
+  background-color    : rgba(203,82,198,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-83-asGIeb {
+  background-color    : rgba(204,83,197,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-84-Rqw0CX {
+  background-color    : rgba(205,83,197,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-85-lpTOZp {
+  background-color    : rgba(206,84,196,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-86-jV4yKR {
+  background-color    : rgba(207,84,196,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-87-4BGIMN {
+  background-color    : rgba(208,85,196,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-88-6kD7pM {
+  background-color    : rgba(209,85,195,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-89-yEHdjB {
+  background-color    : rgba(210,86,195,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-90-KthJRr {
+  background-color    : rgba(211,86,194,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-91-YNemHG {
+  background-color    : rgba(212,87,194,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-92-W7Nk37 {
+  background-color    : rgba(213,87,193,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-93-w9eu1e {
+  background-color    : rgba(214,88,193,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-94-BxUnzV {
+  background-color    : rgba(215,88,193,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-95-JZFhSy {
+  background-color    : rgba(216,89,192,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-96-DkNwoV {
+  background-color    : rgba(217,89,192,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-97-PQkg33 {
+  background-color    : rgba(218,90,191,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-98-rzgKlK {
+  background-color    : rgba(219,90,191,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-99-JxvRIi {
+  background-color    : rgba(220,91,190,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-100-fdDUna {
+  background-color    : rgba(221,91,190,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-101-MltPe0 {
+  background-color    : var(--auto-palette-color-6);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-102-butMf5 {
+  background-color    : rgba(223,93,189,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-103-aqFL4H {
+  background-color    : rgba(224,93,189,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-104-KpzDyH {
+  background-color    : rgba(225,94,188,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-105-nO7HBP {
+  background-color    : rgba(226,94,188,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-106-QZX0eL {
+  background-color    : rgba(227,95,187,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-107-CE3jqP {
+  background-color    : rgba(228,95,187,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-108-KZTMPJ {
+  background-color    : rgba(229,96,186,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-109-fJjJjq {
+  background-color    : rgba(230,96,186,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-110-fItiMA {
+  background-color    : rgba(231,97,186,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-111-7xXgGz {
+  background-color    : rgba(232,97,185,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-112-ERYGyQ {
+  background-color    : rgba(233,98,185,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-113-PxFzPx {
+  background-color    : rgba(234,98,184,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-114-DoOsKZ {
+  background-color    : rgba(235,99,184,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-115-fBIsWS {
+  background-color    : rgba(236,99,183,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-116-WEjW0n {
+  background-color    : rgba(237,100,183,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-117-7vIQrB {
+  background-color    : rgba(238,100,182,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-118-qxF1KP {
+  background-color    : rgba(239,101,182,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-119-weMqc3 {
+  background-color    : rgba(240,101,182,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-120-aq0kwa {
+  background-color    : rgba(241,102,181,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-121-x4jRhJ {
+  background-color    : rgba(242,102,181,1.0);
+  height              : 68px;
+  left                : 4px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-40-BFBErx {
+  background-color    : rgba(160,61,216,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-41-xkJG12 {
+  background-color    : rgba(161,61,216,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-42-7zxDGn {
+  background-color    : rgba(162,62,215,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-43-JnUEX6 {
+  background-color    : rgba(163,62,215,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-44-26QnjN {
+  background-color    : rgba(164,63,214,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-45-bLIiPH {
+  background-color    : rgba(165,63,214,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-46-ZdNRZQ {
+  background-color    : rgba(166,64,214,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-47-qxwVw0 {
+  background-color    : rgba(167,64,213,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-48-lwm6Vx {
+  background-color    : rgba(168,65,213,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-49-lAp47W {
+  background-color    : rgba(169,65,212,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-50-0Wn4F8 {
+  background-color    : rgba(170,66,212,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-51-S77Wsw {
+  background-color    : var(--auto-palette-color-8);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-52-XxmGW2 {
+  background-color    : rgba(172,67,211,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-53-NiMXN1 {
+  background-color    : rgba(173,67,211,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-54-sxlWE7 {
+  background-color    : rgba(174,68,210,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-55-m9xxHl {
+  background-color    : rgba(175,68,210,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-56-QleQZ1 {
+  background-color    : rgba(176,69,209,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-57-hVxqxu {
+  background-color    : var(--auto-palette-color-9);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-58-GCmC9y {
+  background-color    : rgba(178,70,208,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-59-dY5FQ5 {
+  background-color    : rgba(179,70,208,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-60-5CVxhy {
+  background-color    : rgba(180,71,207,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-61-sU7f0A {
+  background-color    : rgba(181,71,207,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-62-PcAYSZ {
+  background-color    : rgba(182,72,207,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-63-s2xDow {
+  background-color    : rgba(183,72,206,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-64-67x4xR {
+  background-color    : rgba(184,73,206,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-65-CFFFI7 {
+  background-color    : rgba(185,73,205,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-66-ZeHXPb {
+  background-color    : rgba(186,74,205,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-67-6qUTSx {
+  background-color    : rgba(187,74,204,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-68-NqBgcV {
+  background-color    : rgba(188,75,204,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-69-ulCaLV {
+  background-color    : rgba(190,76,204,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-70-utZxWN {
+  background-color    : rgba(191,76,203,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-71-5zq32q {
+  background-color    : rgba(192,77,203,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-72-0NTEx3 {
+  background-color    : rgba(193,77,202,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-73-kevnv2 {
+  background-color    : rgba(194,78,202,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-74-FDzMwk {
+  background-color    : rgba(195,78,201,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-75-wIPUze {
+  background-color    : rgba(196,79,201,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-76-0C6gL6 {
+  background-color    : rgba(197,79,200,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-77-SdeHTe {
+  background-color    : rgba(198,80,200,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-78-3GARUw {
+  background-color    : rgba(199,80,200,1.0);
+  height              : 68px;
+  left                : 3px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-79-RRqmaf {
+  background-color    : rgba(200,81,199,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .caminho-28-BuMPoV {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro-preenchido .camada-2-0lBBb5 {
+  align-items         : flex-start;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 68px;
+  justify-content     : flex-start;
+  left                : 613px;
+  position            : absolute;
+  top                 : 14px;
+  width               : auto;
+}
+.cadastro-preenchido .camada-1-Zu7E4k {
+  align-items         : center;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  flex-shrink         : 0;
+  height              : 68px;
+  justify-content     : flex-start;
+  min-width           : 141px;
+  position            : relative;
+  width               : auto;
+}
+.cadastro-preenchido .caminho-31-4XeSO2 {
+  background-color    : rgba(255,0,191,0);
+  height              : 27px;
+  left                : 5px;
+  position            : absolute;
+  top                 : 20px;
+  width               : 26px;
+}
+.cadastro-preenchido .caminho-32-8vU5ls {
+  background-color    : rgba(255,0,191,0);
+  height              : 27px;
+  left                : 34px;
+  position            : absolute;
+  top                 : 21px;
+  width               : 24px;
+}
+.cadastro-preenchido .caminho-33-xU2dHX {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 26px;
+  margin-bottom       : 0.23px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 19px;
+}
+.cadastro-preenchido .caminho-34-o6lx7F {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 26px;
+  margin-bottom       : 0.22px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 18px;
+}
+.cadastro-preenchido .caminho-35-2nIvKq {
+  background-color    : rgba(255,255,255,0);
+  flex-shrink         : 0;
+  height              : 28px;
+  margin-bottom       : 0.22px;
+  margin-left         : 3px;
+  position            : relative;
+  width               : 26px;
+}
+.cadastro-preenchido .caminho-36-8ftP7N {
+  background-color    : rgba(217,188,255,0);
+  height              : 27px;
+  left                : 7px;
+  position            : absolute;
+  top                 : 20px;
+  width               : 26px;
+}
+.cadastro-preenchido .caminho-37-yEv4dY {
+  background-color    : rgba(217,188,255,0);
+  height              : 27px;
+  left                : 36px;
+  position            : absolute;
+  top                 : 21px;
+  width               : 24px;
+}
+.cadastro-preenchido .grupo-24-Ulpe1T {
+  align-items         : flex-end;
+  background-color    : rgba(255,255,255,0);
+  box-sizing          : border-box;
+  display             : inline-flex;
+  flex-direction      : row;
+  height              : 68px;
+  justify-content     : flex-start;
+  left                : 0px;
+  overflow            : hidden;
+  position            : absolute;
+  top                 : 0px;
+  width               : 68px;
+}
+.cadastro-preenchido .retangulo-4-AXWntB {
+  background-color    : rgba(124,42,232,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-5-i5hTwS {
+  background-color    : rgba(125,43,232,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-6-4sRPUV {
+  background-color    : rgba(126,43,231,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-7-pQrpsB {
+  background-color    : rgba(127,44,231,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-8-xvlG7k {
+  background-color    : rgba(128,44,230,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-9-xh188R {
+  background-color    : rgba(129,45,230,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-10-j3bRRj {
+  background-color    : rgba(130,45,229,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-11-QDSWqC {
+  background-color    : rgba(131,46,229,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-12-skfngp {
+  background-color    : rgba(132,46,228,1.0);
+  flex-shrink         : 0;
+  height              : 68px;
+  margin-left         : 0px;
+  position            : relative;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-13-6BUxW1 {
+  background-color    : rgba(133,47,228,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-14-0KfplM {
+  background-color    : rgba(134,47,228,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-15-gdcsQs {
+  background-color    : rgba(135,48,227,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-16-mu8EgZ {
+  background-color    : rgba(136,48,227,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-17-nwBCSx {
+  background-color    : rgba(137,49,226,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-18-33haQ6 {
+  background-color    : rgba(138,49,226,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-19-goT7Qv {
+  background-color    : rgba(139,50,225,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-20-2pmDIU {
+  background-color    : rgba(140,50,225,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-21-djjcRf {
+  background-color    : var(--auto-palette-color-10);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-22-4SsD5t {
+  background-color    : rgba(142,51,224,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-23-rxRBMb {
+  background-color    : rgba(143,52,224,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-24-jee0mx {
+  background-color    : rgba(144,52,223,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-25-fTw7qj {
+  background-color    : var(--auto-palette-color-7);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-26-UuFHPr {
+  background-color    : rgba(146,53,222,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-27-HgnxXw {
+  background-color    : rgba(147,54,222,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-28-qfTnHI {
+  background-color    : rgba(148,54,221,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-29-7iUnbh {
+  background-color    : var(--auto-palette-color-5);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-30-SGJs4o {
+  background-color    : rgba(150,55,221,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-31-ac6VRb {
+  background-color    : rgba(151,56,220,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-32-0dOXjx {
+  background-color    : rgba(152,56,220,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-33-6KYQif {
+  background-color    : rgba(153,57,219,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-34-WrZeIF {
+  background-color    : rgba(154,57,219,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-35-NKToVO {
+  background-color    : rgba(155,58,218,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-36-qiL8Hd {
+  background-color    : rgba(156,58,218,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-37-ZYCilS {
+  background-color    : rgba(157,59,218,1.0);
+  height              : 68px;
+  left                : 1px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-38-3BmPAU {
+  background-color    : rgba(158,60,217,1.0);
+  height              : 68px;
+  left                : 2px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido .retangulo-39-RynmsK {
+  background-color    : rgba(159,60,217,1.0);
+  height              : 68px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1px;
+}
+.cadastro-preenchido {
+  align-items         : flex-start;
+  background-color    : rgba(24,28,40,1.0);
+  box-sizing          : border-box;
+  display             : flex;
+  flex-direction      : column;
+  height              : auto;
+  justify-content     : flex-start;
+  min-height          : 862px;
+  overflow            : hidden;
+  position            : relative;
+  width               : 1366.0px;
+}
+.cadastro-preenchido .banner-kz8zwW {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 1368px;
+}
+.cadastro-preenchido .menu-E3DCV4 {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
+.cadastro-preenchido .bg-RtrBFh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .caminho-19-DHDo1z {
+  background-color    : rgba(206,74,216,0);
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro-preenchido .grupo-2-S4Qzc4 {
+  background-color    : rgba(255,255,255,0);
+  bottom              : calc(49.32% - 11px);
+  height              : 23px;
+  left                : calc(50.00% - 276px);
+  position            : absolute;
+  width               : 551px;
+}
+.cadastro-preenchido .candidaturas-2ZcLjF {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : calc(42.55% - 54px);
+  text-align          : center;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 130px;
+}
+.cadastro-preenchido .para-empresas-mhxBv8 {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  font-size           : 16.0px;
+  height              : 100%;
+  line-height         : 16.0px;
+  position            : absolute;
+  right               : 0px;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 133px;
+}
+.cadastro-preenchido .vagas-Mob1Ea {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : calc(27.62% - 16px);
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 59px;
+}
+.cadastro-preenchido .meu-perfil-bFLiFx {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-3);
+  cursor              : pointer;
+  font-size           : 16.0px;
+  height              : 100%;
+  left                : 0px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : right;
+  top                 : 4px;
+  white-space         : nowrap;
+  width               : 90px;
+}
+.cadastro-preenchido .logoautec-xJxzQD {
+  background-color    : rgba(255,255,255,0);
+  cursor              : pointer;
+  height              : calc(100.00% - 33px);
+  left                : 105px;
+  position            : absolute;
+  top                 : 17px;
+  width               : 131px;
+}
+.cadastro-preenchido .caminho-29-vvR3x3 {
+  background-color    : rgba(255,255,255,0);
+  height              : 671px;
+  left                : 53px;
+  position            : absolute;
+  top                 : 95px;
+  width               : 0px;
+}
+.cadastro-preenchido .para-comecar-nos-responda-algumas-perguntinhas-2aMamA {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 24.0px;
+  height              : 35px;
+  left                : 290px;
+  line-height         : 24.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 144px;
+  width               : 790px;
+}
+.cadastro-preenchido .iremos-mapear-suas-competencias-Q5kpko {
+  background-color    : rgba(255,255,255,0);
+  color               : var(--auto-palette-color-1);
+  font-size           : 16.0px;
+  height              : 35px;
+  left                : 290px;
+  line-height         : 16.0px;
+  position            : absolute;
+  text-align          : center;
+  top                 : 190px;
+  width               : 790px;
+}
+.cadastro-preenchido .grupo-27-k0Z7mq {
+  background-color    : rgba(255,255,255,0);
+  background-image    : url(".././img/caminho-30-1@1x.png");
+  background-size     : 100% 100%;
+  height              : 48px;
+  left                : 1222px;
+  position            : absolute;
+  top                 : 24px;
+  width               : 48px;
+}
+.cadastro-preenchido .icon-awesome-user-alt-1aBSDu {
+  background-color    : rgba(87,87,87,0);
+  height              : 24px;
+  left                : calc(50.00% - 12px);
+  position            : absolute;
+  top                 : calc(50.00% - 12px);
+  width               : 24px;
+}
+.cadastro-preenchido .total-yearly-impact-pwycnf {
+  background-color    : rgba(255,255,255,0);
+  height              : 459px;
+  left                : 290px;
+  position            : absolute;
+  top                 : 242px;
+  width               : 788px;
+}
+.cadastro-preenchido .grupo-23-ztuqYh {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .bg-Q10fuo {
+  background-color    : rgba(255,255,255,0);
+  height              : 100%;
+  left                : 0px;
+  position            : relative;
+  top                 : 0px;
+  width               : 100%;
+}
+.cadastro-preenchido .rectangle-YlnxYb {
+  background-color    : rgba(41,45,57,0);
+  border-radius       : 5.0px;
+  height              : calc(100.00% + 24px);
+  left                : -12px;
+  position            : absolute;
+  top                 : -9px;
+  width               : calc(100.00% + 24px);
+}
+.cadastro-preenchido .grupo-20-FMF4kh {
+  background-color    : rgba(255,255,255,0);
+  height              : 96px;
+  left                : 0px;
+  position            : absolute;
+  top                 : 0px;
+  width               : 1367px;
+}
